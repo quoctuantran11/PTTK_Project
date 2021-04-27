@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace PTTK_Project
 {
-    public partial class fGhiNhanHDDKCCQT : Form
+    public partial class fDKHocPhan : Form
     {
-        public fGhiNhanHDDKCCQT()
+        public fDKHocPhan()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void HocPhan_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

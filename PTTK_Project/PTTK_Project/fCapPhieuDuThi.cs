@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace pttk1
+namespace PTTK_Project
 {
     public partial class fCapPhieuDuThi : Form
     {

@@ -22,12 +22,12 @@ namespace PTTK_Project
 
         }
 
-        private void btnEnroll_Click(object sender, EventArgs e)
+        private void btnDKHP_Click(object sender, EventArgs e)
         {
-            DKHocPhan dkhp = new DKHocPhan();
-
-            dkhp.ShowDialog();
+            fDKHocPhan dkhp = new fDKHocPhan();
             this.Hide();
+            dkhp.ShowDialog();
+            this.Show();           
         }
     }
 }

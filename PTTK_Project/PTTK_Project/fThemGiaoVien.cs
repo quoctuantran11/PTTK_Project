@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PTTK_Project
 {
-    public partial class fGhiNhanHDDKCCQT : Form
+    public partial class fThemGiaoVien : Form
     {
-        public fGhiNhanHDDKCCQT()
+        public fThemGiaoVien()
         {
             InitializeComponent();
         }
