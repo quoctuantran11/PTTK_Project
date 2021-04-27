@@ -52,6 +52,24 @@
     <Compile Include="DangKyChungChiQuocTe.Designer.cs">
       <DependentUpon>DangKyChungChiQuocTe.cs</DependentUpon>
     </Compile>
+    <Compile Include="fCapPhieuDuThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCapPhieuDuThi.Designer.cs">
+      <DependentUpon>fCapPhieuDuThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGhiNhanHDDKCCQT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGhiNhanHDDKCCQT.Designer.cs">
+      <DependentUpon>fGhiNhanHDDKCCQT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGhiNhanHDDKHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGhiNhanHDDKHP.Designer.cs">
+      <DependentUpon>fGhiNhanHDDKHP.cs</DependentUpon>
+    </Compile>
     <Compile Include="fQLDangKyHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +128,15 @@
     </Compile>
     <EmbeddedResource Include="DangKyChungChiQuocTe.resx">
       <DependentUpon>DangKyChungChiQuocTe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCapPhieuDuThi.resx">
+      <DependentUpon>fCapPhieuDuThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGhiNhanHDDKCCQT.resx">
+      <DependentUpon>fGhiNhanHDDKCCQT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGhiNhanHDDKHP.resx">
+      <DependentUpon>fGhiNhanHDDKHP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fQLDangKyHocPhan.resx">
       <DependentUpon>fQLDangKyHocPhan.cs</DependentUpon>
