@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PTTK_Project
 {
-    public partial class DangKyHocPhan : Form
+    public partial class fQLDangKyHocPhan : Form
     {
-        public DangKyHocPhan()
+        public fQLDangKyHocPhan()
         {
             InitializeComponent();
         }

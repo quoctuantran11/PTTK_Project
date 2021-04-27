@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace PTTK_Project
 {
-    public partial class DangKyChungChiQuocTe : Form
+    public partial class XemKQTL : Form
     {
-        public DangKyChungChiQuocTe()
+        public XemKQTL()
         {
             InitializeComponent();
         }
-
-        
-
-        
     }
 }

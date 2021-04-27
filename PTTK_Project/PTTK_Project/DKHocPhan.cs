@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace PTTK_Project
 {
-    public partial class TaoPhieu : Form
+    public partial class DKHocPhan : Form
     {
-        public TaoPhieu()
+        public DKHocPhan()
         {
             InitializeComponent();
+        }
+
+        
+
+        private void HocPhan_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

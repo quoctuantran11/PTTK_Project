@@ -3,9 +3,7 @@ C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_Project.e
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_Project.pdb
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.csprojAssemblyReference.cache
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.DangKyChungChiQuocTe.resources
-C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.DangKyHocPhan.resources
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.GhiDanh.resources
-C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.HocPhan.resources
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.KetQuaThiLai.resources
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.NhapDiemThiLai.resources
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.Properties.Resources.resources
@@ -14,3 +12,8 @@ C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.c
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.csproj.CoreCompileInputs.cache
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.exe
 C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.pdb
+C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fNVTiepNhan_UI.resources
+C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.KiemTraChungChiHocPhan.resources
+C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.XemKQTL.resources
+C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fQLDangKyHocPhan.resources
+C:\Users\Perry\Desktop\pttkTH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.DKHocPhan.resources

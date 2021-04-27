@@ -52,11 +52,17 @@
     <Compile Include="DangKyChungChiQuocTe.Designer.cs">
       <DependentUpon>DangKyChungChiQuocTe.cs</DependentUpon>
     </Compile>
-    <Compile Include="DangKyHocPhan.cs">
+    <Compile Include="fQLDangKyHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangKyHocPhan.Designer.cs">
-      <DependentUpon>DangKyHocPhan.cs</DependentUpon>
+    <Compile Include="fQLDangKyHocPhan.Designer.cs">
+      <DependentUpon>fQLDangKyHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNVTiepNhan_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNVTiepNhan_UI.Designer.cs">
+      <DependentUpon>fNVTiepNhan_UI.cs</DependentUpon>
     </Compile>
     <Compile Include="GhiDanh.cs">
       <SubType>Form</SubType>
@@ -64,17 +70,23 @@
     <Compile Include="GhiDanh.Designer.cs">
       <DependentUpon>GhiDanh.cs</DependentUpon>
     </Compile>
-    <Compile Include="HocPhan.cs">
+    <Compile Include="DKHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HocPhan.Designer.cs">
-      <DependentUpon>HocPhan.cs</DependentUpon>
+    <Compile Include="DKHocPhan.Designer.cs">
+      <DependentUpon>DKHocPhan.cs</DependentUpon>
     </Compile>
     <Compile Include="KetQuaThiLai.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KetQuaThiLai.Designer.cs">
       <DependentUpon>KetQuaThiLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KiemTraChungChiHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiemTraChungChiHocPhan.Designer.cs">
+      <DependentUpon>KiemTraChungChiHocPhan.cs</DependentUpon>
     </Compile>
     <Compile Include="NhapDiemThiLai.cs">
       <SubType>Form</SubType>
@@ -90,26 +102,32 @@
     <Compile Include="SuaDiemThiLai.Designer.cs">
       <DependentUpon>SuaDiemThiLai.cs</DependentUpon>
     </Compile>
-    <Compile Include="TaoPhieu.cs">
+    <Compile Include="XemKQTL.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TaoPhieu.Designer.cs">
-      <DependentUpon>TaoPhieu.cs</DependentUpon>
+    <Compile Include="XemKQTL.Designer.cs">
+      <DependentUpon>XemKQTL.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="DangKyChungChiQuocTe.resx">
       <DependentUpon>DangKyChungChiQuocTe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DangKyHocPhan.resx">
-      <DependentUpon>DangKyHocPhan.cs</DependentUpon>
+    <EmbeddedResource Include="fQLDangKyHocPhan.resx">
+      <DependentUpon>fQLDangKyHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNVTiepNhan_UI.resx">
+      <DependentUpon>fNVTiepNhan_UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GhiDanh.resx">
       <DependentUpon>GhiDanh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HocPhan.resx">
-      <DependentUpon>HocPhan.cs</DependentUpon>
+    <EmbeddedResource Include="DKHocPhan.resx">
+      <DependentUpon>DKHocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KetQuaThiLai.resx">
       <DependentUpon>KetQuaThiLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiemTraChungChiHocPhan.resx">
+      <DependentUpon>KiemTraChungChiHocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhapDiemThiLai.resx">
       <DependentUpon>NhapDiemThiLai.cs</DependentUpon>
@@ -125,6 +143,9 @@
     </Compile>
     <EmbeddedResource Include="SuaDiemThiLai.resx">
       <DependentUpon>SuaDiemThiLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemKQTL.resx">
+      <DependentUpon>XemKQTL.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

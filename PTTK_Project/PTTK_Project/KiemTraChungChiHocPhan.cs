@@ -10,31 +10,34 @@ using System.Windows.Forms;
 
 namespace PTTK_Project
 {
-    public partial class HocPhan : Form
+    public partial class KiemTraChungChiHocPhan : Form
     {
-        public HocPhan()
+        public KiemTraChungChiHocPhan()
         {
             InitializeComponent();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked == true)
             {
                 checkBox2.Checked = false;
                 textBox2.Enabled = false;
+                label7.Visible = false;
 
                 textBox2.Text = "";
             }
         }
-
+    
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked == true)
             {
-                checkBox1.Checked = false;
-                textBox2.Enabled = true;
+                    checkBox1.Checked = false;
+                    textBox2.Enabled = true;
+                    label7.Visible = true;
             }
         }
+        
     }
 }
