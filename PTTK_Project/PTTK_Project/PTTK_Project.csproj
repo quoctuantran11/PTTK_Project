@@ -124,6 +124,12 @@
     <Compile Include="fQuanLyLichThi.Designer.cs">
       <DependentUpon>fQuanLyLichThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSuaDKHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSuaDKHP.Designer.cs">
+      <DependentUpon>fSuaDKHP.cs</DependentUpon>
+    </Compile>
     <Compile Include="fSuaGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fQuanLyLichThi.resx">
       <DependentUpon>fQuanLyLichThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSuaDKHP.resx">
+      <DependentUpon>fSuaDKHP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fSuaGiaoVien.resx">
       <DependentUpon>fSuaGiaoVien.cs</DependentUpon>

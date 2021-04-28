@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace PTTK_Project
 {
-    public partial class fQLDangKyHocPhan : Form
+    public partial class fSuaDKHP : Form
     {
-        public fQLDangKyHocPhan()
+        public fSuaDKHP()
         {
             InitializeComponent();
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            fSuaDKHP SuaDKHP = new fSuaDKHP();
-            this.Hide();
-            SuaDKHP.ShowDialog();
-            this.Show();
         }
     }
 }

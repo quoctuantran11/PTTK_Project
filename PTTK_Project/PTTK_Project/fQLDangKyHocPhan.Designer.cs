@@ -36,14 +36,16 @@ namespace PTTK_Project
             this.label2 = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnHienToanBo = new System.Windows.Forms.Button();
+            this.Namcmb = new System.Windows.Forms.ComboBox();
+            this.Khoacmb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 94);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(56, 152);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
@@ -53,8 +55,8 @@ namespace PTTK_Project
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnXoa.Location = new System.Drawing.Point(642, 413);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Location = new System.Drawing.Point(642, 471);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(148, 52);
             this.btnXoa.TabIndex = 1;
@@ -64,19 +66,20 @@ namespace PTTK_Project
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSua.Location = new System.Drawing.Point(58, 413);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSua.Location = new System.Drawing.Point(58, 471);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(152, 52);
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.textBox1.Location = new System.Drawing.Point(180, 35);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(436, 35);
             this.textBox1.TabIndex = 23;
@@ -96,7 +99,7 @@ namespace PTTK_Project
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnTimKiem.Location = new System.Drawing.Point(636, 26);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(6);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(154, 48);
             this.btnTimKiem.TabIndex = 24;
@@ -106,19 +109,41 @@ namespace PTTK_Project
             // btnHienToanBo
             // 
             this.btnHienToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnHienToanBo.Location = new System.Drawing.Point(298, 413);
-            this.btnHienToanBo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnHienToanBo.Location = new System.Drawing.Point(298, 471);
+            this.btnHienToanBo.Margin = new System.Windows.Forms.Padding(6);
             this.btnHienToanBo.Name = "btnHienToanBo";
             this.btnHienToanBo.Size = new System.Drawing.Size(256, 52);
             this.btnHienToanBo.TabIndex = 25;
             this.btnHienToanBo.Text = "Hiện toàn bộ";
             this.btnHienToanBo.UseVisualStyleBackColor = true;
             // 
+            // Namcmb
+            // 
+            this.Namcmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Namcmb.FormattingEnabled = true;
+            this.Namcmb.Location = new System.Drawing.Point(485, 97);
+            this.Namcmb.Name = "Namcmb";
+            this.Namcmb.Size = new System.Drawing.Size(130, 37);
+            this.Namcmb.TabIndex = 26;
+            this.Namcmb.Text = "Năm";
+            // 
+            // Khoacmb
+            // 
+            this.Khoacmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Khoacmb.FormattingEnabled = true;
+            this.Khoacmb.Location = new System.Drawing.Point(660, 97);
+            this.Khoacmb.Name = "Khoacmb";
+            this.Khoacmb.Size = new System.Drawing.Size(130, 37);
+            this.Khoacmb.TabIndex = 27;
+            this.Khoacmb.Text = "Khóa";
+            // 
             // fQLDangKyHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 492);
+            this.ClientSize = new System.Drawing.Size(833, 545);
+            this.Controls.Add(this.Khoacmb);
+            this.Controls.Add(this.Namcmb);
             this.Controls.Add(this.btnHienToanBo);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.textBox1);
@@ -126,7 +151,7 @@ namespace PTTK_Project
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fQLDangKyHocPhan";
             this.Text = "QLDangKyHocPhan";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -144,5 +169,7 @@ namespace PTTK_Project
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnHienToanBo;
+        private System.Windows.Forms.ComboBox Namcmb;
+        private System.Windows.Forms.ComboBox Khoacmb;
     }
 }
