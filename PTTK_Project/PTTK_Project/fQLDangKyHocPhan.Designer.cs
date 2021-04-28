@@ -102,9 +102,9 @@ namespace PTTK_Project
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button4.Location = new System.Drawing.Point(634, 34);
+            this.button4.Location = new System.Drawing.Point(634, 24);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 35);
+            this.button4.Size = new System.Drawing.Size(129, 53);
             this.button4.TabIndex = 24;
             this.button4.Text = "Tìm kiếm";
             this.button4.UseVisualStyleBackColor = true;

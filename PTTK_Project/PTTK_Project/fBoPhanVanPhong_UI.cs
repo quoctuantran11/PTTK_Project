@@ -48,5 +48,21 @@ namespace PTTK_Project
             QLLT.ShowDialog();
             this.Show();
         }
+
+        private void btnQLDKHP_Click(object sender, EventArgs e)
+        {
+            fQLDangKyHocPhan QLDKHP = new fQLDangKyHocPhan();
+            this.Hide();
+            QLDKHP.ShowDialog();
+            this.Show();
+        }
+
+        private void btnQLKQTL_Click(object sender, EventArgs e)
+        {
+            fKetQuaThiLai QLKQTL = new fKetQuaThiLai();
+            this.Hide();
+            QLKQTL.ShowDialog();
+            this.Show();
+        }
     }
 }
