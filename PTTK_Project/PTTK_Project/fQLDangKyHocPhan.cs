@@ -16,5 +16,11 @@ namespace PTTK_Project
         {
             InitializeComponent();
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            fDKHocPhan dk = new fDKHocPhan();
+            dk.ShowDialog();
+        }
     }
 }

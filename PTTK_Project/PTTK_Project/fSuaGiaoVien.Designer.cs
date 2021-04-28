@@ -199,7 +199,7 @@ namespace PTTK_Project
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.panel1);
             this.Name = "fSuaGiaoVien";
-            this.Text = "fSuaGiaoVien";
+            this.Text = "Sửa Giáo Viên";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
