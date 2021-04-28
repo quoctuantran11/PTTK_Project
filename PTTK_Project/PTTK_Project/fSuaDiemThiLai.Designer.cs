@@ -30,7 +30,7 @@ namespace PTTK_Project
         private void InitializeComponent()
         {
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHoanTat = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -45,15 +45,15 @@ namespace PTTK_Project
             this.textBox4.Size = new System.Drawing.Size(494, 31);
             this.textBox4.TabIndex = 20;
             // 
-            // button1
+            // btnHoanTat
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button1.Location = new System.Drawing.Point(314, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 49);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Hoàn tất";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHoanTat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnHoanTat.Location = new System.Drawing.Point(314, 237);
+            this.btnHoanTat.Name = "btnHoanTat";
+            this.btnHoanTat.Size = new System.Drawing.Size(161, 49);
+            this.btnHoanTat.TabIndex = 16;
+            this.btnHoanTat.Text = "Hoàn tất";
+            this.btnHoanTat.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -99,7 +99,7 @@ namespace PTTK_Project
             this.label6.TabIndex = 22;
             this.label6.Text = "Điểm thi mới";
             // 
-            // SuaDiemThiLai
+            // fSuaDiemThiLai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,10 +108,10 @@ namespace PTTK_Project
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnHoanTat);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Name = "SuaDiemThiLai";
+            this.Name = "fSuaDiemThiLai";
             this.Text = "SuaDiemThiLai";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,7 +120,7 @@ namespace PTTK_Project
 
         #endregion
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHoanTat;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

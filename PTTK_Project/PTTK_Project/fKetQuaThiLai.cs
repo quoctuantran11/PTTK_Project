@@ -16,5 +16,21 @@ namespace PTTK_Project
         {
             InitializeComponent();
         }
+
+        private void btnNhapDiem_Click(object sender, EventArgs e)
+        {
+            fNhapDiemThiLai nhapdiem = new fNhapDiemThiLai();
+            this.Hide();
+            nhapdiem.ShowDialog();
+            this.Show();
+        }
+
+        private void btnSuaDiem_Click(object sender, EventArgs e)
+        {
+            fSuaDiemThiLai suadiem = new fSuaDiemThiLai();
+            this.Hide();
+            suadiem.ShowDialog();
+            this.Show();
+        }
     }
 }

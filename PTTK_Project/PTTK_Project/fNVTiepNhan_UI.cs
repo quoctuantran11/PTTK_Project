@@ -17,17 +17,36 @@ namespace PTTK_Project
             InitializeComponent();
         }
 
-        private void fNVTiepNhan_UI_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnDKHP_Click(object sender, EventArgs e)
         {
             fDKHocPhan dkhp = new fDKHocPhan();
             this.Hide();
             dkhp.ShowDialog();
             this.Show();           
+        }
+
+        private void btnGNHV_Click(object sender, EventArgs e)
+        {
+            fGhiDanh ghidanh = new fGhiDanh();
+            this.Hide();
+            ghidanh.ShowDialog();
+            this.Show();
+        }
+
+        private void btnGNNTDT_Click(object sender, EventArgs e)
+        {
+            fDangKyChungChiQuocTe ccquocte = new fDangKyChungChiQuocTe();
+            this.Hide();
+            ccquocte.ShowDialog();
+            this.Show();
+        }
+
+        private void btnXKQTL_Click(object sender, EventArgs e)
+        {
+            fXemKQTL kqtl = new fXemKQTL();
+            this.Hide();
+            kqtl.ShowDialog();
+            this.Show();
         }
     }
 }

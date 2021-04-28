@@ -17,11 +17,12 @@ namespace PTTK_Project
             InitializeComponent();
         }
 
-        
-
-        private void HocPhan_Load(object sender, EventArgs e)
+        private void btnGNCC_Click(object sender, EventArgs e)
         {
-            
+            fKiemTraChungChiHocPhan kiemtra = new fKiemTraChungChiHocPhan();
+            this.Hide();
+            kiemtra.ShowDialog();
+            this.Show();
         }
     }
 }

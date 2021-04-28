@@ -53,7 +53,7 @@ namespace PTTK_Project
             // Checkbtn
             // 
             this.Checkbtn.AutoSize = true;
-            this.Checkbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Checkbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Checkbtn.Location = new System.Drawing.Point(690, 19);
             this.Checkbtn.Name = "Checkbtn";
             this.Checkbtn.Size = new System.Drawing.Size(135, 45);
@@ -121,7 +121,7 @@ namespace PTTK_Project
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Location = new System.Drawing.Point(352, 191);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(154, 53);
@@ -129,7 +129,7 @@ namespace PTTK_Project
             this.button1.Text = "Hoàn tất";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // KiemTraChungChiHocPhan
+            // fKiemTraChungChiHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,7 +143,7 @@ namespace PTTK_Project
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Name = "KiemTraChungChiHocPhan";
+            this.Name = "fKiemTraChungChiHocPhan";
             this.Text = "KiemTraChungChiHocPhan";
             this.ResumeLayout(false);
             this.PerformLayout();

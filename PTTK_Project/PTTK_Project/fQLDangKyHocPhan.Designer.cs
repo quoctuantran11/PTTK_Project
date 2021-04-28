@@ -30,12 +30,12 @@ namespace PTTK_Project
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.btnHienToanBo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,38 +46,28 @@ namespace PTTK_Project
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(706, 297);
+            this.dataGridView1.Size = new System.Drawing.Size(717, 297);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button1
+            // btnXoa
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button1.Location = new System.Drawing.Point(615, 413);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 43);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Xóa";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnXoa.Location = new System.Drawing.Point(626, 412);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(148, 43);
+            this.btnXoa.TabIndex = 1;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSua
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button2.Location = new System.Drawing.Point(329, 413);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 42);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button3.Location = new System.Drawing.Point(57, 414);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 42);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Thêm";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSua.Location = new System.Drawing.Point(57, 413);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(151, 42);
+            this.btnSua.TabIndex = 2;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -99,27 +89,37 @@ namespace PTTK_Project
             this.label2.TabIndex = 22;
             this.label2.Text = "Học viên";
             // 
-            // button4
+            // btnTimKiem
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button4.Location = new System.Drawing.Point(634, 24);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 53);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "Tìm kiếm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnTimKiem.Location = new System.Drawing.Point(634, 24);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(140, 53);
+            this.btnTimKiem.TabIndex = 24;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            // 
+            // btnHienToanBo
+            // 
+            this.btnHienToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnHienToanBo.Location = new System.Drawing.Point(318, 412);
+            this.btnHienToanBo.Name = "btnHienToanBo";
+            this.btnHienToanBo.Size = new System.Drawing.Size(191, 43);
+            this.btnHienToanBo.TabIndex = 25;
+            this.btnHienToanBo.Text = "Hiện toàn bộ";
+            this.btnHienToanBo.UseVisualStyleBackColor = true;
             // 
             // fQLDangKyHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 474);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnHienToanBo);
+            this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.dataGridView1);
             this.Name = "fQLDangKyHocPhan";
             this.Text = "QLDangKyHocPhan";
@@ -132,11 +132,11 @@ namespace PTTK_Project
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.Button btnHienToanBo;
     }
 }

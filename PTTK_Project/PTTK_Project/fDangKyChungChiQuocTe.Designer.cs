@@ -93,7 +93,7 @@ namespace PTTK_Project
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(416, 131);
+            this.label6.Location = new System.Drawing.Point(406, 226);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 31);
             this.label6.TabIndex = 5;
@@ -101,10 +101,10 @@ namespace PTTK_Project
             // 
             // Createbtn
             // 
-            this.Createbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Createbtn.Location = new System.Drawing.Point(370, 357);
+            this.Createbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Createbtn.Location = new System.Drawing.Point(340, 292);
             this.Createbtn.Name = "Createbtn";
-            this.Createbtn.Size = new System.Drawing.Size(112, 43);
+            this.Createbtn.Size = new System.Drawing.Size(138, 43);
             this.Createbtn.TabIndex = 6;
             this.Createbtn.Text = "Hoàn tất";
             this.Createbtn.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@ namespace PTTK_Project
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.Location = new System.Drawing.Point(416, 76);
+            this.label8.Location = new System.Drawing.Point(406, 171);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(184, 31);
             this.label8.TabIndex = 8;
@@ -139,7 +139,7 @@ namespace PTTK_Project
             // dateTimePicker2
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dateTimePicker2.Location = new System.Drawing.Point(543, 127);
+            this.dateTimePicker2.Location = new System.Drawing.Point(533, 222);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(236, 35);
             this.dateTimePicker2.TabIndex = 12;
@@ -163,7 +163,7 @@ namespace PTTK_Project
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox5.Location = new System.Drawing.Point(543, 73);
+            this.textBox5.Location = new System.Drawing.Point(533, 168);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(236, 35);
             this.textBox5.TabIndex = 17;
@@ -181,7 +181,7 @@ namespace PTTK_Project
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox6.Location = new System.Drawing.Point(139, 311);
+            this.textBox6.Location = new System.Drawing.Point(533, 123);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(226, 35);
             this.textBox6.TabIndex = 32;
@@ -190,7 +190,7 @@ namespace PTTK_Project
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label10.Location = new System.Drawing.Point(28, 315);
+            this.label10.Location = new System.Drawing.Point(406, 131);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(97, 31);
             this.label10.TabIndex = 31;
@@ -199,7 +199,7 @@ namespace PTTK_Project
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox7.Location = new System.Drawing.Point(139, 263);
+            this.textBox7.Location = new System.Drawing.Point(533, 75);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(226, 35);
             this.textBox7.TabIndex = 30;
@@ -208,7 +208,7 @@ namespace PTTK_Project
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label11.Location = new System.Drawing.Point(28, 263);
+            this.label11.Location = new System.Drawing.Point(406, 79);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(171, 31);
             this.label11.TabIndex = 29;
@@ -219,7 +219,7 @@ namespace PTTK_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(813, 412);
+            this.ClientSize = new System.Drawing.Size(813, 350);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox7);

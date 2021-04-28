@@ -32,7 +32,7 @@ namespace PTTK_Project
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnXacNhan = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -41,13 +41,14 @@ namespace PTTK_Project
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnGNCC = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(178, 21);
+            this.label1.Location = new System.Drawing.Point(96, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(523, 67);
@@ -59,7 +60,7 @@ namespace PTTK_Project
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(248, 315);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(430, 37);
             this.comboBox2.TabIndex = 30;
@@ -75,24 +76,24 @@ namespace PTTK_Project
             this.label2.TabIndex = 29;
             this.label2.Text = "Tên học phần";
             // 
-            // button1
+            // btnXacNhan
             // 
-            this.button1.AutoSize = true;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(364, 438);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(156, 60);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Xác nhận";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnXacNhan.AutoSize = true;
+            this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnXacNhan.Location = new System.Drawing.Point(293, 499);
+            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(156, 60);
+            this.btnXacNhan.TabIndex = 38;
+            this.btnXacNhan.Text = "Xác nhận";
+            this.btnXacNhan.UseVisualStyleBackColor = true;
             // 
             // comboBox3
             // 
             this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(248, 183);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(134, 37);
             this.comboBox3.TabIndex = 40;
@@ -113,7 +114,7 @@ namespace PTTK_Project
             this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(248, 248);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(134, 37);
             this.comboBox4.TabIndex = 42;
@@ -143,7 +144,7 @@ namespace PTTK_Project
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(248, 121);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(428, 31);
             this.textBox1.TabIndex = 44;
@@ -151,7 +152,7 @@ namespace PTTK_Project
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(248, 379);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(428, 31);
@@ -168,11 +169,25 @@ namespace PTTK_Project
             this.label3.TabIndex = 45;
             this.label3.Text = "Loại học phần";
             // 
+            // btnGNCC
+            // 
+            this.btnGNCC.AutoSize = true;
+            this.btnGNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnGNCC.Location = new System.Drawing.Point(248, 434);
+            this.btnGNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGNCC.Name = "btnGNCC";
+            this.btnGNCC.Size = new System.Drawing.Size(256, 48);
+            this.btnGNCC.TabIndex = 47;
+            this.btnGNCC.Text = "Ghi nhận chứng chỉ";
+            this.btnGNCC.UseVisualStyleBackColor = true;
+            this.btnGNCC.Click += new System.EventHandler(this.btnGNCC_Click);
+            // 
             // fDKHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 523);
+            this.ClientSize = new System.Drawing.Size(726, 586);
+            this.Controls.Add(this.btnGNCC);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -181,15 +196,15 @@ namespace PTTK_Project
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnXacNhan);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fDKHocPhan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DKHocPhan";
-            this.Load += new System.EventHandler(this.HocPhan_Load);
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,7 +214,7 @@ namespace PTTK_Project
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox4;
@@ -208,5 +223,6 @@ namespace PTTK_Project
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnGNCC;
     }
 }
