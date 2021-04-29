@@ -30,14 +30,14 @@ namespace PTTK_Project
         private void InitializeComponent()
         {
             this.label7 = new System.Windows.Forms.Label();
-            this.Checkbtn = new System.Windows.Forms.Button();
+            this.btnKiemTra = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHoanThanh = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -52,16 +52,16 @@ namespace PTTK_Project
             this.label7.TabIndex = 47;
             this.label7.Text = "Tên trung tâm";
             // 
-            // Checkbtn
+            // btnKiemTra
             // 
-            this.Checkbtn.AutoSize = true;
-            this.Checkbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Checkbtn.Location = new System.Drawing.Point(690, 77);
-            this.Checkbtn.Name = "Checkbtn";
-            this.Checkbtn.Size = new System.Drawing.Size(135, 45);
-            this.Checkbtn.TabIndex = 46;
-            this.Checkbtn.Text = "Kiểm tra";
-            this.Checkbtn.UseVisualStyleBackColor = true;
+            this.btnKiemTra.AutoSize = true;
+            this.btnKiemTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnKiemTra.Location = new System.Drawing.Point(690, 77);
+            this.btnKiemTra.Name = "btnKiemTra";
+            this.btnKiemTra.Size = new System.Drawing.Size(135, 45);
+            this.btnKiemTra.TabIndex = 46;
+            this.btnKiemTra.Text = "Kiểm tra";
+            this.btnKiemTra.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -121,15 +121,15 @@ namespace PTTK_Project
             this.label4.TabIndex = 40;
             this.label4.Text = "Mã chứng chỉ";
             // 
-            // button1
+            // btnHoanThanh
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(352, 249);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 53);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Hoàn tất";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnHoanThanh.Location = new System.Drawing.Point(352, 249);
+            this.btnHoanThanh.Name = "btnHoanThanh";
+            this.btnHoanThanh.Size = new System.Drawing.Size(154, 53);
+            this.btnHoanThanh.TabIndex = 48;
+            this.btnHoanThanh.Text = "Hoàn tất";
+            this.btnHoanThanh.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
@@ -155,9 +155,9 @@ namespace PTTK_Project
             this.ClientSize = new System.Drawing.Size(849, 321);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnHoanThanh);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.Checkbtn);
+            this.Controls.Add(this.btnKiemTra);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
@@ -174,14 +174,14 @@ namespace PTTK_Project
         #endregion
 
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button Checkbtn;
+        private System.Windows.Forms.Button btnKiemTra;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHoanThanh;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
     }
