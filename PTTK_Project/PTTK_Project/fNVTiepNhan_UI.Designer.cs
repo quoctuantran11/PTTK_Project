@@ -33,17 +33,17 @@ namespace PTTK_Project
             this.btnXKQTL = new System.Windows.Forms.Button();
             this.btnGNHV = new System.Windows.Forms.Button();
             this.btnGNNTDT = new System.Windows.Forms.Button();
-            this.btnThongKe = new System.Windows.Forms.Button();
+            this.btnTraCuuKQ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDKHP
             // 
             this.btnDKHP.BackColor = System.Drawing.SystemColors.Window;
             this.btnDKHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDKHP.Location = new System.Drawing.Point(189, 27);
-            this.btnDKHP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDKHP.Location = new System.Drawing.Point(25, 95);
+            this.btnDKHP.Margin = new System.Windows.Forms.Padding(2);
             this.btnDKHP.Name = "btnDKHP";
-            this.btnDKHP.Size = new System.Drawing.Size(151, 45);
+            this.btnDKHP.Size = new System.Drawing.Size(144, 42);
             this.btnDKHP.TabIndex = 0;
             this.btnDKHP.Text = "Đăng ký học phần";
             this.btnDKHP.UseVisualStyleBackColor = false;
@@ -53,8 +53,8 @@ namespace PTTK_Project
             // 
             this.btnXKQTL.BackColor = System.Drawing.SystemColors.Window;
             this.btnXKQTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXKQTL.Location = new System.Drawing.Point(189, 95);
-            this.btnXKQTL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXKQTL.Location = new System.Drawing.Point(189, 27);
+            this.btnXKQTL.Margin = new System.Windows.Forms.Padding(2);
             this.btnXKQTL.Name = "btnXKQTL";
             this.btnXKQTL.Size = new System.Drawing.Size(151, 42);
             this.btnXKQTL.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace PTTK_Project
             this.btnGNHV.BackColor = System.Drawing.SystemColors.Window;
             this.btnGNHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGNHV.Location = new System.Drawing.Point(25, 27);
-            this.btnGNHV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGNHV.Margin = new System.Windows.Forms.Padding(2);
             this.btnGNHV.Name = "btnGNHV";
             this.btnGNHV.Size = new System.Drawing.Size(144, 42);
             this.btnGNHV.TabIndex = 2;
@@ -79,8 +79,8 @@ namespace PTTK_Project
             // 
             this.btnGNNTDT.BackColor = System.Drawing.SystemColors.Window;
             this.btnGNNTDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGNNTDT.Location = new System.Drawing.Point(107, 158);
-            this.btnGNNTDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGNNTDT.Location = new System.Drawing.Point(189, 95);
+            this.btnGNNTDT.Margin = new System.Windows.Forms.Padding(2);
             this.btnGNNTDT.Name = "btnGNNTDT";
             this.btnGNNTDT.Size = new System.Drawing.Size(151, 42);
             this.btnGNNTDT.TabIndex = 3;
@@ -88,30 +88,29 @@ namespace PTTK_Project
             this.btnGNNTDT.UseVisualStyleBackColor = false;
             this.btnGNNTDT.Click += new System.EventHandler(this.btnGNNTDT_Click);
             // 
-            // btnThongKe
+            // btnTraCuuKQ
             // 
-            this.btnThongKe.BackColor = System.Drawing.SystemColors.Window;
-            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.Location = new System.Drawing.Point(25, 95);
-            this.btnThongKe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(144, 42);
-            this.btnThongKe.TabIndex = 4;
-            this.btnThongKe.Text = "Kiểm tra sỉ số lớp";
-            this.btnThongKe.UseVisualStyleBackColor = false;
-            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            this.btnTraCuuKQ.BackColor = System.Drawing.SystemColors.Window;
+            this.btnTraCuuKQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraCuuKQ.Location = new System.Drawing.Point(101, 164);
+            this.btnTraCuuKQ.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTraCuuKQ.Name = "btnTraCuuKQ";
+            this.btnTraCuuKQ.Size = new System.Drawing.Size(151, 42);
+            this.btnTraCuuKQ.TabIndex = 4;
+            this.btnTraCuuKQ.Text = "Tra cứu kết quả";
+            this.btnTraCuuKQ.UseVisualStyleBackColor = false;
             // 
             // fNVTiepNhan_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 224);
-            this.Controls.Add(this.btnThongKe);
+            this.ClientSize = new System.Drawing.Size(357, 223);
+            this.Controls.Add(this.btnTraCuuKQ);
             this.Controls.Add(this.btnGNNTDT);
             this.Controls.Add(this.btnGNHV);
             this.Controls.Add(this.btnXKQTL);
             this.Controls.Add(this.btnDKHP);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fNVTiepNhan_UI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhân Viên Tiếp Nhận";
@@ -125,6 +124,6 @@ namespace PTTK_Project
         private System.Windows.Forms.Button btnXKQTL;
         private System.Windows.Forms.Button btnGNHV;
         private System.Windows.Forms.Button btnGNNTDT;
-        private System.Windows.Forms.Button btnThongKe;
+        private System.Windows.Forms.Button btnTraCuuKQ;
     }
 }
