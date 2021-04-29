@@ -37,6 +37,10 @@ namespace PTTK_Project
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.cmbNam = new System.Windows.Forms.ComboBox();
             this.cmbKhoa = new System.Windows.Forms.ComboBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnHienToanBo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +48,7 @@ namespace PTTK_Project
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(113, 27);
+            this.label1.Location = new System.Drawing.Point(125, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(360, 37);
             this.label1.TabIndex = 2;
@@ -53,16 +57,17 @@ namespace PTTK_Project
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 88);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.Location = new System.Drawing.Point(26, 134);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 13);
+            this.label2.Size = new System.Drawing.Size(144, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Danh Sách Học Phần";
             // 
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSua.Location = new System.Drawing.Point(398, 361);
+            this.btnSua.Location = new System.Drawing.Point(398, 407);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 33);
             this.btnSua.TabIndex = 9;
@@ -73,7 +78,7 @@ namespace PTTK_Project
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnXoa.Location = new System.Drawing.Point(259, 361);
+            this.btnXoa.Location = new System.Drawing.Point(267, 407);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 33);
             this.btnXoa.TabIndex = 8;
@@ -83,7 +88,7 @@ namespace PTTK_Project
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnThem.Location = new System.Drawing.Point(135, 361);
+            this.btnThem.Location = new System.Drawing.Point(143, 407);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 33);
             this.btnThem.TabIndex = 7;
@@ -94,7 +99,7 @@ namespace PTTK_Project
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(21, 112);
+            this.dataGridView.Location = new System.Drawing.Point(29, 158);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(559, 232);
             this.dataGridView.TabIndex = 6;
@@ -102,7 +107,7 @@ namespace PTTK_Project
             // cmbNam
             // 
             this.cmbNam.FormattingEnabled = true;
-            this.cmbNam.Location = new System.Drawing.Point(321, 85);
+            this.cmbNam.Location = new System.Drawing.Point(189, 131);
             this.cmbNam.Name = "cmbNam";
             this.cmbNam.Size = new System.Drawing.Size(121, 21);
             this.cmbNam.TabIndex = 10;
@@ -111,17 +116,61 @@ namespace PTTK_Project
             // cmbKhoa
             // 
             this.cmbKhoa.FormattingEnabled = true;
-            this.cmbKhoa.Location = new System.Drawing.Point(467, 85);
+            this.cmbKhoa.Location = new System.Drawing.Point(335, 130);
             this.cmbKhoa.Name = "cmbKhoa";
             this.cmbKhoa.Size = new System.Drawing.Size(113, 21);
             this.cmbKhoa.TabIndex = 11;
             this.cmbKhoa.Text = "Khoá";
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnTimKiem.Location = new System.Drawing.Point(468, 89);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(50, 26);
+            this.btnTimKiem.TabIndex = 34;
+            this.btnTimKiem.Text = "Tìm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.textBox1.Location = new System.Drawing.Point(189, 91);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(259, 21);
+            this.textBox1.TabIndex = 33;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.Location = new System.Drawing.Point(26, 95);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 17);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Học Phần";
+            // 
+            // btnHienToanBo
+            // 
+            this.btnHienToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnHienToanBo.Location = new System.Drawing.Point(468, 126);
+            this.btnHienToanBo.Name = "btnHienToanBo";
+            this.btnHienToanBo.Size = new System.Drawing.Size(120, 26);
+            this.btnHienToanBo.TabIndex = 35;
+            this.btnHienToanBo.Text = "Hiện toàn bộ";
+            this.btnHienToanBo.UseVisualStyleBackColor = true;
+            // 
             // fQuanLyHocPhanMo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 416);
+            this.ClientSize = new System.Drawing.Size(610, 480);
+            this.Controls.Add(this.btnHienToanBo);
+            this.Controls.Add(this.btnTimKiem);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbKhoa);
             this.Controls.Add(this.cmbNam);
             this.Controls.Add(this.btnSua);
@@ -149,5 +198,9 @@ namespace PTTK_Project
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.ComboBox cmbNam;
         private System.Windows.Forms.ComboBox cmbKhoa;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnHienToanBo;
     }
 }
