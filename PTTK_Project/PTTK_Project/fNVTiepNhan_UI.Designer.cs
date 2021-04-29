@@ -33,6 +33,7 @@ namespace PTTK_Project
             this.btnXKQTL = new System.Windows.Forms.Button();
             this.btnGNHV = new System.Windows.Forms.Button();
             this.btnGNNTDT = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDKHP
@@ -83,11 +84,24 @@ namespace PTTK_Project
             this.btnGNNTDT.UseVisualStyleBackColor = true;
             this.btnGNNTDT.Click += new System.EventHandler(this.btnGNNTDT_Click);
             // 
+            // btnThongKe
+            // 
+            this.btnThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnThongKe.Location = new System.Drawing.Point(48, 304);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(602, 85);
+            this.btnThongKe.TabIndex = 4;
+            this.btnThongKe.Text = "Thống kê số lượng học viên từng học phần theo năm/quý";
+            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
             // fNVTiepNhan_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 313);
+            this.ClientSize = new System.Drawing.Size(702, 431);
+            this.Controls.Add(this.btnThongKe);
             this.Controls.Add(this.btnGNNTDT);
             this.Controls.Add(this.btnGNHV);
             this.Controls.Add(this.btnXKQTL);
@@ -96,7 +110,6 @@ namespace PTTK_Project
             this.Name = "fNVTiepNhan_UI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhân Viên Tiếp Nhận";
-            
             this.ResumeLayout(false);
 
         }
@@ -107,5 +120,6 @@ namespace PTTK_Project
         private System.Windows.Forms.Button btnXKQTL;
         private System.Windows.Forms.Button btnGNHV;
         private System.Windows.Forms.Button btnGNNTDT;
+        private System.Windows.Forms.Button btnThongKe;
     }
 }

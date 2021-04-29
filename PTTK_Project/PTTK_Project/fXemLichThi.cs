@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace PTTK_Project
 {
-    public partial class fDangKyChungChiQuocTe : Form
+    public partial class fXemLichThi : Form
     {
-        public fDangKyChungChiQuocTe()
+        public fXemLichThi()
         {
             InitializeComponent();
-        }
-
-        private void btnXemLich_Click(object sender, EventArgs e)
-        {
-            fXemLichThi lichthi = new fXemLichThi();
-            lichthi.ShowDialog();
         }
     }
 }

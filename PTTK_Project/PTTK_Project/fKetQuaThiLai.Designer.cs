@@ -154,7 +154,7 @@ namespace PTTK_Project
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fKetQuaThiLai";
-            this.Text = "KetQuaThiLai";
+            this.Text = "Kết quả thi lại";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

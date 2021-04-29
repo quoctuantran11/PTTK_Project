@@ -212,7 +212,7 @@ namespace PTTK_Project
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fSuaDKHP";
-            this.Text = "fSuaDKHP";
+            this.Text = "Sửa đăng ký học phần";
             this.ResumeLayout(false);
             this.PerformLayout();
 

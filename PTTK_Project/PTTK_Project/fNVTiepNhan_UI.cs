@@ -48,5 +48,13 @@ namespace PTTK_Project
             kqtl.ShowDialog();
             this.Show();
         }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            fThongKeHocVien thongke = new fThongKeHocVien();
+            this.Hide();
+            thongke.ShowDialog();
+            this.Show();
+        }
     }
 }

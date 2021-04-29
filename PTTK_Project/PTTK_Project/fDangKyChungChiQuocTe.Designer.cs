@@ -34,7 +34,7 @@ namespace PTTK_Project
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Createbtn = new System.Windows.Forms.Button();
+            this.HoanTatbtn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -47,6 +47,7 @@ namespace PTTK_Project
             this.label10 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnXemLich = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -99,15 +100,15 @@ namespace PTTK_Project
             this.label6.TabIndex = 5;
             this.label6.Text = "Ngày thi";
             // 
-            // Createbtn
+            // HoanTatbtn
             // 
-            this.Createbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Createbtn.Location = new System.Drawing.Point(340, 292);
-            this.Createbtn.Name = "Createbtn";
-            this.Createbtn.Size = new System.Drawing.Size(138, 43);
-            this.Createbtn.TabIndex = 6;
-            this.Createbtn.Text = "Hoàn tất";
-            this.Createbtn.UseVisualStyleBackColor = true;
+            this.HoanTatbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.HoanTatbtn.Location = new System.Drawing.Point(340, 292);
+            this.HoanTatbtn.Name = "HoanTatbtn";
+            this.HoanTatbtn.Size = new System.Drawing.Size(138, 43);
+            this.HoanTatbtn.TabIndex = 6;
+            this.HoanTatbtn.Text = "Hoàn tất";
+            this.HoanTatbtn.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -183,14 +184,14 @@ namespace PTTK_Project
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.textBox6.Location = new System.Drawing.Point(533, 123);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(226, 35);
+            this.textBox6.Size = new System.Drawing.Size(236, 35);
             this.textBox6.TabIndex = 32;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label10.Location = new System.Drawing.Point(406, 131);
+            this.label10.Location = new System.Drawing.Point(406, 127);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(97, 31);
             this.label10.TabIndex = 31;
@@ -201,7 +202,7 @@ namespace PTTK_Project
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.textBox7.Location = new System.Drawing.Point(533, 75);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(226, 35);
+            this.textBox7.Size = new System.Drawing.Size(236, 35);
             this.textBox7.TabIndex = 30;
             // 
             // label11
@@ -214,12 +215,24 @@ namespace PTTK_Project
             this.label11.TabIndex = 29;
             this.label11.Text = "Số điện thoại";
             // 
+            // btnXemLich
+            // 
+            this.btnXemLich.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnXemLich.Location = new System.Drawing.Point(595, 263);
+            this.btnXemLich.Name = "btnXemLich";
+            this.btnXemLich.Size = new System.Drawing.Size(174, 43);
+            this.btnXemLich.TabIndex = 33;
+            this.btnXemLich.Text = "Xem lịch thi";
+            this.btnXemLich.UseVisualStyleBackColor = true;
+            this.btnXemLich.Click += new System.EventHandler(this.btnXemLich_Click);
+            // 
             // fDangKyChungChiQuocTe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(813, 350);
+            this.Controls.Add(this.btnXemLich);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox7);
@@ -231,7 +244,7 @@ namespace PTTK_Project
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Createbtn);
+            this.Controls.Add(this.HoanTatbtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -240,7 +253,7 @@ namespace PTTK_Project
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Name = "fDangKyChungChiQuocTe";
-            this.Text = "DangKyChungChiQuocTe";
+            this.Text = "Đăng ký chứng chỉ quốc tế";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,7 +265,7 @@ namespace PTTK_Project
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button Createbtn;
+        private System.Windows.Forms.Button HoanTatbtn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -265,5 +278,6 @@ namespace PTTK_Project
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnXemLich;
     }
 }
