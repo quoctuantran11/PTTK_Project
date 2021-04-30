@@ -49,5 +49,12 @@ namespace PTTK_Project
             this.Show();
         }
 
+        private void btnTraCuuKQ_Click(object sender, EventArgs e)
+        {
+            fTraCuuKetQua tracuu = new fTraCuuKetQua();
+            this.Hide();
+            tracuu.ShowDialog();
+            this.Show();
+        }
     }
 }

@@ -40,10 +40,10 @@ namespace PTTK_Project
             // 
             this.btnDKHP.BackColor = System.Drawing.SystemColors.Window;
             this.btnDKHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDKHP.Location = new System.Drawing.Point(25, 95);
-            this.btnDKHP.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDKHP.Location = new System.Drawing.Point(50, 183);
+            this.btnDKHP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDKHP.Name = "btnDKHP";
-            this.btnDKHP.Size = new System.Drawing.Size(144, 42);
+            this.btnDKHP.Size = new System.Drawing.Size(288, 81);
             this.btnDKHP.TabIndex = 0;
             this.btnDKHP.Text = "Đăng ký học phần";
             this.btnDKHP.UseVisualStyleBackColor = false;
@@ -53,10 +53,10 @@ namespace PTTK_Project
             // 
             this.btnXKQTL.BackColor = System.Drawing.SystemColors.Window;
             this.btnXKQTL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXKQTL.Location = new System.Drawing.Point(189, 27);
-            this.btnXKQTL.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXKQTL.Location = new System.Drawing.Point(378, 52);
+            this.btnXKQTL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXKQTL.Name = "btnXKQTL";
-            this.btnXKQTL.Size = new System.Drawing.Size(151, 42);
+            this.btnXKQTL.Size = new System.Drawing.Size(302, 81);
             this.btnXKQTL.TabIndex = 1;
             this.btnXKQTL.Text = "Xem kết quả thi lại";
             this.btnXKQTL.UseVisualStyleBackColor = false;
@@ -66,10 +66,10 @@ namespace PTTK_Project
             // 
             this.btnGNHV.BackColor = System.Drawing.SystemColors.Window;
             this.btnGNHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGNHV.Location = new System.Drawing.Point(25, 27);
-            this.btnGNHV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGNHV.Location = new System.Drawing.Point(50, 52);
+            this.btnGNHV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGNHV.Name = "btnGNHV";
-            this.btnGNHV.Size = new System.Drawing.Size(144, 42);
+            this.btnGNHV.Size = new System.Drawing.Size(288, 81);
             this.btnGNHV.TabIndex = 2;
             this.btnGNHV.Text = "Ghi nhận học viên";
             this.btnGNHV.UseVisualStyleBackColor = false;
@@ -79,10 +79,10 @@ namespace PTTK_Project
             // 
             this.btnGNNTDT.BackColor = System.Drawing.SystemColors.Window;
             this.btnGNNTDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGNNTDT.Location = new System.Drawing.Point(189, 95);
-            this.btnGNNTDT.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGNNTDT.Location = new System.Drawing.Point(378, 183);
+            this.btnGNNTDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGNNTDT.Name = "btnGNNTDT";
-            this.btnGNNTDT.Size = new System.Drawing.Size(151, 42);
+            this.btnGNNTDT.Size = new System.Drawing.Size(302, 81);
             this.btnGNNTDT.TabIndex = 3;
             this.btnGNNTDT.Text = "Ghi nhận người tham dự thi";
             this.btnGNNTDT.UseVisualStyleBackColor = false;
@@ -92,25 +92,26 @@ namespace PTTK_Project
             // 
             this.btnTraCuuKQ.BackColor = System.Drawing.SystemColors.Window;
             this.btnTraCuuKQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuuKQ.Location = new System.Drawing.Point(101, 164);
-            this.btnTraCuuKQ.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTraCuuKQ.Location = new System.Drawing.Point(202, 315);
+            this.btnTraCuuKQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTraCuuKQ.Name = "btnTraCuuKQ";
-            this.btnTraCuuKQ.Size = new System.Drawing.Size(151, 42);
+            this.btnTraCuuKQ.Size = new System.Drawing.Size(302, 81);
             this.btnTraCuuKQ.TabIndex = 4;
             this.btnTraCuuKQ.Text = "Tra cứu kết quả";
             this.btnTraCuuKQ.UseVisualStyleBackColor = false;
+            this.btnTraCuuKQ.Click += new System.EventHandler(this.btnTraCuuKQ_Click);
             // 
             // fNVTiepNhan_UI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(357, 223);
+            this.ClientSize = new System.Drawing.Size(714, 429);
             this.Controls.Add(this.btnTraCuuKQ);
             this.Controls.Add(this.btnGNNTDT);
             this.Controls.Add(this.btnGNHV);
             this.Controls.Add(this.btnXKQTL);
             this.Controls.Add(this.btnDKHP);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fNVTiepNhan_UI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhân Viên Tiếp Nhận";

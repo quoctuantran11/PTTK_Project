@@ -24,5 +24,12 @@ namespace PTTK_Project
             kiemtra.ShowDialog();
             this.Show();
         }
+
+        private void btnKiemTraSiSo_Click(object sender, EventArgs e)
+        {
+            int siso = 30, max = 31;
+            string text = "Si so cua lop hien la " + siso + "/" + max;
+            MessageBox.Show(text);
+        }
     }
 }
