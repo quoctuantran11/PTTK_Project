@@ -31,14 +31,14 @@ namespace PTTK_Project
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbHoTen = new System.Windows.Forms.TextBox();
             this.btnTim = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvKetQuaThiLai = new System.Windows.Forms.DataGridView();
             this.btnHienThi = new System.Windows.Forms.Button();
             this.btnNhapDiem = new System.Windows.Forms.Button();
             this.btnSuaDiem = new System.Windows.Forms.Button();
             this.btnXoaDiem = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQuaThiLai)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,13 +63,13 @@ namespace PTTK_Project
             this.label2.TabIndex = 1;
             this.label2.Text = "Kết quả thi lại";
             // 
-            // textBox1
+            // txbHoTen
             // 
-            this.textBox1.Location = new System.Drawing.Point(176, 125);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(572, 31);
-            this.textBox1.TabIndex = 2;
+            this.txbHoTen.Location = new System.Drawing.Point(176, 125);
+            this.txbHoTen.Margin = new System.Windows.Forms.Padding(4);
+            this.txbHoTen.Name = "txbHoTen";
+            this.txbHoTen.Size = new System.Drawing.Size(572, 31);
+            this.txbHoTen.TabIndex = 2;
             // 
             // btnTim
             // 
@@ -81,16 +81,17 @@ namespace PTTK_Project
             this.btnTim.TabIndex = 3;
             this.btnTim.Text = "Tìm kiếm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
-            // dataGridView1
+            // dgvKetQuaThiLai
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 198);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(868, 348);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvKetQuaThiLai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKetQuaThiLai.Location = new System.Drawing.Point(40, 198);
+            this.dgvKetQuaThiLai.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvKetQuaThiLai.Name = "dgvKetQuaThiLai";
+            this.dgvKetQuaThiLai.RowHeadersWidth = 82;
+            this.dgvKetQuaThiLai.Size = new System.Drawing.Size(868, 348);
+            this.dgvKetQuaThiLai.TabIndex = 4;
             // 
             // btnHienThi
             // 
@@ -102,6 +103,7 @@ namespace PTTK_Project
             this.btnHienThi.TabIndex = 5;
             this.btnHienThi.Text = "Hiện toàn bộ";
             this.btnHienThi.UseVisualStyleBackColor = true;
+            this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
             // 
             // btnNhapDiem
             // 
@@ -137,6 +139,7 @@ namespace PTTK_Project
             this.btnXoaDiem.TabIndex = 8;
             this.btnXoaDiem.Text = "Xóa";
             this.btnXoaDiem.UseVisualStyleBackColor = true;
+            this.btnXoaDiem.Click += new System.EventHandler(this.btnXoaDiem_Click);
             // 
             // fKetQuaThiLai
             // 
@@ -147,15 +150,15 @@ namespace PTTK_Project
             this.Controls.Add(this.btnSuaDiem);
             this.Controls.Add(this.btnNhapDiem);
             this.Controls.Add(this.btnHienThi);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvKetQuaThiLai);
             this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbHoTen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fKetQuaThiLai";
             this.Text = "Kết quả thi lại";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQuaThiLai)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,9 +168,9 @@ namespace PTTK_Project
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbHoTen;
         private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvKetQuaThiLai;
         private System.Windows.Forms.Button btnHienThi;
         private System.Windows.Forms.Button btnNhapDiem;
         private System.Windows.Forms.Button btnSuaDiem;

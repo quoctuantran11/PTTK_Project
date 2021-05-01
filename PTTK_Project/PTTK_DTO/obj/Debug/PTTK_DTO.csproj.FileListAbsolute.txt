@@ -1,0 +1,9 @@
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\bin\Debug\PTTK_DTO.exe.config
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\bin\Debug\PTTK_DTO.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\bin\Debug\PTTK_DTO.pdb
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\obj\Debug\PTTK_DTO.csprojAssemblyReference.cache
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\obj\Debug\PTTK_DTO.Properties.Resources.resources
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\obj\Debug\PTTK_DTO.csproj.GenerateResource.cache
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\obj\Debug\PTTK_DTO.csproj.CoreCompileInputs.cache
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\obj\Debug\PTTK_DTO.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DTO\obj\Debug\PTTK_DTO.pdb

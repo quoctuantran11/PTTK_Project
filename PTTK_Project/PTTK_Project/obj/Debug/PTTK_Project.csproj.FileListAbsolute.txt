@@ -79,3 +79,13 @@ C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.exe
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.pdb
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fTraCuuKetQua.resources
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_BUS.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_DAO.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_DTO.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_BUS.pdb
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_BUS.exe.config
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_DAO.pdb
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_DAO.exe.config
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_DTO.pdb
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\bin\Debug\PTTK_DTO.exe.config
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.csproj.CopyComplete

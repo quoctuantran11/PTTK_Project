@@ -29,28 +29,28 @@ namespace PTTK_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblTrungTam = new System.Windows.Forms.Label();
             this.btnKiemTra = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbTrungTam = new System.Windows.Forms.TextBox();
+            this.chbTrungTamKhac = new System.Windows.Forms.CheckBox();
+            this.chbTrungTamNay = new System.Windows.Forms.CheckBox();
+            this.txbChungChi = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnHoanThanh = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbHoTen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label7
+            // lblTrungTam
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.Location = new System.Drawing.Point(24, 201);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(182, 31);
-            this.label7.TabIndex = 47;
-            this.label7.Text = "Tên trung tâm";
+            this.lblTrungTam.AutoSize = true;
+            this.lblTrungTam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblTrungTam.Location = new System.Drawing.Point(24, 201);
+            this.lblTrungTam.Name = "lblTrungTam";
+            this.lblTrungTam.Size = new System.Drawing.Size(182, 31);
+            this.lblTrungTam.TabIndex = 47;
+            this.lblTrungTam.Text = "Tên trung tâm";
             // 
             // btnKiemTra
             // 
@@ -62,44 +62,45 @@ namespace PTTK_Project
             this.btnKiemTra.TabIndex = 46;
             this.btnKiemTra.Text = "Kiểm tra";
             this.btnKiemTra.UseVisualStyleBackColor = true;
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
             // 
-            // textBox2
+            // txbTrungTam
             // 
-            this.textBox2.Location = new System.Drawing.Point(235, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(428, 31);
-            this.textBox2.TabIndex = 45;
+            this.txbTrungTam.Location = new System.Drawing.Point(235, 201);
+            this.txbTrungTam.Name = "txbTrungTam";
+            this.txbTrungTam.Size = new System.Drawing.Size(428, 31);
+            this.txbTrungTam.TabIndex = 45;
             // 
-            // checkBox2
+            // chbTrungTamKhac
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.checkBox2.Location = new System.Drawing.Point(469, 146);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(210, 33);
-            this.checkBox2.TabIndex = 44;
-            this.checkBox2.Text = "Trung tâm khác";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.chbTrungTamKhac.AutoSize = true;
+            this.chbTrungTamKhac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            this.chbTrungTamKhac.Location = new System.Drawing.Point(469, 146);
+            this.chbTrungTamKhac.Name = "chbTrungTamKhac";
+            this.chbTrungTamKhac.Size = new System.Drawing.Size(210, 33);
+            this.chbTrungTamKhac.TabIndex = 44;
+            this.chbTrungTamKhac.Text = "Trung tâm khác";
+            this.chbTrungTamKhac.UseVisualStyleBackColor = true;
+            this.chbTrungTamKhac.CheckedChanged += new System.EventHandler(this.chbTrungTamKhac_CheckedChanged);
             // 
-            // checkBox1
+            // chbTrungTamNay
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.checkBox1.Location = new System.Drawing.Point(235, 148);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(228, 33);
-            this.checkBox1.TabIndex = 43;
-            this.checkBox1.Text = "Tại trung tâm này";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.chbTrungTamNay.AutoSize = true;
+            this.chbTrungTamNay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
+            this.chbTrungTamNay.Location = new System.Drawing.Point(235, 148);
+            this.chbTrungTamNay.Name = "chbTrungTamNay";
+            this.chbTrungTamNay.Size = new System.Drawing.Size(228, 33);
+            this.chbTrungTamNay.TabIndex = 43;
+            this.chbTrungTamNay.Text = "Tại trung tâm này";
+            this.chbTrungTamNay.UseVisualStyleBackColor = true;
+            this.chbTrungTamNay.CheckedChanged += new System.EventHandler(this.chbTrungTamNay_CheckedChanged);
             // 
-            // textBox1
+            // txbChungChi
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(428, 31);
-            this.textBox1.TabIndex = 42;
+            this.txbChungChi.Location = new System.Drawing.Point(235, 87);
+            this.txbChungChi.Name = "txbChungChi";
+            this.txbChungChi.Size = new System.Drawing.Size(428, 31);
+            this.txbChungChi.TabIndex = 42;
             // 
             // label5
             // 
@@ -130,13 +131,14 @@ namespace PTTK_Project
             this.btnHoanThanh.TabIndex = 48;
             this.btnHoanThanh.Text = "Hoàn tất";
             this.btnHoanThanh.UseVisualStyleBackColor = true;
+            this.btnHoanThanh.Click += new System.EventHandler(this.btnHoanThanh_Click);
             // 
-            // textBox3
+            // txbHoTen
             // 
-            this.textBox3.Location = new System.Drawing.Point(235, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(428, 31);
-            this.textBox3.TabIndex = 50;
+            this.txbHoTen.Location = new System.Drawing.Point(235, 30);
+            this.txbHoTen.Name = "txbHoTen";
+            this.txbHoTen.Size = new System.Drawing.Size(428, 31);
+            this.txbHoTen.TabIndex = 50;
             // 
             // label1
             // 
@@ -153,15 +155,15 @@ namespace PTTK_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 321);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txbHoTen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnHoanThanh);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblTrungTam);
             this.Controls.Add(this.btnKiemTra);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbTrungTam);
+            this.Controls.Add(this.chbTrungTamKhac);
+            this.Controls.Add(this.chbTrungTamNay);
+            this.Controls.Add(this.txbChungChi);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Name = "fKiemTraChungChiHocPhan";
@@ -173,16 +175,16 @@ namespace PTTK_Project
 
         #endregion
 
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblTrungTam;
         private System.Windows.Forms.Button btnKiemTra;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbTrungTam;
+        private System.Windows.Forms.CheckBox chbTrungTamKhac;
+        private System.Windows.Forms.CheckBox chbTrungTamNay;
+        private System.Windows.Forms.TextBox txbChungChi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnHoanThanh;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbHoTen;
         private System.Windows.Forms.Label label1;
     }
 }

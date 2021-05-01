@@ -29,59 +29,62 @@ namespace PTTK_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txbCMND = new System.Windows.Forms.TextBox();
+            this.txbHoTen = new System.Windows.Forms.TextBox();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.cmbGioiTinh = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbSDT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txbDiaChi = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnDKHP = new System.Windows.Forms.Button();
             this.btnGhiNhan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txbCMND
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox2.Location = new System.Drawing.Point(215, 323);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(493, 35);
-            this.textBox2.TabIndex = 22;
+            this.txbCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbCMND.Location = new System.Drawing.Point(215, 323);
+            this.txbCMND.Margin = new System.Windows.Forms.Padding(4);
+            this.txbCMND.Name = "txbCMND";
+            this.txbCMND.Size = new System.Drawing.Size(493, 35);
+            this.txbCMND.TabIndex = 22;
             // 
-            // textBox1
+            // txbHoTen
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox1.Location = new System.Drawing.Point(215, 117);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(493, 35);
-            this.textBox1.TabIndex = 21;
+            this.txbHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbHoTen.Location = new System.Drawing.Point(215, 117);
+            this.txbHoTen.Margin = new System.Windows.Forms.Padding(4);
+            this.txbHoTen.Name = "txbHoTen";
+            this.txbHoTen.Size = new System.Drawing.Size(493, 35);
+            this.txbHoTen.TabIndex = 21;
             // 
-            // dateTimePicker1
+            // dtpNgaySinh
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(215, 250);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(493, 35);
-            this.dateTimePicker1.TabIndex = 20;
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dtpNgaySinh.Location = new System.Drawing.Point(215, 250);
+            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(493, 35);
+            this.dtpNgaySinh.TabIndex = 20;
             // 
-            // comboBox1
+            // cmbGioiTinh
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(215, 178);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(162, 37);
-            this.comboBox1.TabIndex = 19;
+            this.cmbGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmbGioiTinh.FormattingEnabled = true;
+            this.cmbGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nu"});
+            this.cmbGioiTinh.Location = new System.Drawing.Point(215, 178);
+            this.cmbGioiTinh.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbGioiTinh.Name = "cmbGioiTinh";
+            this.cmbGioiTinh.Size = new System.Drawing.Size(162, 37);
+            this.cmbGioiTinh.TabIndex = 19;
             // 
             // label5
             // 
@@ -138,14 +141,14 @@ namespace PTTK_Project
             this.label1.TabIndex = 23;
             this.label1.Text = "Ghi danh";
             // 
-            // textBox3
+            // txbSDT
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox3.Location = new System.Drawing.Point(215, 388);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(493, 35);
-            this.textBox3.TabIndex = 26;
+            this.txbSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbSDT.Location = new System.Drawing.Point(215, 388);
+            this.txbSDT.Margin = new System.Windows.Forms.Padding(4);
+            this.txbSDT.Name = "txbSDT";
+            this.txbSDT.Size = new System.Drawing.Size(493, 35);
+            this.txbSDT.TabIndex = 26;
             // 
             // label7
             // 
@@ -158,14 +161,14 @@ namespace PTTK_Project
             this.label7.TabIndex = 25;
             this.label7.Text = "Số điện thoại";
             // 
-            // textBox4
+            // txbDiaChi
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox4.Location = new System.Drawing.Point(215, 452);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(493, 35);
-            this.textBox4.TabIndex = 28;
+            this.txbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbDiaChi.Location = new System.Drawing.Point(215, 452);
+            this.txbDiaChi.Margin = new System.Windows.Forms.Padding(4);
+            this.txbDiaChi.Name = "txbDiaChi";
+            this.txbDiaChi.Size = new System.Drawing.Size(493, 35);
+            this.txbDiaChi.TabIndex = 28;
             // 
             // label8
             // 
@@ -200,23 +203,24 @@ namespace PTTK_Project
             this.btnGhiNhan.TabIndex = 30;
             this.btnGhiNhan.Text = "Ghi nhận";
             this.btnGhiNhan.UseVisualStyleBackColor = true;
+            this.btnGhiNhan.Click += new System.EventHandler(this.btnGhiNhan_Click);
             // 
             // fGhiDanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 602);
+            this.ClientSize = new System.Drawing.Size(759, 602);
             this.Controls.Add(this.btnGhiNhan);
             this.Controls.Add(this.btnDKHP);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txbDiaChi);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txbSDT);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txbCMND);
+            this.Controls.Add(this.txbHoTen);
+            this.Controls.Add(this.dtpNgaySinh);
+            this.Controls.Add(this.cmbGioiTinh);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -231,18 +235,18 @@ namespace PTTK_Project
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txbCMND;
+        private System.Windows.Forms.TextBox txbHoTen;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.ComboBox cmbGioiTinh;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbSDT;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txbDiaChi;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnDKHP;
         private System.Windows.Forms.Button btnGhiNhan;

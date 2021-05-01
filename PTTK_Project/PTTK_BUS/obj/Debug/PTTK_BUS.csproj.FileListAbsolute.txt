@@ -1,0 +1,16 @@
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_BUS.exe.config
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_BUS.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_BUS.pdb
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_DAO.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_DTO.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_DAO.pdb
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_DAO.exe.config
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_DTO.pdb
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\bin\Debug\PTTK_DTO.exe.config
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\obj\Debug\PTTK_BUS.csprojAssemblyReference.cache
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\obj\Debug\PTTK_BUS.Properties.Resources.resources
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\obj\Debug\PTTK_BUS.csproj.GenerateResource.cache
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\obj\Debug\PTTK_BUS.csproj.CoreCompileInputs.cache
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\obj\Debug\PTTK_BUS.csproj.CopyComplete
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\obj\Debug\PTTK_BUS.exe
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_BUS\obj\Debug\PTTK_BUS.pdb

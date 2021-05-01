@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoClosingMessageBox.cs" />
+    <Compile Include="cKetNoiDB.cs" />
     <Compile Include="fDangKyChungChiQuocTe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -357,6 +359,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PTTK_BUS\PTTK_BUS.csproj">
+      <Project>{75b9ddb3-3a7b-4e3c-92b7-fa635347d081}</Project>
+      <Name>PTTK_BUS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
