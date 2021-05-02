@@ -35,7 +35,7 @@ namespace PTTK_Project
 
         private void btnGhiNhanHDDKHP_Click(object sender, EventArgs e)
         {
-            fGhiNhanHDDKHP GN = new fGhiNhanHDDKHP();
+            fHoaDonDKHP GN = new fHoaDonDKHP();
             this.Hide();
             GN.ShowDialog();
             this.Show();
