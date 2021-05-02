@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PTTK_BUS;
 
 namespace PTTK_Project
 {
@@ -15,6 +16,43 @@ namespace PTTK_Project
         public fGhiNhanHDDKCCQT()
         {
             InitializeComponent();
+        }
+
+        private void btnKiemTra_Click(object sender, EventArgs e)
+        {
+            string mathisinh = txtMaThiSinh.Text;
+            if(PTTK_BUS.GhiNhanHDDKCCQTBUS.Instance.KiemTraHocVien(mathisinh))
+            {
+                ckbTrongTrungTam.Checked = true;
+                int tongtien = Int32.Parse(txtTongTien.Text);
+                int giamgia = tongtien / 100 * 10;
+
+                tongtien = tongtien - giamgia;
+
+                txtTongTien.Text = tongtien.ToString();
+                txtGiamGia.Text = giamgia.ToString();
+            }
+            else
+            {
+                ckbBenNgoai.Checked = true;
+            }
+
+        }
+
+        private void btnGhiNhan_Click(object sender, EventArgs e)
+        {
+            DateTime ngaylap = dtpNgayLap.Value;
+            int tongtien = Int32.Parse(txtTongTien.Text);
+            int mathisinh = Int32.Parse(txtMaThiSinh.Text);
+            int giamgia = Int32.Parse(txtGiamGia.Text);
+            if(PTTK_BUS.GhiNhanHDDKCCQTBUS.Instance.GhiNhan(ngaylap, giamgia, tongtien, mathisinh))
+            {
+                MessageBox.Show("Ghi nhận thành công!");
+            }
+            else
+            {
+                MessageBox.Show("Ghi nhận thất bại!");
+            }
         }
     }
 }
