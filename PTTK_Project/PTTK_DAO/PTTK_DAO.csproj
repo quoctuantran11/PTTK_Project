@@ -47,6 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChiTietLichThiDAO.cs" />
+    <Compile Include="ChungChiHocPhanNgoaiTrungTamDAO.cs" />
+    <Compile Include="ChungChiHocPhanTrungTamDAO.cs" />
+    <Compile Include="ChungChiNgoaiTrungTam_HocVienDAO.cs" />
+    <Compile Include="ChungChiTrungTam_HocVienDAO.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -54,6 +58,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoVienDAO.cs" />
     <Compile Include="HocPhanDAO.cs" />
     <Compile Include="HocPhanMoDAO.cs" />
     <Compile Include="GhiNhanHDDKCCQTDAO.cs" />

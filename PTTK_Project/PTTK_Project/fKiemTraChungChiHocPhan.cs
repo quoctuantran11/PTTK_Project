@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PTTK_BUS;
 
 namespace PTTK_Project
 {
@@ -39,111 +40,65 @@ namespace PTTK_Project
 
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
-            if (KiemTraDuLieu(txbChungChi.Text, txbTrungTam.Text) == true)
+            if (txbChungChi.Text != "")
             {
-                MessageBox.Show("Xác thực hoàn tất", "Xác thực chứng chỉ");
+                if (chbTrungTamNay.Checked == true)
+                {
+                    if (ChungChiHocPhanTrungTamBUS.Instance.KiemTraDuLieu(txbChungChi.Text))
+                    {
+                        MessageBox.Show("Xác thực hoàn tất!", "Thông báo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tồn tại chứng chỉ này!", "Thông báo");
+                    }
+                }
 
-            }
-        }
-
-        private bool KiemTraDuLieu(string chungchi, string noicap)
-        {
-            return KiemTraDB(chungchi, noicap);   
-        }
-
-        private bool KiemTraDB(string chungchi, string noicap)
-        {
-            string sql, tencc = "none";
-            bool kq;
-            cKetNoiDB.Con.Open();
-
-            if (chbTrungTamNay.Checked == true)
-            {
-                sql = "select TenChungChi from ChungChiHocPhanTrungTam where MaChungChi = '" + chungchi + "'";
-
-                tencc = cKetNoiDB.GetFieldValues(sql);
-            }
-
-            if (chbTrungTamKhac.Checked == true)
-            {
-                sql = "select TenChungChi from ChungChiHocPhanTrungTam where MaChungChi = '" + chungchi + "'" +
-                    " and NoiCap = '" + noicap + "'";
-
-                tencc = cKetNoiDB.GetFieldValues(sql);
-            }
-
-            if (tencc == "")
-            {
-                MessageBox.Show("Không tồn tại chứng chỉ này!");
-                kq = false;
-            }
-            else if (tencc == "none")
-            {
-                MessageBox.Show("Error!!!");
-                kq = false;
+                if (chbTrungTamKhac.Checked == true)
+                {
+                    if (txbTrungTam.Text == "")
+                    {
+                        MessageBox.Show("Bạn chưa nhập trung tâm cấp chứng chỉ của bạn", "Thông báo");
+                    }
+                    else
+                    {
+                        if (ChungChiHocPhanNgoaiTrungTamBUS.Instance.KiemTraDuLieu(txbChungChi.Text, txbTrungTam.Text))
+                        {
+                            MessageBox.Show("Xác thực hoàn tất!", "Thông báo");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tồn tại chứng chỉ này!", "Thông báo");
+                        }
+                    }
+                }
             }
             else
             {
-                kq = true;
+                MessageBox.Show("Bạn chưa nhập mã chứng chỉ học phần cơ bản!", "Thông báo");
             }
-
-            cKetNoiDB.Con.Close();
-            return kq;
         }
 
         private void btnHoanThanh_Click(object sender, EventArgs e)
         {
-            bool ngoai = false;
-
-            if (chbTrungTamNay.Checked == true)
+            if (txbHoTen.Text == "")
             {
-                ngoai = false;
-            }
-
-            if (chbTrungTamKhac.Checked == true)
-            {
-                ngoai = true;
-            }
-
-            GhiChungChi(txbHoTen.Text, txbChungChi.Text, ngoai);
-        }
-
-        private void GhiChungChi(string ten, string machungchi, bool ngoai)
-        {
-            if (ngoai)
-            {
-                ChungChiNgoaiTrungTam_HocVienDB(ten, machungchi);
+                MessageBox.Show("Bạn chưa nhập tên học viên!", "Thông báo");
             }
             else
             {
-                ChungChiTrungTam_HocVienDB(ten, machungchi);
+                if (chbTrungTamNay.Checked == true)
+                {
+                    ChungChiTrungTam_HocVienBUS.Instance.GhiHoSo(txbHoTen.Text, txbChungChi.Text);
+                    this.Close();
+                }
+
+                if (chbTrungTamKhac.Checked == true)
+                {
+                    ChungChiNgoaiTrungTam_HocVienBUS.Instance.GhiHoSo(txbHoTen.Text, txbChungChi.Text);
+                    this.Close();
+                }
             }
-        }
-
-        private void ChungChiTrungTam_HocVienDB(string ten, string machungchi)
-        {
-            string sql, mahocvien;
-            cKetNoiDB.Con.Open();
-            sql = "Select MaHocVien from HocVien where HoTen = '" + ten + "'";
-            mahocvien = cKetNoiDB.GetFieldValues(sql);
-
-            sql = "Insert into ChungChiTrungTam_HocVien values (" + machungchi + "," + mahocvien + ")";
-            cKetNoiDB.RunSQL(sql);
-            MessageBox.Show("Ghi nhận thành công.");
-            cKetNoiDB.Con.Close();
-        }
-
-        private void ChungChiNgoaiTrungTam_HocVienDB(string ten, string machungchi)
-        {
-            string sql, mahocvien;
-            cKetNoiDB.Con.Open();
-            sql = "Select MaHocVien from HocVien where HoTen = '" + ten + "'";
-            mahocvien = cKetNoiDB.GetFieldValues(sql);
-
-            sql = "Insert into ChungChiNgoaiTrungTam_HocVien values (" + machungchi + "," + mahocvien + ")";
-            cKetNoiDB.RunSQL(sql);
-            MessageBox.Show("Ghi nhận thành công.");
-            cKetNoiDB.Con.Close();
         }
     }
 }

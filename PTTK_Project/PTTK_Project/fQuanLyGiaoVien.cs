@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PTTK_BUS;
 
 namespace PTTK_Project
 {
@@ -27,6 +28,26 @@ namespace PTTK_Project
         {
             fSuaGiaoVien GV = new fSuaGiaoVien();
             GV.ShowDialog();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if(txbHoTen.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập tên giáo viên!", "Thông báo");
+            }
+            else
+            {
+                if (!GiaoVienBUS.Instance.TimGiaoVien(dgvGiaoVien, txbHoTen.Text))
+                {
+                    MessageBox.Show("Không có dữ liệu!", "Thông báo");
+                }
+            }
+        }
+
+        private void btnHienToanBo_Click(object sender, EventArgs e)
+        {
+            GiaoVienBUS.Instance.HienToanBo(dgvGiaoVien);
         }
     }
 }

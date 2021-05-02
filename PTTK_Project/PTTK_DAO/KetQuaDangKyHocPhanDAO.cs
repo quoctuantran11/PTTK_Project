@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,12 +28,116 @@ namespace PTTK_DAO
 
         private KetQuaDangKyHocPhanDAO() { }
 
+        public DataTable HienToanBo()
+        {
+            DataProvider.Con.Open();
+
+            string query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,HV.HoTen,KQHP.Diem,KQHP.NgayCap" +
+                " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien";
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public DataTable HienTheoNam(string ten, string nam)
+        {
+            DataProvider.Con.Open();
+            string query = "";
+
+            if (ten == "")
+            {
+                query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,HV.HoTen,KQHP.Diem,KQHP.NgayCap" +
+                    " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                    " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien where KQHP.Nam = " + nam;
+            }
+            else
+            {
+                query = "select MaHocVien from HocVien where HoTen = '" + ten + "'";
+                string maHocVien = DataProvider.GetFieldValues(query);
+
+                query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,HV.HoTen,KQHP.Diem,KQHP.NgayCap" +
+                " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien" +
+                " where KQHP.MaHocVien = " + maHocVien + " and KQHP.Nam = " + nam;
+            }
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public DataTable HienTheoKhoa(string ten, string khoa)
+        {
+            DataProvider.Con.Open();
+            string query = "";
+
+            if (ten == "")
+            {
+                query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,HV.HoTen,KQHP.Diem,KQHP.NgayCap" +
+                    " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                    " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien where KQHP.Khoa = " + khoa;
+            }
+            else
+            {
+                query = "select MaHocVien from HocVien where HoTen = '" + ten + "'";
+                string maHocVien = DataProvider.GetFieldValues(query);
+
+                query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,HV.HoTen,KQHP.Diem,KQHP.NgayCap" +
+                " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien" +
+                " where KQHP.MaHocVien = " + maHocVien + " and KQHP.Khoa = " + khoa;
+            }
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public DataTable HienTheoNamvaKhoa(string ten, string nam, string khoa)
+        {
+            DataProvider.Con.Open();
+            string query = "";
+
+            if (ten == "")
+            {
+                query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,HV.HoTen,KQHP.Diem,KQHP.NgayCap" +
+                    " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                    " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien where KQHP.Nam = " + nam +
+                    " and KQHP.Khoa = " + khoa;
+            }
+            else
+            {
+                query = "select MaHocVien from HocVien where HoTen = '" + ten + "'";
+                string maHocVien = DataProvider.GetFieldValues(query);
+
+                query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,HV.HoTen,KQHP.Diem,KQHP.NgayCap" +
+                " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien" +
+                " where KQHP.MaHocVien = " + maHocVien + " and KQHP.Nam = " + nam +
+                    " and KQHP.Khoa = " + khoa;
+            }
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
         public DataTable TimKiem(string ten)
         {
             string query = "select MaHocVien from HocVien where HoTen = '" + ten + "'";
             DataProvider.Con.Open();
 
             string maHocVien = DataProvider.GetFieldValues(query);
+            if (maHocVien == "")
+            {
+                maHocVien = "0";
+            }
 
             query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,HV.HoTen,KQHP.Diem,KQHP.NgayCap" +
                 " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
@@ -103,6 +208,33 @@ namespace PTTK_DAO
 
             DataProvider.Con.Close();
             return sisodk;
+        }
+
+        public bool XoaDKHP(string tenhocphan, string nam, string khoa, string tenhocvien)
+        {
+            DataProvider.Con.Open();
+
+            string query = "select MaHocPhan from HocPhan where TenHocPhan = '" + tenhocphan + "'";
+            string mahocphan = DataProvider.GetFieldValues(query);
+
+            query = "select MaHocVien from HocVien where HoTen = '" + tenhocvien + "'";
+            string mahocvien = DataProvider.GetFieldValues(query);
+
+            query = "Delete from KetQuaDangKyHocPhan where MaHocPhan = " + mahocphan + " and Nam = " +
+                nam + " and Khoa = " + khoa + " and MaHocVien = " + mahocvien;
+
+            SqlCommand cmd = new SqlCommand(query, DataProvider.Con);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                DataProvider.Con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                DataProvider.Con.Close();
+                return false;
+            }
         }
     }
 }
