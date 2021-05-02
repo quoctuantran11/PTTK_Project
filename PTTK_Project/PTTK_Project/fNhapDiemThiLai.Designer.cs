@@ -35,11 +35,15 @@ namespace PTTK_Project
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnHoanTat = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txbMonHoc = new System.Windows.Forms.TextBox();
+            this.txbCMND = new System.Windows.Forms.TextBox();
+            this.txbHoTen = new System.Windows.Forms.TextBox();
+            this.txbDiemThiLai = new System.Windows.Forms.TextBox();
+            this.dtpNgayThiLai = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbNam = new System.Windows.Forms.ComboBox();
+            this.cmbKhoa = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -76,7 +80,7 @@ namespace PTTK_Project
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(51, 270);
+            this.label4.Location = new System.Drawing.Point(51, 382);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 31);
             this.label4.TabIndex = 3;
@@ -86,7 +90,7 @@ namespace PTTK_Project
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(51, 339);
+            this.label5.Location = new System.Drawing.Point(51, 451);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 31);
             this.label5.TabIndex = 4;
@@ -95,58 +99,101 @@ namespace PTTK_Project
             // btnHoanTat
             // 
             this.btnHoanTat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnHoanTat.Location = new System.Drawing.Point(324, 410);
+            this.btnHoanTat.Location = new System.Drawing.Point(324, 522);
             this.btnHoanTat.Name = "btnHoanTat";
             this.btnHoanTat.Size = new System.Drawing.Size(161, 49);
             this.btnHoanTat.TabIndex = 5;
             this.btnHoanTat.Text = "Hoàn tất";
             this.btnHoanTat.UseVisualStyleBackColor = true;
+            this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
-            // textBox1
+            // txbMonHoc
             // 
-            this.textBox1.Location = new System.Drawing.Point(242, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(494, 31);
-            this.textBox1.TabIndex = 6;
+            this.txbMonHoc.Location = new System.Drawing.Point(242, 194);
+            this.txbMonHoc.Name = "txbMonHoc";
+            this.txbMonHoc.Size = new System.Drawing.Size(494, 31);
+            this.txbMonHoc.TabIndex = 6;
+            this.txbMonHoc.TextChanged += new System.EventHandler(this.txbMonHoc_TextChanged);
             // 
-            // textBox2
+            // txbCMND
             // 
-            this.textBox2.Location = new System.Drawing.Point(242, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(494, 31);
-            this.textBox2.TabIndex = 7;
+            this.txbCMND.Location = new System.Drawing.Point(242, 125);
+            this.txbCMND.Name = "txbCMND";
+            this.txbCMND.Size = new System.Drawing.Size(494, 31);
+            this.txbCMND.TabIndex = 7;
+            this.txbCMND.TextChanged += new System.EventHandler(this.txbCMND_TextChanged);
             // 
-            // textBox3
+            // txbHoTen
             // 
-            this.textBox3.Location = new System.Drawing.Point(242, 50);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(494, 31);
-            this.textBox3.TabIndex = 8;
+            this.txbHoTen.Location = new System.Drawing.Point(242, 50);
+            this.txbHoTen.Name = "txbHoTen";
+            this.txbHoTen.Size = new System.Drawing.Size(494, 31);
+            this.txbHoTen.TabIndex = 8;
             // 
-            // textBox4
+            // txbDiemThiLai
             // 
-            this.textBox4.Location = new System.Drawing.Point(242, 270);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(494, 31);
-            this.textBox4.TabIndex = 9;
+            this.txbDiemThiLai.Location = new System.Drawing.Point(242, 385);
+            this.txbDiemThiLai.Name = "txbDiemThiLai";
+            this.txbDiemThiLai.Size = new System.Drawing.Size(491, 31);
+            this.txbDiemThiLai.TabIndex = 9;
             // 
-            // dateTimePicker1
+            // dtpNgayThiLai
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(239, 345);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(496, 31);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtpNgayThiLai.Location = new System.Drawing.Point(242, 457);
+            this.dtpNgayThiLai.Name = "dtpNgayThiLai";
+            this.dtpNgayThiLai.Size = new System.Drawing.Size(493, 31);
+            this.dtpNgayThiLai.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label6.Location = new System.Drawing.Point(51, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 31);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Năm";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label7.Location = new System.Drawing.Point(51, 322);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 31);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Khóa";
+            // 
+            // cmbNam
+            // 
+            this.cmbNam.FormattingEnabled = true;
+            this.cmbNam.Location = new System.Drawing.Point(242, 256);
+            this.cmbNam.Name = "cmbNam";
+            this.cmbNam.Size = new System.Drawing.Size(151, 33);
+            this.cmbNam.TabIndex = 13;
+            // 
+            // cmbKhoa
+            // 
+            this.cmbKhoa.FormattingEnabled = true;
+            this.cmbKhoa.Location = new System.Drawing.Point(242, 320);
+            this.cmbKhoa.Name = "cmbKhoa";
+            this.cmbKhoa.Size = new System.Drawing.Size(151, 33);
+            this.cmbKhoa.TabIndex = 14;
             // 
             // fNhapDiemThiLai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 481);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(769, 595);
+            this.Controls.Add(this.cmbKhoa);
+            this.Controls.Add(this.cmbNam);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dtpNgayThiLai);
+            this.Controls.Add(this.txbDiemThiLai);
+            this.Controls.Add(this.txbHoTen);
+            this.Controls.Add(this.txbCMND);
+            this.Controls.Add(this.txbMonHoc);
             this.Controls.Add(this.btnHoanTat);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -168,10 +215,14 @@ namespace PTTK_Project
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnHoanTat;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txbMonHoc;
+        private System.Windows.Forms.TextBox txbCMND;
+        private System.Windows.Forms.TextBox txbHoTen;
+        private System.Windows.Forms.TextBox txbDiemThiLai;
+        private System.Windows.Forms.DateTimePicker dtpNgayThiLai;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbNam;
+        private System.Windows.Forms.ComboBox cmbKhoa;
     }
 }

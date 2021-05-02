@@ -29,43 +29,44 @@ namespace PTTK_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dgvKetqua = new System.Windows.Forms.DataGridView();
+            this.btnTimkiem = new System.Windows.Forms.Button();
+            this.txbHoten = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnHientoanbo = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetqua)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvKetqua
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(52, 260);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(876, 348);
-            this.dataGridView1.TabIndex = 9;
+            this.dgvKetqua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKetqua.Location = new System.Drawing.Point(52, 260);
+            this.dgvKetqua.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvKetqua.Name = "dgvKetqua";
+            this.dgvKetqua.RowHeadersWidth = 82;
+            this.dgvKetqua.Size = new System.Drawing.Size(876, 348);
+            this.dgvKetqua.TabIndex = 9;
             // 
-            // button1
+            // btnTimkiem
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(782, 129);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 44);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Tìm kiếm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnTimkiem.Location = new System.Drawing.Point(782, 129);
+            this.btnTimkiem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimkiem.Name = "btnTimkiem";
+            this.btnTimkiem.Size = new System.Drawing.Size(146, 44);
+            this.btnTimkiem.TabIndex = 8;
+            this.btnTimkiem.Text = "Tìm kiếm";
+            this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
-            // textBox1
+            // txbHoten
             // 
-            this.textBox1.Location = new System.Drawing.Point(188, 135);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(572, 31);
-            this.textBox1.TabIndex = 7;
+            this.txbHoten.Location = new System.Drawing.Point(188, 135);
+            this.txbHoten.Margin = new System.Windows.Forms.Padding(4);
+            this.txbHoten.Name = "txbHoten";
+            this.txbHoten.Size = new System.Drawing.Size(572, 31);
+            this.txbHoten.TabIndex = 7;
             // 
             // label2
             // 
@@ -89,32 +90,33 @@ namespace PTTK_Project
             this.label1.TabIndex = 5;
             this.label1.Text = "Học viên";
             // 
-            // button2
+            // btnHientoanbo
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button2.Location = new System.Drawing.Point(52, 200);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(330, 52);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Hiện toàn bộ danh sách";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHientoanbo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnHientoanbo.Location = new System.Drawing.Point(52, 200);
+            this.btnHientoanbo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHientoanbo.Name = "btnHientoanbo";
+            this.btnHientoanbo.Size = new System.Drawing.Size(330, 52);
+            this.btnHientoanbo.TabIndex = 10;
+            this.btnHientoanbo.Text = "Hiện toàn bộ danh sách";
+            this.btnHientoanbo.UseVisualStyleBackColor = true;
+            this.btnHientoanbo.Click += new System.EventHandler(this.btnHientoanbo_Click);
             // 
             // fXemKQTL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 644);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnHientoanbo);
+            this.Controls.Add(this.dgvKetqua);
+            this.Controls.Add(this.btnTimkiem);
+            this.Controls.Add(this.txbHoten);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fXemKQTL";
             this.Text = "XemKQTL";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetqua)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,11 +124,11 @@ namespace PTTK_Project
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dgvKetqua;
+        private System.Windows.Forms.Button btnTimkiem;
+        private System.Windows.Forms.TextBox txbHoten;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnHientoanbo;
     }
 }

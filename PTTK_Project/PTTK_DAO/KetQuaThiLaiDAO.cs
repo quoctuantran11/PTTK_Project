@@ -57,6 +57,89 @@ namespace PTTK_DAO
             return ketquathilai;
         }
 
+        public DataTable HienThiComboNam(string monhoc, string cmnd)
+        {
+            string query = "select MaHocVien from HocVien where CMND = " + cmnd;
+
+            DataProvider.Con.Open();
+            string maHocVien = DataProvider.GetFieldValues(query);
+            if(maHocVien == "")
+            {
+                maHocVien = "0";
+            }
+
+            query = "select MaHocPhan from HocPhan where TenHocPhan = '" + monhoc + "'";
+
+            string maHocPhan = DataProvider.GetFieldValues(query);
+            if (maHocPhan == "")
+            {
+                maHocPhan = "0";
+            }
+
+            query = "select Nam from KetQuaDangKyHocPhan where MaHocPhan = " + maHocPhan + " and " +
+                "MaHocVien = " + maHocVien;
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public DataTable HienThiComboKhoa(string monhoc, string cmnd)
+        {
+            string query = "select MaHocVien from HocVien where CMND = " + cmnd;
+
+            DataProvider.Con.Open();
+            string maHocVien = DataProvider.GetFieldValues(query);
+            if (maHocVien == "")
+            {
+                maHocVien = "0";
+            }
+
+            query = "select MaHocPhan from HocPhan where TenHocPhan = '" + monhoc + "'";
+
+            string maHocPhan = DataProvider.GetFieldValues(query);
+            if (maHocPhan == "")
+            {
+                maHocPhan = "0";
+            }
+
+            query = "select Khoa from KetQuaDangKyHocPhan where MaHocPhan = " + maHocPhan + " and " +
+                "MaHocVien = " + maHocVien;
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public void NhapDiem(string tenHocPhan, string nam, string khoa, string tenHocVien, string cmnd, string diem, DateTime ngaythilai)
+        {
+            string query = "select MaHocVien from HocVien where HoTen = '" + tenHocVien + "' and " +
+                "CMND = " + cmnd;
+
+            DataProvider.Con.Open();
+            string maHocVien = DataProvider.GetFieldValues(query);
+
+            query = "select MaHocPhan from HocPhan where TenHocPhan = '" + tenHocPhan + "'";
+
+            string maHocPhan = DataProvider.GetFieldValues(query);
+
+            query = "Insert into KetQuaThiLai values (" + maHocPhan + "," + nam + "," + khoa + "," +
+                maHocVien + "," + diem + ",'" + ngaythilai + "',1)";
+
+            SqlCommand cmd = new SqlCommand(query, DataProvider.Con);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                DataProvider.Con.Close();
+            }
+            catch (Exception ex)
+            {
+                DataProvider.Con.Close();
+            }
+        }
+
         public bool Xoa(string maHocPhan, string nam, string khoa, string maHocVien, KetQuaThiLai kqtl)
         {
             DataProvider.Con.Open();
@@ -78,6 +161,16 @@ namespace PTTK_DAO
             }
 
         }
+
+        public void HienThi_Sua(string maHocPhan, string nam, string khoa, string maHocVien)
+        {
+            
+        }
+
+        public void SuaDiem()
+        {
+
+        }    
 
         public List<KetQuaThiLai> TimKiem(string ten)
         {

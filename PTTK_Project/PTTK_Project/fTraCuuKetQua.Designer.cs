@@ -29,23 +29,23 @@ namespace PTTK_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvKetQuaHoc = new System.Windows.Forms.DataGridView();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txbHocVien = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQuaHoc)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvKetQuaHoc
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(58, 184);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(876, 348);
-            this.dataGridView1.TabIndex = 14;
+            this.dgvKetQuaHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKetQuaHoc.Location = new System.Drawing.Point(58, 184);
+            this.dgvKetQuaHoc.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvKetQuaHoc.Name = "dgvKetQuaHoc";
+            this.dgvKetQuaHoc.RowHeadersWidth = 82;
+            this.dgvKetQuaHoc.Size = new System.Drawing.Size(876, 348);
+            this.dgvKetQuaHoc.TabIndex = 14;
             // 
             // btnTimKiem
             // 
@@ -57,6 +57,7 @@ namespace PTTK_Project
             this.btnTimKiem.TabIndex = 13;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txbHocVien
             // 
@@ -93,14 +94,14 @@ namespace PTTK_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 563);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvKetQuaHoc);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txbHocVien);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fTraCuuKetQua";
             this.Text = "Tra cứu kết quả";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQuaHoc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +109,7 @@ namespace PTTK_Project
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvKetQuaHoc;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txbHocVien;
         private System.Windows.Forms.Label label2;

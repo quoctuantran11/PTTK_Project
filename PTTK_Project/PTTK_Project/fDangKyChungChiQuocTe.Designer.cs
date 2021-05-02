@@ -36,19 +36,19 @@ namespace PTTK_Project
             this.label6 = new System.Windows.Forms.Label();
             this.HoanTatbtn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cmbGioiTinh = new System.Windows.Forms.ComboBox();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayThi = new System.Windows.Forms.DateTimePicker();
+            this.txbHoten = new System.Windows.Forms.TextBox();
+            this.txbCMND = new System.Windows.Forms.TextBox();
+            this.txbTenChungChi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txbDiaChi = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txbSDT = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnXemLich = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbDotThi = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -111,6 +111,7 @@ namespace PTTK_Project
             this.HoanTatbtn.TabIndex = 6;
             this.HoanTatbtn.Text = "Hoàn tất";
             this.HoanTatbtn.UseVisualStyleBackColor = true;
+            this.HoanTatbtn.Click += new System.EventHandler(this.HoanTatbtn_Click);
             // 
             // label8
             // 
@@ -122,54 +123,57 @@ namespace PTTK_Project
             this.label8.TabIndex = 8;
             this.label8.Text = "Tên chứng chỉ";
             // 
-            // comboBox1
+            // cmbGioiTinh
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(139, 118);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(115, 37);
-            this.comboBox1.TabIndex = 10;
+            this.cmbGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmbGioiTinh.FormattingEnabled = true;
+            this.cmbGioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nu"});
+            this.cmbGioiTinh.Location = new System.Drawing.Point(139, 118);
+            this.cmbGioiTinh.Name = "cmbGioiTinh";
+            this.cmbGioiTinh.Size = new System.Drawing.Size(115, 37);
+            this.cmbGioiTinh.TabIndex = 10;
             // 
-            // dateTimePicker1
+            // dtpNgaySinh
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(139, 168);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(226, 35);
-            this.dateTimePicker1.TabIndex = 11;
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dtpNgaySinh.Location = new System.Drawing.Point(139, 168);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(226, 35);
+            this.dtpNgaySinh.TabIndex = 11;
             // 
-            // dateTimePicker2
+            // dtpNgayThi
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.dateTimePicker2.Location = new System.Drawing.Point(533, 214);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(236, 35);
-            this.dateTimePicker2.TabIndex = 12;
+            this.dtpNgayThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dtpNgayThi.Location = new System.Drawing.Point(533, 214);
+            this.dtpNgayThi.Name = "dtpNgayThi";
+            this.dtpNgayThi.Size = new System.Drawing.Size(236, 35);
+            this.dtpNgayThi.TabIndex = 12;
             // 
-            // textBox1
+            // txbHoten
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox1.Location = new System.Drawing.Point(139, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 35);
-            this.textBox1.TabIndex = 13;
+            this.txbHoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbHoten.Location = new System.Drawing.Point(139, 76);
+            this.txbHoten.Name = "txbHoten";
+            this.txbHoten.Size = new System.Drawing.Size(226, 35);
+            this.txbHoten.TabIndex = 13;
             // 
-            // textBox2
+            // txbCMND
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox2.Location = new System.Drawing.Point(139, 218);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 35);
-            this.textBox2.TabIndex = 14;
+            this.txbCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbCMND.Location = new System.Drawing.Point(139, 218);
+            this.txbCMND.Name = "txbCMND";
+            this.txbCMND.Size = new System.Drawing.Size(226, 35);
+            this.txbCMND.TabIndex = 14;
             // 
-            // textBox5
+            // txbTenChungChi
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox5.Location = new System.Drawing.Point(533, 120);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(236, 35);
-            this.textBox5.TabIndex = 17;
+            this.txbTenChungChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbTenChungChi.Location = new System.Drawing.Point(533, 120);
+            this.txbTenChungChi.Name = "txbTenChungChi";
+            this.txbTenChungChi.Size = new System.Drawing.Size(236, 35);
+            this.txbTenChungChi.TabIndex = 17;
             // 
             // label1
             // 
@@ -181,13 +185,13 @@ namespace PTTK_Project
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng ký chứng chỉ quốc tế";
             // 
-            // textBox6
+            // txbDiaChi
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox6.Location = new System.Drawing.Point(533, 75);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(236, 35);
-            this.textBox6.TabIndex = 32;
+            this.txbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbDiaChi.Location = new System.Drawing.Point(533, 75);
+            this.txbDiaChi.Name = "txbDiaChi";
+            this.txbDiaChi.Size = new System.Drawing.Size(236, 35);
+            this.txbDiaChi.TabIndex = 32;
             // 
             // label10
             // 
@@ -199,13 +203,13 @@ namespace PTTK_Project
             this.label10.TabIndex = 31;
             this.label10.Text = "Địa chỉ";
             // 
-            // textBox7
+            // txbSDT
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.textBox7.Location = new System.Drawing.Point(139, 271);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(226, 35);
-            this.textBox7.TabIndex = 30;
+            this.txbSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txbSDT.Location = new System.Drawing.Point(139, 271);
+            this.txbSDT.Name = "txbSDT";
+            this.txbSDT.Size = new System.Drawing.Size(226, 35);
+            this.txbSDT.TabIndex = 30;
             // 
             // label11
             // 
@@ -228,14 +232,14 @@ namespace PTTK_Project
             this.btnXemLich.UseVisualStyleBackColor = true;
             this.btnXemLich.Click += new System.EventHandler(this.btnXemLich_Click);
             // 
-            // comboBox2
+            // cmbDotThi
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(533, 166);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(138, 37);
-            this.comboBox2.TabIndex = 35;
+            this.cmbDotThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cmbDotThi.FormattingEnabled = true;
+            this.cmbDotThi.Location = new System.Drawing.Point(533, 166);
+            this.cmbDotThi.Name = "cmbDotThi";
+            this.cmbDotThi.Size = new System.Drawing.Size(138, 37);
+            this.cmbDotThi.TabIndex = 35;
             // 
             // label7
             // 
@@ -253,19 +257,19 @@ namespace PTTK_Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(813, 400);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbDotThi);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnXemLich);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txbDiaChi);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txbSDT);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txbTenChungChi);
+            this.Controls.Add(this.txbCMND);
+            this.Controls.Add(this.txbHoten);
+            this.Controls.Add(this.dtpNgayThi);
+            this.Controls.Add(this.dtpNgaySinh);
+            this.Controls.Add(this.cmbGioiTinh);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.HoanTatbtn);
             this.Controls.Add(this.label6);
@@ -277,6 +281,7 @@ namespace PTTK_Project
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Name = "fDangKyChungChiQuocTe";
             this.Text = "Đăng ký chứng chỉ quốc tế";
+            this.Load += new System.EventHandler(this.fDangKyChungChiQuocTe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,19 +295,19 @@ namespace PTTK_Project
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button HoanTatbtn;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox cmbGioiTinh;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.DateTimePicker dtpNgayThi;
+        private System.Windows.Forms.TextBox txbHoten;
+        private System.Windows.Forms.TextBox txbCMND;
+        private System.Windows.Forms.TextBox txbTenChungChi;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txbDiaChi;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txbSDT;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnXemLich;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbDotThi;
         private System.Windows.Forms.Label label7;
     }
 }

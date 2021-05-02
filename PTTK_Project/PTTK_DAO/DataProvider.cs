@@ -109,14 +109,6 @@ namespace PTTK_DAO
             cbo.DisplayMember = ten; //Trường hiển thị
         }
 
-        public static void Disconnect()
-        {
-            if (Con.State == ConnectionState.Open)
-            {
-                Con.Close();   	//Đóng kết nối
-                Con.Dispose(); 	//Giải phóng tài nguyên
-                Con = null;
-            }
-        }
+        
     }
 }

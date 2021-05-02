@@ -16,5 +16,15 @@ namespace PTTK_Project
         {
             InitializeComponent();
         }
+
+        private void btnHoanTat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fSuaDiemThiLai_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

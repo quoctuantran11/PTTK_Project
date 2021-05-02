@@ -95,6 +95,10 @@ namespace PTTK_Project
             // 
             this.cmbNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmbNam.FormattingEnabled = true;
+            this.cmbNam.Items.AddRange(new object[] {
+            "2020",
+            "2021",
+            "2022"});
             this.cmbNam.Location = new System.Drawing.Point(248, 183);
             this.cmbNam.Margin = new System.Windows.Forms.Padding(4);
             this.cmbNam.Name = "cmbNam";
@@ -116,6 +120,10 @@ namespace PTTK_Project
             // 
             this.cmbKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmbKhoa.FormattingEnabled = true;
+            this.cmbKhoa.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
             this.cmbKhoa.Location = new System.Drawing.Point(248, 248);
             this.cmbKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.cmbKhoa.Name = "cmbKhoa";

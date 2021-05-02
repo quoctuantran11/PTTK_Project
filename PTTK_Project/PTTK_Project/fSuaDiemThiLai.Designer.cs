@@ -29,30 +29,30 @@ namespace PTTK_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txbDiemCu = new System.Windows.Forms.TextBox();
             this.btnHoanTat = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dtpNgayThiLai = new System.Windows.Forms.DateTimePicker();
+            this.txbDiemMoi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbHoTen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbNam = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbKhoa = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txbTenHocPhan = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox4
+            // txbDiemCu
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(233, 326);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(494, 31);
-            this.textBox4.TabIndex = 20;
+            this.txbDiemCu.Enabled = false;
+            this.txbDiemCu.Location = new System.Drawing.Point(233, 326);
+            this.txbDiemCu.Name = "txbDiemCu";
+            this.txbDiemCu.Size = new System.Drawing.Size(494, 31);
+            this.txbDiemCu.TabIndex = 20;
             // 
             // btnHoanTat
             // 
@@ -63,6 +63,7 @@ namespace PTTK_Project
             this.btnHoanTat.TabIndex = 16;
             this.btnHoanTat.Text = "Hoàn tất";
             this.btnHoanTat.UseVisualStyleBackColor = true;
+            this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
             // label4
             // 
@@ -84,20 +85,19 @@ namespace PTTK_Project
             this.label5.TabIndex = 15;
             this.label5.Text = "Ngày thi";
             // 
-            // dateTimePicker1
+            // dtpNgayThiLai
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(233, 465);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(496, 31);
-            this.dateTimePicker1.TabIndex = 21;
+            this.dtpNgayThiLai.Location = new System.Drawing.Point(233, 465);
+            this.dtpNgayThiLai.Name = "dtpNgayThiLai";
+            this.dtpNgayThiLai.Size = new System.Drawing.Size(496, 31);
+            this.dtpNgayThiLai.TabIndex = 21;
             // 
-            // textBox5
+            // txbDiemMoi
             // 
-            this.textBox5.Location = new System.Drawing.Point(233, 394);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(494, 31);
-            this.textBox5.TabIndex = 23;
+            this.txbDiemMoi.Location = new System.Drawing.Point(233, 394);
+            this.txbDiemMoi.Name = "txbDiemMoi";
+            this.txbDiemMoi.Size = new System.Drawing.Size(494, 31);
+            this.txbDiemMoi.TabIndex = 23;
             // 
             // label6
             // 
@@ -109,13 +109,13 @@ namespace PTTK_Project
             this.label6.TabIndex = 22;
             this.label6.Text = "Điểm thi mới";
             // 
-            // textBox1
+            // txbHoTen
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(233, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(494, 31);
-            this.textBox1.TabIndex = 25;
+            this.txbHoTen.Enabled = false;
+            this.txbHoTen.Location = new System.Drawing.Point(233, 44);
+            this.txbHoTen.Name = "txbHoTen";
+            this.txbHoTen.Size = new System.Drawing.Size(494, 31);
+            this.txbHoTen.TabIndex = 25;
             // 
             // label1
             // 
@@ -127,13 +127,13 @@ namespace PTTK_Project
             this.label1.TabIndex = 24;
             this.label1.Text = "Tên học viên";
             // 
-            // textBox2
+            // txbNam
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(233, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(494, 31);
-            this.textBox2.TabIndex = 27;
+            this.txbNam.Enabled = false;
+            this.txbNam.Location = new System.Drawing.Point(233, 114);
+            this.txbNam.Name = "txbNam";
+            this.txbNam.Size = new System.Drawing.Size(494, 31);
+            this.txbNam.TabIndex = 27;
             // 
             // label2
             // 
@@ -145,13 +145,13 @@ namespace PTTK_Project
             this.label2.TabIndex = 26;
             this.label2.Text = "Năm";
             // 
-            // textBox3
+            // txbKhoa
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(233, 187);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(494, 31);
-            this.textBox3.TabIndex = 29;
+            this.txbKhoa.Enabled = false;
+            this.txbKhoa.Location = new System.Drawing.Point(233, 187);
+            this.txbKhoa.Name = "txbKhoa";
+            this.txbKhoa.Size = new System.Drawing.Size(494, 31);
+            this.txbKhoa.TabIndex = 29;
             // 
             // label3
             // 
@@ -163,13 +163,13 @@ namespace PTTK_Project
             this.label3.TabIndex = 28;
             this.label3.Text = "Khóa";
             // 
-            // textBox6
+            // txbTenHocPhan
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(233, 258);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(494, 31);
-            this.textBox6.TabIndex = 31;
+            this.txbTenHocPhan.Enabled = false;
+            this.txbTenHocPhan.Location = new System.Drawing.Point(233, 258);
+            this.txbTenHocPhan.Name = "txbTenHocPhan";
+            this.txbTenHocPhan.Size = new System.Drawing.Size(494, 31);
+            this.txbTenHocPhan.TabIndex = 31;
             // 
             // label7
             // 
@@ -186,43 +186,44 @@ namespace PTTK_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 611);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txbTenHocPhan);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txbKhoa);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txbNam);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbHoTen);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txbDiemMoi);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.dtpNgayThiLai);
+            this.Controls.Add(this.txbDiemCu);
             this.Controls.Add(this.btnHoanTat);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Name = "fSuaDiemThiLai";
             this.Text = "Sửa điểm thi lại";
+            this.Load += new System.EventHandler(this.fSuaDiemThiLai_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txbDiemCu;
         private System.Windows.Forms.Button btnHoanTat;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.DateTimePicker dtpNgayThiLai;
+        private System.Windows.Forms.TextBox txbDiemMoi;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbHoTen;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbNam;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbKhoa;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txbTenHocPhan;
         private System.Windows.Forms.Label label7;
     }
 }
