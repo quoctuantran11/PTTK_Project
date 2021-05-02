@@ -108,7 +108,12 @@ namespace PTTK_DAO
             cbo.ValueMember = ma; //Trường giá trị
             cbo.DisplayMember = ten; //Trường hiển thị
         }
-
-        
+        public static void Disconnect()
+        {
+            if (Con.State == ConnectionState.Open)
+            {
+                Con.Close();   	//Đóng kết nối
+            }
+        }
     }
 }

@@ -53,7 +53,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HocPhanBUS.cs" />
+    <Compile Include="GhiNhanHDDKCCQTBUS.cs" />
+    <Compile Include="HoaDonDKChungChiQuocTeBUS.cs" />
     <Compile Include="HocPhanMoBUS.cs" />
     <Compile Include="HocVienBUS.cs" />
     <Compile Include="KetQuaDangKyHocPhanBUS.cs" />

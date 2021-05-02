@@ -11,3 +11,16 @@ C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.C
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.CopyComplete
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.exe
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.pdb
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\bin\Debug\PTTK_DAO.exe.config
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\bin\Debug\PTTK_DAO.exe
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\bin\Debug\PTTK_DAO.pdb
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\bin\Debug\PTTK_DTO.exe
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\bin\Debug\PTTK_DTO.pdb
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\bin\Debug\PTTK_DTO.exe.config
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.csprojAssemblyReference.cache
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.Properties.Resources.resources
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.GenerateResource.cache
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.CoreCompileInputs.cache
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.CopyComplete
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.exe
+C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.pdb

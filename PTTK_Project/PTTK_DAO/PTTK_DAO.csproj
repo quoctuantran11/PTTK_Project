@@ -56,6 +56,8 @@
     </Compile>
     <Compile Include="HocPhanDAO.cs" />
     <Compile Include="HocPhanMoDAO.cs" />
+    <Compile Include="GhiNhanHDDKCCQTDAO.cs" />
+    <Compile Include="HoaDonDKChungChiQuocTeDAO.cs" />
     <Compile Include="HocVienDAO.cs" />
     <Compile Include="KetQuaDangKyHocPhanDAO.cs" />
     <Compile Include="KetQuaThiLaiDAO.cs" />
