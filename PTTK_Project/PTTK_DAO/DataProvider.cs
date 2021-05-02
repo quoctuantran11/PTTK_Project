@@ -11,7 +11,7 @@ namespace PTTK_DAO
 {
     class DataProvider
     {
-        public static SqlConnection Con = new SqlConnection(@"Data Source=./;Initial Catalog=PTTK;Integrated Security=True");
+        public static SqlConnection Con = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=PTTK;Integrated Security=True");
         public static void Connect()
         {
 
@@ -114,8 +114,6 @@ namespace PTTK_DAO
             if (Con.State == ConnectionState.Open)
             {
                 Con.Close();   	//Đóng kết nối
-                Con.Dispose(); 	//Giải phóng tài nguyên
-                Con = null;
             }
         }
     }

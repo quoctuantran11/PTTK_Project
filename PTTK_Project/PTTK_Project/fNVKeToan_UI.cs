@@ -19,7 +19,7 @@ namespace PTTK_Project
 
         private void btnGhiNhanHDDKCCQT_Click(object sender, EventArgs e)
         {
-            fGhiNhanHDDKCCQT GN = new fGhiNhanHDDKCCQT();
+            fHoaDonDKCCQT GN = new fHoaDonDKCCQT();
             this.Hide();
             GN.ShowDialog();
             this.Show();
