@@ -59,6 +59,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaoVienDAO.cs" />
+    <Compile Include="GhiNhanHDDKHPDAO.cs" />
+    <Compile Include="HoaDonDKHPDAO.cs" />
     <Compile Include="HocPhanDAO.cs" />
     <Compile Include="HocPhanMoDAO.cs" />
     <Compile Include="GhiNhanHDDKCCQTDAO.cs" />
