@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +27,15 @@ namespace PTTK_DAO
 
         private HocPhanDAO() { }
 
-
+        public DataTable LayHocPhan()
+        {
+            string query = "select distinct MaHocPhan from HocPhan";
+            DataProvider.Connect();
+            DataTable table = new DataTable();
+            table = DataProvider.GetDataToTable(query);
+            DataProvider.Disconnect();
+            return table;
+        }
     }
 }
 

@@ -61,5 +61,15 @@ namespace PTTK_DAO
 
             DataProvider.Con.Close();
         }
+
+        public DataTable LayMaGV()
+        {
+            string query = "Select MaGiaoVien from GiaoVien";
+
+            DataProvider.Connect();
+            DataTable data = DataProvider.GetDataToTable(query);
+            DataProvider.Disconnect();
+            return data;
+        }
     }
 }

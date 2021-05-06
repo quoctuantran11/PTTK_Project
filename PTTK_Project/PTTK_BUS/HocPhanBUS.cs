@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PTTK_DAO;
 
 namespace PTTK_BUS
 {
@@ -25,6 +27,9 @@ namespace PTTK_BUS
 
         private HocPhanBUS() { }
 
-
+        public DataTable HienThiHocPhan()
+        {
+            return HocPhanDAO.Instance.LayHocPhan();
+        }
     }
 }

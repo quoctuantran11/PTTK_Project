@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +50,11 @@ namespace PTTK_BUS
         public void ThemGiaoVien(string ten, string diachi, DateTime ngaysinh, string phai, string sdt)
         {
             GiaoVienDAO.Instance.ThemGiaoVien(ten, diachi, ngaysinh, phai, sdt);
+        }
+
+        public DataTable HienThiMaGV()
+        {
+            return GiaoVienDAO.Instance.LayMaGV();
         }
     }
 }

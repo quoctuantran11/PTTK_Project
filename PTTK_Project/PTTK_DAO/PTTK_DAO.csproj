@@ -68,6 +68,7 @@
     <Compile Include="HocVienDAO.cs" />
     <Compile Include="KetQuaDangKyHocPhanDAO.cs" />
     <Compile Include="KetQuaThiLaiDAO.cs" />
+    <Compile Include="Nam_KhoaDAO.cs" />
     <Compile Include="NguoiThamDuThiDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
