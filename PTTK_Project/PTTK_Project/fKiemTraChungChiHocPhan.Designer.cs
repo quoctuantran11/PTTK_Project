@@ -32,14 +32,14 @@ namespace PTTK_Project
             this.lblTrungTam = new System.Windows.Forms.Label();
             this.btnKiemTra = new System.Windows.Forms.Button();
             this.txbTrungTam = new System.Windows.Forms.TextBox();
-            this.chbTrungTamKhac = new System.Windows.Forms.CheckBox();
-            this.chbTrungTamNay = new System.Windows.Forms.CheckBox();
             this.txbChungChi = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnHoanThanh = new System.Windows.Forms.Button();
             this.txbHoTen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.rbTrungTamNay = new System.Windows.Forms.RadioButton();
+            this.rbTrungTamKhac = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // lblTrungTam
@@ -70,30 +70,6 @@ namespace PTTK_Project
             this.txbTrungTam.Name = "txbTrungTam";
             this.txbTrungTam.Size = new System.Drawing.Size(428, 31);
             this.txbTrungTam.TabIndex = 45;
-            // 
-            // chbTrungTamKhac
-            // 
-            this.chbTrungTamKhac.AutoSize = true;
-            this.chbTrungTamKhac.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.chbTrungTamKhac.Location = new System.Drawing.Point(469, 146);
-            this.chbTrungTamKhac.Name = "chbTrungTamKhac";
-            this.chbTrungTamKhac.Size = new System.Drawing.Size(210, 33);
-            this.chbTrungTamKhac.TabIndex = 44;
-            this.chbTrungTamKhac.Text = "Trung tâm khác";
-            this.chbTrungTamKhac.UseVisualStyleBackColor = true;
-            this.chbTrungTamKhac.CheckedChanged += new System.EventHandler(this.chbTrungTamKhac_CheckedChanged);
-            // 
-            // chbTrungTamNay
-            // 
-            this.chbTrungTamNay.AutoSize = true;
-            this.chbTrungTamNay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
-            this.chbTrungTamNay.Location = new System.Drawing.Point(235, 148);
-            this.chbTrungTamNay.Name = "chbTrungTamNay";
-            this.chbTrungTamNay.Size = new System.Drawing.Size(228, 33);
-            this.chbTrungTamNay.TabIndex = 43;
-            this.chbTrungTamNay.Text = "Tại trung tâm này";
-            this.chbTrungTamNay.UseVisualStyleBackColor = true;
-            this.chbTrungTamNay.CheckedChanged += new System.EventHandler(this.chbTrungTamNay_CheckedChanged);
             // 
             // txbChungChi
             // 
@@ -150,24 +126,51 @@ namespace PTTK_Project
             this.label1.TabIndex = 49;
             this.label1.Text = "Tên học viên";
             // 
+            // rbTrungTamNay
+            // 
+            this.rbTrungTamNay.AutoSize = true;
+            this.rbTrungTamNay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.rbTrungTamNay.Location = new System.Drawing.Point(235, 144);
+            this.rbTrungTamNay.Name = "rbTrungTamNay";
+            this.rbTrungTamNay.Size = new System.Drawing.Size(227, 33);
+            this.rbTrungTamNay.TabIndex = 51;
+            this.rbTrungTamNay.TabStop = true;
+            this.rbTrungTamNay.Text = "Tại trung tâm này";
+            this.rbTrungTamNay.UseVisualStyleBackColor = true;
+            this.rbTrungTamNay.CheckedChanged += new System.EventHandler(this.rbTrungTamNay_CheckedChanged);
+            // 
+            // rbTrungTamKhac
+            // 
+            this.rbTrungTamKhac.AutoSize = true;
+            this.rbTrungTamKhac.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.rbTrungTamKhac.Location = new System.Drawing.Point(477, 144);
+            this.rbTrungTamKhac.Name = "rbTrungTamKhac";
+            this.rbTrungTamKhac.Size = new System.Drawing.Size(209, 33);
+            this.rbTrungTamKhac.TabIndex = 52;
+            this.rbTrungTamKhac.TabStop = true;
+            this.rbTrungTamKhac.Text = "Trung tâm khác";
+            this.rbTrungTamKhac.UseVisualStyleBackColor = true;
+            this.rbTrungTamKhac.CheckedChanged += new System.EventHandler(this.rbTrungTamKhac_CheckedChanged);
+            // 
             // fKiemTraChungChiHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 321);
+            this.Controls.Add(this.rbTrungTamKhac);
+            this.Controls.Add(this.rbTrungTamNay);
             this.Controls.Add(this.txbHoTen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnHoanThanh);
             this.Controls.Add(this.lblTrungTam);
             this.Controls.Add(this.btnKiemTra);
             this.Controls.Add(this.txbTrungTam);
-            this.Controls.Add(this.chbTrungTamKhac);
-            this.Controls.Add(this.chbTrungTamNay);
             this.Controls.Add(this.txbChungChi);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Name = "fKiemTraChungChiHocPhan";
             this.Text = "KiemTraChungChiHocPhan";
+            this.Load += new System.EventHandler(this.fKiemTraChungChiHocPhan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,13 +181,13 @@ namespace PTTK_Project
         private System.Windows.Forms.Label lblTrungTam;
         private System.Windows.Forms.Button btnKiemTra;
         private System.Windows.Forms.TextBox txbTrungTam;
-        private System.Windows.Forms.CheckBox chbTrungTamKhac;
-        private System.Windows.Forms.CheckBox chbTrungTamNay;
         private System.Windows.Forms.TextBox txbChungChi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnHoanThanh;
         private System.Windows.Forms.TextBox txbHoTen;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton rbTrungTamNay;
+        private System.Windows.Forms.RadioButton rbTrungTamKhac;
     }
 }

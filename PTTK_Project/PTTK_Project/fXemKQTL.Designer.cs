@@ -116,6 +116,7 @@ namespace PTTK_Project
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fXemKQTL";
             this.Text = "XemKQTL";
+            this.Load += new System.EventHandler(this.fXemKQTL_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetqua)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

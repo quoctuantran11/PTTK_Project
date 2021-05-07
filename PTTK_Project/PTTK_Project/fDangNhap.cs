@@ -17,28 +17,74 @@ namespace PTTK_Project
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            fBoPhanVanPhong_UI VP = new fBoPhanVanPhong_UI();
-            this.Hide();
-            VP.ShowDialog();
-            this.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            fNVTiepNhan_UI TN = new fNVTiepNhan_UI();
-            this.Hide();
-            TN.ShowDialog();
-            this.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            fNVKeToan_UI TN = new fNVKeToan_UI();
-            this.Hide();
-            TN.ShowDialog();
-            this.Show();
+            if (txbTenDangNhap.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập tên đăng nhập!", "Thông báo");
+                txbTenDangNhap.Focus();
+            }
+            else
+            {
+                if (txbMatKhau.Text == "")
+                {
+                    MessageBox.Show("Xin hãy nhập mật khẩu!", "Thông báo");
+                    txbMatKhau.Focus();
+                }
+                else
+                {
+                    if (txbTenDangNhap.Text == "bpvp")
+                    {
+                        if (txbMatKhau.Text != "vp")
+                        {
+                            MessageBox.Show("Sai mật khẩu!", "Thông báo");
+                            txbMatKhau.Focus();
+                        }
+                        else
+                        {
+                            fBoPhanVanPhong_UI VP = new fBoPhanVanPhong_UI();
+                            this.Hide();
+                            VP.ShowDialog();
+                            this.Show();
+                        }
+                    }
+                    else if (txbTenDangNhap.Text == "bptn")
+                    {
+                        if (txbMatKhau.Text != "tn")
+                        {
+                            MessageBox.Show("Sai mật khẩu!", "Thông báo");
+                            txbMatKhau.Focus();
+                        }
+                        else
+                        {
+                            fNVTiepNhan_UI TN = new fNVTiepNhan_UI();
+                            this.Hide();
+                            TN.ShowDialog();
+                            this.Show();
+                        }
+                    }
+                    else if (txbTenDangNhap.Text == "bpkt")
+                    {
+                        if (txbMatKhau.Text != "kt")
+                        {
+                            MessageBox.Show("Sai mật khẩu!", "Thông báo");
+                            txbMatKhau.Focus();
+                        }
+                        else
+                        {
+                            fNVKeToan_UI KT = new fNVKeToan_UI();
+                            this.Hide();
+                            KT.ShowDialog();
+                            this.Show();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tên đăng nhập không tồn tại!", "Thông báo");
+                        txbTenDangNhap.Focus();
+                    }
+                }
+            }
         }
     }
 }

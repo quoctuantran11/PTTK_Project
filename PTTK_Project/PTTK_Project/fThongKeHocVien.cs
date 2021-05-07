@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PTTK_BUS;
 
 namespace PTTK_Project
 {
@@ -15,6 +16,11 @@ namespace PTTK_Project
         public fThongKeHocVien()
         {
             InitializeComponent();
+        }
+
+        private void fThongKeHocVien_Load(object sender, EventArgs e)
+        {
+            KetQuaDangKyHocPhanBUS.Instance.DemHocVien(dgvKetQua);
         }
     }
 }

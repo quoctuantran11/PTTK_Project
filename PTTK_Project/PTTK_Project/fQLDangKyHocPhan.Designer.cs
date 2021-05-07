@@ -38,6 +38,8 @@ namespace PTTK_Project
             this.btnHienToanBo = new System.Windows.Forms.Button();
             this.Namcmb = new System.Windows.Forms.ComboBox();
             this.Khoacmb = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDKHP)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,12 +126,7 @@ namespace PTTK_Project
             // 
             this.Namcmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Namcmb.FormattingEnabled = true;
-            this.Namcmb.Items.AddRange(new object[] {
-            "2019",
-            "2020",
-            "2021",
-            "2022"});
-            this.Namcmb.Location = new System.Drawing.Point(485, 97);
+            this.Namcmb.Location = new System.Drawing.Point(322, 97);
             this.Namcmb.Name = "Namcmb";
             this.Namcmb.Size = new System.Drawing.Size(130, 37);
             this.Namcmb.TabIndex = 26;
@@ -140,10 +137,6 @@ namespace PTTK_Project
             // 
             this.Khoacmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Khoacmb.FormattingEnabled = true;
-            this.Khoacmb.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
             this.Khoacmb.Location = new System.Drawing.Point(660, 97);
             this.Khoacmb.Name = "Khoacmb";
             this.Khoacmb.Size = new System.Drawing.Size(130, 37);
@@ -151,11 +144,35 @@ namespace PTTK_Project
             this.Khoacmb.Text = "Khóa";
             this.Khoacmb.SelectedIndexChanged += new System.EventHandler(this.Khoacmb_SelectedIndexChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.label1.Location = new System.Drawing.Point(227, 98);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 36);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Năm";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.label3.Location = new System.Drawing.Point(549, 98);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 36);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Khóa";
+            // 
             // fQLDangKyHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 545);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Khoacmb);
             this.Controls.Add(this.Namcmb);
             this.Controls.Add(this.btnHienToanBo);
@@ -168,6 +185,7 @@ namespace PTTK_Project
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fQLDangKyHocPhan";
             this.Text = "QLDangKyHocPhan";
+            this.Load += new System.EventHandler(this.fQLDangKyHocPhan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDKHP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -185,5 +203,7 @@ namespace PTTK_Project
         private System.Windows.Forms.Button btnHienToanBo;
         private System.Windows.Forms.ComboBox Namcmb;
         private System.Windows.Forms.ComboBox Khoacmb;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

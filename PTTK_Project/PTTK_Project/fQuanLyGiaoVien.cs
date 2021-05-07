@@ -49,5 +49,10 @@ namespace PTTK_Project
         {
             GiaoVienBUS.Instance.HienToanBo(dgvGiaoVien);
         }
+
+        private void fQuanLyGiaoVien_Load(object sender, EventArgs e)
+        {
+            GiaoVienBUS.Instance.HienToanBo(dgvGiaoVien);
+        }
     }
 }

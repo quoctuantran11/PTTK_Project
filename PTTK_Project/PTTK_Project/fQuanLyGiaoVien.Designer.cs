@@ -159,6 +159,7 @@ namespace PTTK_Project
             this.Name = "fQuanLyGiaoVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Giáo Viên";
+            this.Load += new System.EventHandler(this.fQuanLyGiaoVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

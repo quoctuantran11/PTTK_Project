@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using PTTK_DAO;
 
 namespace PTTK_BUS
@@ -30,6 +31,11 @@ namespace PTTK_BUS
         public DataTable HienThiHocPhan()
         {
             return HocPhanDAO.Instance.LayHocPhan();
+        }
+
+        public void XemToanBo(DataGridView data)
+        {
+            data.DataSource = HocPhanDAO.Instance.XemToanBo();
         }
     }
 }

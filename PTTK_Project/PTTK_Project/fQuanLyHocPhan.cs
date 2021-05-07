@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PTTK_BUS;
 
 namespace PTTK_Project
 {
@@ -27,6 +28,16 @@ namespace PTTK_Project
         {
             fSuaHocPhan HP = new fSuaHocPhan();
             HP.ShowDialog();
+        }
+
+        private void fQuanLyHocPhan_Load(object sender, EventArgs e)
+        {
+            HocPhanBUS.Instance.XemToanBo(dgvHocPhan);
+        }
+
+        private void btnHienToanBo_Click(object sender, EventArgs e)
+        {
+            HocPhanBUS.Instance.XemToanBo(dgvHocPhan);
         }
     }
 }

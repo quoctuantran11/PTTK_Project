@@ -65,5 +65,10 @@ namespace PTTK_Project
                 MessageBox.Show("Lỗi!!", "Thông báo");
             }
         }
+
+        private void fKetQuaThiLai_Load(object sender, EventArgs e)
+        {
+            KetQuaThiLaiBUS.Instance.HienThiToanBo(dgvKetQuaThiLai);
+        }
     }
 }

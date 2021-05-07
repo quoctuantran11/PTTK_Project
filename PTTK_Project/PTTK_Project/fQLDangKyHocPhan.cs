@@ -60,7 +60,11 @@ namespace PTTK_Project
 
         private void Namcmb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (Khoacmb.Text == "Khóa")
+            if(Khoacmb.SelectedIndex == -1 && Namcmb.SelectedIndex == -1)
+            {
+                KetQuaDangKyHocPhanBUS.Instance.HienToanBo(dgvDKHP);
+            }    
+            else if (Khoacmb.SelectedIndex == -1)
             {
                 KetQuaDangKyHocPhanBUS.Instance.HienTheoNam(dgvDKHP, txbHoten.Text, Namcmb.Text);
             }
@@ -72,7 +76,11 @@ namespace PTTK_Project
 
         private void Khoacmb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (Namcmb.Text == "Năm")
+            if (Khoacmb.SelectedIndex == -1 && Namcmb.SelectedIndex == -1)
+            {
+                KetQuaDangKyHocPhanBUS.Instance.HienToanBo(dgvDKHP);
+            }
+            else if (Namcmb.SelectedIndex == -1)
             {
                 KetQuaDangKyHocPhanBUS.Instance.HienTheoKhoa(dgvDKHP, txbHoten.Text, Khoacmb.Text);
             }
@@ -80,6 +88,21 @@ namespace PTTK_Project
             {
                 KetQuaDangKyHocPhanBUS.Instance.HienTheoNamvaKhoa(dgvDKHP, txbHoten.Text, Namcmb.Text, Khoacmb.Text);
             }
+        }
+
+        private void fQLDangKyHocPhan_Load(object sender, EventArgs e)
+        {
+            KetQuaDangKyHocPhanBUS.Instance.HienToanBo(dgvDKHP);
+
+            Namcmb.SelectedIndexChanged -= Namcmb_SelectedIndexChanged;
+            Namcmb.DataSource = KetQuaDangKyHocPhanBUS.Instance.HienNamvaKhoa();
+            Namcmb.DisplayMember = "Nam";
+            Namcmb.SelectedIndexChanged += Namcmb_SelectedIndexChanged;
+
+            Khoacmb.SelectedIndexChanged -= Khoacmb_SelectedIndexChanged;
+            Khoacmb.DataSource = KetQuaDangKyHocPhanBUS.Instance.HienNamvaKhoa();
+            Khoacmb.DisplayMember = "Khoa";
+            Khoacmb.SelectedIndexChanged += Khoacmb_SelectedIndexChanged;
         }
     }
 }

@@ -65,17 +65,17 @@ namespace PTTK_Project
 
                 if (HocPhanMoBUS.Instance.SuaHocPhanMo(mahocphan, nam, khoa, phonghoc, soluongsv, magv))
                 {
-                    MessageBox.Show("Sửa nhận thành công!");
+                    MessageBox.Show("Sửa thành công!");
                 }
                 else
                 {
-                    MessageBox.Show("Sửa nhận thất bại!");
+                    MessageBox.Show("Sửa thất bại!");
                 }
             }
 
             catch
             {
-                MessageBox.Show("Chưa nhập đủ dữ liệu hoặc nhập thông không tồn tại");
+                MessageBox.Show("Chưa nhập đủ dữ liệu hoặc nhập thông tin không tồn tại");
             }
         }
     }

@@ -29,28 +29,28 @@ namespace PTTK_Project
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvKetQua = new System.Windows.Forms.DataGridView();
             this.cmbNam = new System.Windows.Forms.ComboBox();
             this.cmbQuy = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvKetQua
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 145);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(999, 507);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvKetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKetQua.Location = new System.Drawing.Point(45, 145);
+            this.dgvKetQua.Name = "dgvKetQua";
+            this.dgvKetQua.RowHeadersWidth = 82;
+            this.dgvKetQua.RowTemplate.Height = 33;
+            this.dgvKetQua.Size = new System.Drawing.Size(968, 507);
+            this.dgvKetQua.TabIndex = 0;
             // 
             // cmbNam
             // 
             this.cmbNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
             this.cmbNam.FormattingEnabled = true;
-            this.cmbNam.Location = new System.Drawing.Point(714, 90);
+            this.cmbNam.Location = new System.Drawing.Point(683, 92);
             this.cmbNam.Name = "cmbNam";
             this.cmbNam.Size = new System.Drawing.Size(140, 37);
             this.cmbNam.TabIndex = 1;
@@ -60,7 +60,7 @@ namespace PTTK_Project
             // 
             this.cmbQuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F);
             this.cmbQuy.FormattingEnabled = true;
-            this.cmbQuy.Location = new System.Drawing.Point(904, 90);
+            this.cmbQuy.Location = new System.Drawing.Point(873, 92);
             this.cmbQuy.Name = "cmbQuy";
             this.cmbQuy.Size = new System.Drawing.Size(140, 37);
             this.cmbQuy.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace PTTK_Project
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(119, 23);
+            this.label1.Location = new System.Drawing.Point(98, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(800, 46);
             this.label1.TabIndex = 3;
@@ -80,14 +80,15 @@ namespace PTTK_Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 679);
+            this.ClientSize = new System.Drawing.Size(1052, 679);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbQuy);
             this.Controls.Add(this.cmbNam);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvKetQua);
             this.Name = "fThongKeHocVien";
             this.Text = "fThongKeHocVien";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.fThongKeHocVien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,7 +96,7 @@ namespace PTTK_Project
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvKetQua;
         private System.Windows.Forms.ComboBox cmbNam;
         private System.Windows.Forms.ComboBox cmbQuy;
         private System.Windows.Forms.Label label1;

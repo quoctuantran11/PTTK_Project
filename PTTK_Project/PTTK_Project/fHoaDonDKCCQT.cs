@@ -28,13 +28,13 @@ namespace PTTK_Project
 
         private void fHoaDonDKCCQT_Load(object sender, EventArgs e)
         {
-           PTTK_BUS.HoaDonDKChungChiQuocTe.Instance.Xem(dgvHDDKCCQT);
+           HoaDonDKChungChiQuocTe.Instance.Xem(dgvHDDKCCQT);
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             string mathisinh = txtMaThiSinh.Text;
-            PTTK_BUS.HoaDonDKChungChiQuocTe.Instance.TimKiem(dgvHDDKCCQT, mathisinh);
+            HoaDonDKChungChiQuocTe.Instance.TimKiem(dgvHDDKCCQT, mathisinh);
         }
     }
 }

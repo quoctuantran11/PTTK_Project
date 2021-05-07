@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,11 @@ namespace PTTK_BUS
             data.DataSource = KetQuaDangKyHocPhanDAO.Instance.HienTheoNamvaKhoa(ten, nam, khoa);
         }
 
+        public DataTable HienNamvaKhoa()
+        {
+            return KetQuaDangKyHocPhanDAO.Instance.HienNamvaKhoa();
+        }
+
         public bool TimKiem(DataGridView data, string ten)
         {
             data.DataSource = KetQuaDangKyHocPhanDAO.Instance.TimKiem(ten);
@@ -87,6 +93,11 @@ namespace PTTK_BUS
             string khoa = row.Cells["Khoa"].Value.ToString();
 
             return KetQuaDangKyHocPhanDAO.Instance.XoaDKHP(tenHocPhan, nam, khoa, tenHocVien);
+        }
+
+        public void DemHocVien(DataGridView data)
+        {
+            data.DataSource = KetQuaDangKyHocPhanDAO.Instance.DemHocVien();
         }
     }
 }

@@ -158,6 +158,7 @@ namespace PTTK_Project
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fKetQuaThiLai";
             this.Text = "Kết quả thi lại";
+            this.Load += new System.EventHandler(this.fKetQuaThiLai_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQuaThiLai)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

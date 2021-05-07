@@ -128,6 +128,18 @@ namespace PTTK_DAO
             return data;
         }
 
+        public DataTable HienNamvaKhoa()
+        {
+            DataProvider.Con.Open();
+
+            string query = "Select distinct Nam, Khoa from KetQuaDangKyHocPhan";
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
         public DataTable TimKiem(string ten)
         {
             string query = "select MaHocVien from HocVien where HoTen = '" + ten + "'";
@@ -188,9 +200,20 @@ namespace PTTK_DAO
 
             sql = "Select SoLuongSV from HocPhanMo where MaHocPhan = " + mahocphan + " and " +
                 "Nam = " + nam + " and Khoa = " + khoa;
-            string siso = DataProvider.GetFieldValues(sql);
 
-            DataProvider.Con.Close();
+            string siso = "";
+
+            try
+            {
+                siso = DataProvider.GetFieldValues(sql);
+
+                DataProvider.Con.Close();
+            }
+            catch
+            {
+                DataProvider.Con.Close();
+            }
+
             return siso;
         }
 
@@ -235,6 +258,21 @@ namespace PTTK_DAO
                 DataProvider.Con.Close();
                 return false;
             }
+        }
+
+        public DataTable DemHocVien()
+        {
+            DataProvider.Con.Open();
+
+            string query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,count(KQHP.MaHocVien) SoLuongHocVien" +
+                " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien" +
+                " group by HP.TenHocPhan,KQHP.Nam,KQHP.Khoa";
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
         }
     }
 }

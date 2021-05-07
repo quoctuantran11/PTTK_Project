@@ -37,5 +37,10 @@ namespace PTTK_Project
                 }
             }
         }
+
+        private void fXemKQTL_Load(object sender, EventArgs e)
+        {
+            KetQuaThiLaiBUS.Instance.HienThiToanBo(dgvKetqua);
+        }
     }
 }

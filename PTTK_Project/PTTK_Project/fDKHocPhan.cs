@@ -28,12 +28,36 @@ namespace PTTK_Project
 
         private void btnKiemTraSiSo_Click(object sender, EventArgs e)
         {
-            string sisotoida = KetQuaDangKyHocPhanBUS.Instance.LaySiSo(cmbNam.Text, cmbKhoa.Text, cmbHocPhan.Text);
-            string sisodk = KetQuaDangKyHocPhanBUS.Instance.LaySiSoDK(cmbNam.Text, cmbKhoa.Text, cmbHocPhan.Text);
+            if (cmbHocPhan.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn học phần!", "Thông báo");
+                
+            }
+            else
+            {
+                if (cmbNam.Text == "")
+                {
+                    MessageBox.Show("Bạn chưa chọn năm!", "Thông báo");
+                }
+                else
+                {
+                    if (cmbKhoa.Text == "")
+                    {
+                        MessageBox.Show("Bạn chưa chọn khóa!", "Thông báo");
+                    }
+                    else
+                    {
+                        string sisotoida = KetQuaDangKyHocPhanBUS.Instance.LaySiSo(cmbNam.Text, cmbKhoa.Text, cmbHocPhan.Text);
+                        string sisodk = KetQuaDangKyHocPhanBUS.Instance.LaySiSoDK(cmbNam.Text, cmbKhoa.Text, cmbHocPhan.Text);
 
-            string thongbao = "Sĩ số của lớp hiện tại là " + sisodk + "/" + sisotoida;
+                        
+                            string thongbao = "Sĩ số của lớp hiện tại là " + sisodk + "/" + sisotoida;
 
-            MessageBox.Show(thongbao, "Thông báo");
+                            MessageBox.Show(thongbao, "Thông báo");
+                        
+                    }
+                }
+            }
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)

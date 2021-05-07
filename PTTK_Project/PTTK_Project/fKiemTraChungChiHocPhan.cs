@@ -18,31 +18,11 @@ namespace PTTK_Project
             InitializeComponent();
         }
 
-        private void chbTrungTamNay_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chbTrungTamNay.Checked == true)
-            {
-                chbTrungTamKhac.Checked = false;
-                lblTrungTam.Visible = false;
-                txbTrungTam.Visible = false;
-            }
-        }
-
-        private void chbTrungTamKhac_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chbTrungTamKhac.Checked == true)
-            {
-                chbTrungTamNay.Checked = false;
-                lblTrungTam.Visible = true;
-                txbTrungTam.Visible = true;
-            }
-        }
-
         private void btnKiemTra_Click(object sender, EventArgs e)
         {
             if (txbChungChi.Text != "")
             {
-                if (chbTrungTamNay.Checked == true)
+                if (rbTrungTamNay.Checked == true)
                 {
                     if (ChungChiHocPhanTrungTamBUS.Instance.KiemTraDuLieu(txbChungChi.Text))
                     {
@@ -54,7 +34,7 @@ namespace PTTK_Project
                     }
                 }
 
-                if (chbTrungTamKhac.Checked == true)
+                if (rbTrungTamKhac.Checked == true)
                 {
                     if (txbTrungTam.Text == "")
                     {
@@ -87,17 +67,45 @@ namespace PTTK_Project
             }
             else
             {
-                if (chbTrungTamNay.Checked == true)
+                if (rbTrungTamNay.Checked == true)
                 {
                     ChungChiTrungTam_HocVienBUS.Instance.GhiHoSo(txbHoTen.Text, txbChungChi.Text);
                     this.Close();
                 }
 
-                if (chbTrungTamKhac.Checked == true)
+                if (rbTrungTamKhac.Checked == true)
                 {
                     ChungChiNgoaiTrungTam_HocVienBUS.Instance.GhiHoSo(txbHoTen.Text, txbChungChi.Text);
                     this.Close();
                 }
+            }
+        }
+
+        private void fKiemTraChungChiHocPhan_Load(object sender, EventArgs e)
+        {
+            rbTrungTamNay.Checked = true;
+
+
+
+        }
+
+        private void rbTrungTamNay_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbTrungTamNay.Checked == true)
+            {
+
+                lblTrungTam.Visible = false;
+                txbTrungTam.Visible = false;
+            }
+        }
+
+        private void rbTrungTamKhac_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbTrungTamKhac.Checked == true)
+            {
+
+                lblTrungTam.Visible = true;
+                txbTrungTam.Visible = true;
             }
         }
     }

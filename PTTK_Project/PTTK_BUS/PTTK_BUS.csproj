@@ -50,7 +50,9 @@
     <Compile Include="ChungChiHocPhanNgoaiTrungTamBUS.cs" />
     <Compile Include="ChungChiHocPhanTrungTamBUS.cs" />
     <Compile Include="ChungChiNgoaiTrungTam_HocVienBUS.cs" />
+    <Compile Include="ChungChiQuocTeBUS.cs" />
     <Compile Include="ChungChiTrungTam_HocVienBUS.cs" />
+    <Compile Include="DotThiBUS.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +69,7 @@
     <Compile Include="HocVienBUS.cs" />
     <Compile Include="KetQuaDangKyHocPhanBUS.cs" />
     <Compile Include="KetQuaThiLaiBUS.cs" />
+    <Compile Include="LichThiBUS.cs" />
     <Compile Include="Nam_KhoaBUS.cs" />
     <Compile Include="NguoiThamDuThiBUS.cs" />
     <Compile Include="Program.cs" />

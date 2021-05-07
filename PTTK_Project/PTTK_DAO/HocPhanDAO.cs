@@ -36,6 +36,15 @@ namespace PTTK_DAO
             DataProvider.Disconnect();
             return table;
         }
+
+        public DataTable XemToanBo()
+        {
+            string query = "select * from HocPhan";
+            DataProvider.Connect();
+            DataTable table = DataProvider.GetDataToTable(query);
+            DataProvider.Disconnect();
+            return table;
+        }
     }
 }
 
