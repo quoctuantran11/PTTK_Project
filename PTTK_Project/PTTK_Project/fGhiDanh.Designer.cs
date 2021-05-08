@@ -227,7 +227,7 @@ namespace PTTK_Project
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fGhiDanh";
-            this.Text = "GhiDanh";
+            this.Text = "Ghi Danh";
             this.ResumeLayout(false);
             this.PerformLayout();
 

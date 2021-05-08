@@ -228,7 +228,7 @@ namespace PTTK_Project
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fDKHocPhan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DKHocPhan";
+            this.Text = "Đăng ký học phần";
             this.Load += new System.EventHandler(this.fDKHocPhan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

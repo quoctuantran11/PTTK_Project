@@ -1,7 +1,7 @@
 ﻿
 namespace PTTK_Project
 {
-    partial class fKiemTraChungChiHocPhan
+    partial class fTiepNhanChungChiHocPhan
     {
         /// <summary>
         /// Required designer variable.
@@ -152,7 +152,7 @@ namespace PTTK_Project
             this.rbTrungTamKhac.UseVisualStyleBackColor = true;
             this.rbTrungTamKhac.CheckedChanged += new System.EventHandler(this.rbTrungTamKhac_CheckedChanged);
             // 
-            // fKiemTraChungChiHocPhan
+            // fTiepNhanChungChiHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,8 +168,8 @@ namespace PTTK_Project
             this.Controls.Add(this.txbChungChi);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Name = "fKiemTraChungChiHocPhan";
-            this.Text = "KiemTraChungChiHocPhan";
+            this.Name = "fTiepNhanChungChiHocPhan";
+            this.Text = "Tiếp nhận chứng chỉ học phần cơ bản";
             this.Load += new System.EventHandler(this.fKiemTraChungChiHocPhan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

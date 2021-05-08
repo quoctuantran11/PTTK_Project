@@ -95,12 +95,12 @@ namespace PTTK_Project
             KetQuaDangKyHocPhanBUS.Instance.HienToanBo(dgvDKHP);
 
             Namcmb.SelectedIndexChanged -= Namcmb_SelectedIndexChanged;
-            Namcmb.DataSource = KetQuaDangKyHocPhanBUS.Instance.HienNamvaKhoa();
+            Namcmb.DataSource = KetQuaDangKyHocPhanBUS.Instance.HienNam();
             Namcmb.DisplayMember = "Nam";
             Namcmb.SelectedIndexChanged += Namcmb_SelectedIndexChanged;
 
             Khoacmb.SelectedIndexChanged -= Khoacmb_SelectedIndexChanged;
-            Khoacmb.DataSource = KetQuaDangKyHocPhanBUS.Instance.HienNamvaKhoa();
+            Khoacmb.DataSource = KetQuaDangKyHocPhanBUS.Instance.HienKhoa();
             Khoacmb.DisplayMember = "Khoa";
             Khoacmb.SelectedIndexChanged += Khoacmb_SelectedIndexChanged;
         }

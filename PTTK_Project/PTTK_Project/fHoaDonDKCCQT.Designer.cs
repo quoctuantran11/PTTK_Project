@@ -38,27 +38,30 @@
             // 
             // txtMaThiSinh
             // 
-            this.txtMaThiSinh.Location = new System.Drawing.Point(119, 28);
+            this.txtMaThiSinh.Location = new System.Drawing.Point(159, 35);
+            this.txtMaThiSinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaThiSinh.Name = "txtMaThiSinh";
-            this.txtMaThiSinh.Size = new System.Drawing.Size(411, 26);
+            this.txtMaThiSinh.Size = new System.Drawing.Size(547, 31);
             this.txtMaThiSinh.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(7, 27);
+            this.label1.Location = new System.Drawing.Point(9, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 25);
+            this.label1.Size = new System.Drawing.Size(144, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã thí sinh";
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTimKiem.Location = new System.Drawing.Point(550, 20);
+            this.btnTimKiem.Location = new System.Drawing.Point(733, 25);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(102, 39);
+            this.btnTimKiem.Size = new System.Drawing.Size(136, 49);
             this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
@@ -67,20 +70,22 @@
             // dgvHDDKCCQT
             // 
             this.dgvHDDKCCQT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHDDKCCQT.Location = new System.Drawing.Point(12, 68);
+            this.dgvHDDKCCQT.Location = new System.Drawing.Point(16, 85);
+            this.dgvHDDKCCQT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvHDDKCCQT.Name = "dgvHDDKCCQT";
             this.dgvHDDKCCQT.ReadOnly = true;
             this.dgvHDDKCCQT.RowHeadersWidth = 62;
             this.dgvHDDKCCQT.RowTemplate.Height = 28;
-            this.dgvHDDKCCQT.Size = new System.Drawing.Size(640, 322);
+            this.dgvHDDKCCQT.Size = new System.Drawing.Size(853, 402);
             this.dgvHDDKCCQT.TabIndex = 3;
             // 
             // btnGhiNhan
             // 
             this.btnGhiNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnGhiNhan.Location = new System.Drawing.Point(244, 397);
+            this.btnGhiNhan.Location = new System.Drawing.Point(325, 496);
+            this.btnGhiNhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGhiNhan.Name = "btnGhiNhan";
-            this.btnGhiNhan.Size = new System.Drawing.Size(142, 41);
+            this.btnGhiNhan.Size = new System.Drawing.Size(189, 51);
             this.btnGhiNhan.TabIndex = 4;
             this.btnGhiNhan.Text = "Ghi nhận";
             this.btnGhiNhan.UseVisualStyleBackColor = true;
@@ -88,16 +93,17 @@
             // 
             // fHoaDonDKCCQT
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 450);
+            this.ClientSize = new System.Drawing.Size(885, 562);
             this.Controls.Add(this.btnGhiNhan);
             this.Controls.Add(this.dgvHDDKCCQT);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMaThiSinh);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fHoaDonDKCCQT";
-            this.Text = "fHoaDonDKCCQT";
+            this.Text = "Hóa đơn đăng ký chứng chỉ quốc tế";
             this.Load += new System.EventHandler(this.fHoaDonDKCCQT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDDKCCQT)).EndInit();
             this.ResumeLayout(false);

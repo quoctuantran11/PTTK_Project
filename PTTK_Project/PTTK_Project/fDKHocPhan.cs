@@ -20,7 +20,7 @@ namespace PTTK_Project
 
         private void btnGNCC_Click(object sender, EventArgs e)
         {
-            fKiemTraChungChiHocPhan kiemtra = new fKiemTraChungChiHocPhan();
+            fTiepNhanChungChiHocPhan kiemtra = new fTiepNhanChungChiHocPhan();
             this.Hide();
             kiemtra.ShowDialog();
             this.Show();

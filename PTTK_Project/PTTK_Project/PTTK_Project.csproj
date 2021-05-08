@@ -209,11 +209,11 @@
     <Compile Include="fKetQuaThiLai.Designer.cs">
       <DependentUpon>fKetQuaThiLai.cs</DependentUpon>
     </Compile>
-    <Compile Include="fKiemTraChungChiHocPhan.cs">
+    <Compile Include="fTiepNhanChungChiHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fKiemTraChungChiHocPhan.Designer.cs">
-      <DependentUpon>fKiemTraChungChiHocPhan.cs</DependentUpon>
+    <Compile Include="fTiepNhanChungChiHocPhan.Designer.cs">
+      <DependentUpon>fTiepNhanChungChiHocPhan.cs</DependentUpon>
     </Compile>
     <Compile Include="fNhapDiemThiLai.cs">
       <SubType>Form</SubType>
@@ -334,8 +334,8 @@
     <EmbeddedResource Include="fKetQuaThiLai.resx">
       <DependentUpon>fKetQuaThiLai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fKiemTraChungChiHocPhan.resx">
-      <DependentUpon>fKiemTraChungChiHocPhan.cs</DependentUpon>
+    <EmbeddedResource Include="fTiepNhanChungChiHocPhan.resx">
+      <DependentUpon>fTiepNhanChungChiHocPhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fNhapDiemThiLai.resx">
       <DependentUpon>fNhapDiemThiLai.cs</DependentUpon>

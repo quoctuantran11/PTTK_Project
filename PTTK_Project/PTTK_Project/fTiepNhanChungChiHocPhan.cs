@@ -11,9 +11,9 @@ using PTTK_BUS;
 
 namespace PTTK_Project
 {
-    public partial class fKiemTraChungChiHocPhan : Form
+    public partial class fTiepNhanChungChiHocPhan : Form
     {
-        public fKiemTraChungChiHocPhan()
+        public fTiepNhanChungChiHocPhan()
         {
             InitializeComponent();
         }

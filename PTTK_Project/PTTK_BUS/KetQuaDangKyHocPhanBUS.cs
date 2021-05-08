@@ -49,9 +49,14 @@ namespace PTTK_BUS
             data.DataSource = KetQuaDangKyHocPhanDAO.Instance.HienTheoNamvaKhoa(ten, nam, khoa);
         }
 
-        public DataTable HienNamvaKhoa()
+        public DataTable HienNam()
         {
-            return KetQuaDangKyHocPhanDAO.Instance.HienNamvaKhoa();
+            return KetQuaDangKyHocPhanDAO.Instance.HienNam();
+        }
+
+        public DataTable HienKhoa()
+        {
+            return KetQuaDangKyHocPhanDAO.Instance.HienKhoa();
         }
 
         public bool TimKiem(DataGridView data, string ten)
@@ -98,6 +103,21 @@ namespace PTTK_BUS
         public void DemHocVien(DataGridView data)
         {
             data.DataSource = KetQuaDangKyHocPhanDAO.Instance.DemHocVien();
+        }
+
+        public void ThongKeTheoNam(DataGridView data, string nam)
+        {
+            data.DataSource = KetQuaDangKyHocPhanDAO.Instance.ThongKeTheoNam(nam);
+        }
+
+        public void ThongKeTheoQuy(DataGridView data, string khoa)
+        {
+            data.DataSource = KetQuaDangKyHocPhanDAO.Instance.ThongKeTheoQuy(khoa);
+        }
+
+        public void ThongKeTheoNamvaQuy(DataGridView data, string nam, string khoa)
+        {
+            data.DataSource = KetQuaDangKyHocPhanDAO.Instance.ThongKeTheoNamvaQuy(nam, khoa);
         }
     }
 }

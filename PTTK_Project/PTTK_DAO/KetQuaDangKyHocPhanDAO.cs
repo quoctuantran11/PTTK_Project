@@ -128,11 +128,23 @@ namespace PTTK_DAO
             return data;
         }
 
-        public DataTable HienNamvaKhoa()
+        public DataTable HienNam()
         {
             DataProvider.Con.Open();
 
-            string query = "Select distinct Nam, Khoa from KetQuaDangKyHocPhan";
+            string query = "Select distinct Nam from KetQuaDangKyHocPhan";
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public DataTable HienKhoa()
+        {
+            DataProvider.Con.Open();
+
+            string query = "Select distinct Khoa from KetQuaDangKyHocPhan";
 
             DataTable data = DataProvider.GetDataToTable(query);
 
@@ -268,6 +280,50 @@ namespace PTTK_DAO
                 " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
                 " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien" +
                 " group by HP.TenHocPhan,KQHP.Nam,KQHP.Khoa";
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public DataTable ThongKeTheoNam(string nam)
+        {
+            DataProvider.Con.Open();
+            string query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,count(KQHP.MaHocVien) SoLuongHocVien" +
+                    " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                    " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien" +
+                    " where KQHP.Nam = " + nam + " group by HP.TenHocPhan,KQHP.Nam,KQHP.Khoa";
+
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public DataTable ThongKeTheoQuy(string khoa)
+        {
+            DataProvider.Con.Open();
+            string query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,count(KQHP.MaHocVien) SoLuongHocVien" +
+                    " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                    " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien" +
+                    " where KQHP.Khoa = " + khoa + " group by HP.TenHocPhan,KQHP.Nam,KQHP.Khoa";
+
+
+            DataTable data = DataProvider.GetDataToTable(query);
+
+            DataProvider.Con.Close();
+            return data;
+        }
+
+        public DataTable ThongKeTheoNamvaQuy(string nam, string khoa)
+        {
+            DataProvider.Con.Open();
+            string query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,count(KQHP.MaHocVien) SoLuongHocVien" +
+                    " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
+                    " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien where KQHP.Nam = " + nam +
+                    " and KQHP.Khoa = " + khoa + " group by HP.TenHocPhan,KQHP.Nam,KQHP.Khoa";
 
             DataTable data = DataProvider.GetDataToTable(query);
 

@@ -67,7 +67,6 @@ C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fGhiDanh.resources
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fDKHocPhan.resources
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fKetQuaThiLai.resources
-C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fKiemTraChungChiHocPhan.resources
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fNhapDiemThiLai.resources
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fThongKeHocVien.resources
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fXemLichThi.resources
@@ -144,3 +143,4 @@ C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_Project
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fHoaDonDKCCQT.resources
 C:\Users\NguyenTrungKien\Documents\GitHub\PTTK_Project\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fHoaDonDKHP.resources
 C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fHoaDonDKHP.resources
+C:\Users\Perry\Desktop\PTTK_TH\PTTK_Project\PTTK_Project\obj\Debug\PTTK_Project.fTiepNhanChungChiHocPhan.resources

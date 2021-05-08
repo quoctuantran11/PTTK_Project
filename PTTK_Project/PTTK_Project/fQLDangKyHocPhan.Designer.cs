@@ -184,7 +184,7 @@ namespace PTTK_Project
             this.Controls.Add(this.dgvDKHP);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fQLDangKyHocPhan";
-            this.Text = "QLDangKyHocPhan";
+            this.Text = "Quản Lý Đăng Ký Học Phần";
             this.Load += new System.EventHandler(this.fQLDangKyHocPhan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDKHP)).EndInit();
             this.ResumeLayout(false);

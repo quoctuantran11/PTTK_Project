@@ -201,7 +201,7 @@ namespace PTTK_Project
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fNhapDiemThiLai";
-            this.Text = "NhapDiemThiLai";
+            this.Text = "Nhập Điểm Thi Lại";
             this.ResumeLayout(false);
             this.PerformLayout();
 
