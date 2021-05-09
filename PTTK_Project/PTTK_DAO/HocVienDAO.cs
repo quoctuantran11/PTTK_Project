@@ -39,15 +39,26 @@ namespace PTTK_DAO
             return data;
         }
 
-        public void ThemHocVien(string hoten, string gioitinh, string ngaysinh, string cmnd, string sdt, string diachi)
+        public bool ThemHocVien(string hoten, string gioitinh, string ngaysinh, string cmnd, string sdt, string diachi)
         {
             DataProvider.Con.Open();
             string sql = "Insert into HocVien values ('" + hoten + "','" + cmnd + "','"
                 + diachi + "','" + ngaysinh + "','" + gioitinh + "','" + sdt + "')";
 
-            DataProvider.RunSQL(sql);
+            try
+            {
+                DataProvider.RunSQL(sql);
+                DataProvider.Con.Close();
+                return true;
+            }
+            catch
+            {
+                DataProvider.Con.Close();
+                return false;
+            }
+            
        
-            DataProvider.Con.Close();
+            
         }
     }
 }

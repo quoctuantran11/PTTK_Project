@@ -95,15 +95,12 @@ namespace PTTK_Project
             // 
             this.cmbNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmbNam.FormattingEnabled = true;
-            this.cmbNam.Items.AddRange(new object[] {
-            "2020",
-            "2021",
-            "2022"});
             this.cmbNam.Location = new System.Drawing.Point(248, 183);
             this.cmbNam.Margin = new System.Windows.Forms.Padding(4);
             this.cmbNam.Name = "cmbNam";
             this.cmbNam.Size = new System.Drawing.Size(134, 37);
             this.cmbNam.TabIndex = 40;
+            this.cmbNam.SelectedIndexChanged += new System.EventHandler(this.cmbNam_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -120,15 +117,12 @@ namespace PTTK_Project
             // 
             this.cmbKhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cmbKhoa.FormattingEnabled = true;
-            this.cmbKhoa.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
             this.cmbKhoa.Location = new System.Drawing.Point(248, 248);
             this.cmbKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.cmbKhoa.Name = "cmbKhoa";
             this.cmbKhoa.Size = new System.Drawing.Size(134, 37);
             this.cmbKhoa.TabIndex = 42;
+            this.cmbKhoa.SelectedIndexChanged += new System.EventHandler(this.cmbKhoa_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -210,7 +204,7 @@ namespace PTTK_Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 615);
+            this.ClientSize = new System.Drawing.Size(818, 615);
             this.Controls.Add(this.btnKiemTraSiSo);
             this.Controls.Add(this.btnGNCC);
             this.Controls.Add(this.txbLoaiHocPhan);

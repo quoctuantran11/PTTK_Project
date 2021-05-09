@@ -74,16 +74,49 @@ namespace PTTK_Project
 
         private void fDKHocPhan_Load(object sender, EventArgs e)
         {
-            cmbHocPhan.DataSource = HocPhanMoBUS.Instance.HienThiHocPhan();
-            cmbHocPhan.DisplayMember = "TenHocPhan";
-            cmbHocPhan.ValueMember = "MaHocPhan";
+            cmbNam.DataSource = Nam_KhoaBUS.Instance.HienThiNam();
+            cmbNam.DisplayMember = "Nam";
+            cmbNam.SelectedIndex = -1;
 
-            cmbHocPhan.SelectedIndex = -1;
+            cmbKhoa.DataSource = Nam_KhoaBUS.Instance.HienThiKhoa();
+            cmbKhoa.DisplayMember = "Khoa";
+            cmbKhoa.SelectedIndex = -1;
         }
 
         private void cmbHocPhan_SelectedIndexChanged(object sender, EventArgs e)
         {
             txbLoaiHocPhan.Text = HocPhanMoBUS.Instance.HienThiLoaiHocPhan(cmbHocPhan.Text);
+
+            if(txbLoaiHocPhan.Text == "Co ban")
+            {
+                btnGNCC.Enabled = false;
+            }
+            else
+            {
+                btnGNCC.Enabled = true;
+            }
+        }
+
+        private void cmbNam_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbNam.SelectedIndex != -1 && cmbKhoa.SelectedIndex != -1)
+            {
+                cmbHocPhan.DataSource = HocPhanMoBUS.Instance.HienThiHocPhanMo(cmbNam.Text, cmbKhoa.Text);
+                cmbHocPhan.DisplayMember = "TenHocPhan";
+                cmbHocPhan.ValueMember = "MaHocPhan";
+                cmbHocPhan.SelectedIndex = -1;
+            }
+        }
+
+        private void cmbKhoa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbNam.SelectedIndex != -1 && cmbKhoa.SelectedIndex != -1)
+            {
+                cmbHocPhan.DataSource = HocPhanMoBUS.Instance.HienThiHocPhanMo(cmbNam.Text, cmbKhoa.Text);
+                cmbHocPhan.DisplayMember = "TenHocPhan";
+                cmbHocPhan.ValueMember = "MaHocPhan";
+                cmbHocPhan.SelectedIndex = -1;
+            }
         }
     }
 }

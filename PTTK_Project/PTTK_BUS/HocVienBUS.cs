@@ -28,9 +28,9 @@ namespace PTTK_BUS
 
         private HocVienBUS() { }
 
-        public void ThemHocVien(string hoten, string gioitinh, string ngaysinh, string cmnd, string sdt, string diachi)
+        public bool ThemHocVien(string hoten, string gioitinh, string ngaysinh, string cmnd, string sdt, string diachi)
         {
-            HocVienDAO.Instance.ThemHocVien(hoten, gioitinh, ngaysinh, cmnd, sdt, diachi);
+            return HocVienDAO.Instance.ThemHocVien(hoten, gioitinh, ngaysinh, cmnd, sdt, diachi);
         }
 
         public bool KiemTraTrungLap(string cmnd)

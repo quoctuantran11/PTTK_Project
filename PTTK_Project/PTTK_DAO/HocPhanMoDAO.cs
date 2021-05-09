@@ -40,7 +40,20 @@ namespace PTTK_DAO
 
             return data;
         }
-        
+
+        public DataTable LayHocPhanMo(string nam, string khoa)
+        {
+            DataProvider.Con.Open();
+            string sql = "Select HPM.MaHocPhan, HP.TenHocPhan, HPM.Nam, HPM.Khoa from HocPhan HP join HocPhanMo HPM on " +
+                "HP.MaHocPhan = HPM.MaHocPhan where HPM.Nam = " + nam + " and HPM.Khoa = " + khoa;
+
+            DataTable data = DataProvider.GetDataToTable(sql);
+
+            DataProvider.Con.Close();
+
+            return data;
+        }
+
         public string LayLoaiHocPhan(string tenhocphan)
         {
             DataProvider.Con.Open();

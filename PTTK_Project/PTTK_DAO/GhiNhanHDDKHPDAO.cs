@@ -28,6 +28,7 @@ namespace PTTK_DAO
             string query = "insert into HoaDonHocPhan (NgayLap, TongTien, MaHocVien) values ('" + ngaylap + "'," + tongtien + "," + mahocvien + ")";
             DataProvider.Connect();
             SqlCommand command = new SqlCommand(query, DataProvider.Con);
+
             if (command.ExecuteNonQuery() > 0)
             {
                 DataProvider.Disconnect();

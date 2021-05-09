@@ -45,6 +45,23 @@ namespace PTTK_DAO
             DataProvider.Disconnect();
             return table;
         }
+
+        public bool ThemHocPhan(string ten, string loai)
+        {
+            string query = "Insert into HocPhan values ('" + loai + "','" + ten + "')";
+            DataProvider.Connect();
+            try
+            {
+                DataProvider.RunSQL(query);
+                DataProvider.Disconnect();
+                return true;
+            }
+            catch
+            {
+                DataProvider.Disconnect();
+                return false;
+            }
+        }
     }
 }
 

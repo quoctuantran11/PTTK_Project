@@ -27,18 +27,16 @@ namespace PTTK_DAO
         {
             string query = "select distinct Nam from Nam_Khoa";
             DataProvider.Connect();
-            DataTable table = new DataTable();
-            table = DataProvider.GetDataToTable(query);
+            DataTable table = DataProvider.GetDataToTable(query);
             DataProvider.Disconnect();
             return table;
         }
 
         public DataTable LayKhoa()
         {
-            string query = "select distinct Khoa, Khoa from Nam_Khoa";
+            string query = "select distinct Khoa from Nam_Khoa";
             DataProvider.Connect();
-            DataTable table = new DataTable();
-            table = DataProvider.GetDataToTable(query);
+            DataTable table = DataProvider.GetDataToTable(query);
             DataProvider.Disconnect();
             return table;
         }

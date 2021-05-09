@@ -55,8 +55,14 @@ namespace PTTK_Project
                     }
                     else
                     {
-                        HocVienBUS.Instance.ThemHocVien(txbHoTen.Text, cmbGioiTinh.Text, dtpNgaySinh.Value.ToString("yyyyMMdd"), txbCMND.Text, txbSDT.Text, txbDiaChi.Text);
-                        this.Close();
+                        if (!HocVienBUS.Instance.ThemHocVien(txbHoTen.Text, cmbGioiTinh.Text, dtpNgaySinh.Value.ToString("yyyyMMdd"), txbCMND.Text, txbSDT.Text, txbDiaChi.Text))
+                        {
+                            MessageBox.Show("Lỗi!!!", "Thông báo");
+                        }
+                        else
+                        {
+                            this.Close();
+                        }
                     }
                 }
                 else

@@ -32,7 +32,12 @@ namespace PTTK_BUS
         {
             return HocPhanMoDAO.Instance.LayHocPhan();
         }
-        
+
+        public DataTable HienThiHocPhanMo(string nam, string khoa)
+        {
+            return HocPhanMoDAO.Instance.LayHocPhanMo(nam,khoa);
+        }
+
         public string HienThiLoaiHocPhan(string tenhocphan)
         {
             return HocPhanMoDAO.Instance.LayLoaiHocPhan(tenhocphan);

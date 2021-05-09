@@ -37,5 +37,10 @@ namespace PTTK_BUS
         {
             data.DataSource = HocPhanDAO.Instance.XemToanBo();
         }
+
+        public bool GhiHocPhan(string ten, string loai)
+        {
+            return HocPhanDAO.Instance.ThemHocPhan(ten, loai);
+        }
     }
 }

@@ -276,7 +276,7 @@ namespace PTTK_DAO
         {
             DataProvider.Con.Open();
 
-            string query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa,count(KQHP.MaHocVien) SoLuongHocVien" +
+            string query = "Select HP.TenHocPhan,KQHP.Nam,KQHP.Khoa Quy,count(KQHP.MaHocVien) SoLuongHocVien" +
                 " from KetQuaDangKyHocPhan KQHP join HocPhan HP on KQHP.MaHocPhan = HP.MaHocPhan" +
                 " join HocVien HV on KQHP.MaHocVien = HV.MaHocVien" +
                 " group by HP.TenHocPhan,KQHP.Nam,KQHP.Khoa";
