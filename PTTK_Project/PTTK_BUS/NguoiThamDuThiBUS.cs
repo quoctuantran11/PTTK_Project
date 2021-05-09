@@ -27,7 +27,7 @@ namespace PTTK_BUS
 
         private NguoiThamDuThiBUS() { }
 
-        public void GhiNhan(string hoten, string gioitinh, DateTime ngaysinh, string cmnd, string sdt, string diachi)
+        public void GhiNhan(string hoten, string gioitinh, string ngaysinh, string cmnd, string sdt, string diachi)
         {
             NguoiThamDuThiDAO.Instance.GhiNhan(hoten, gioitinh, ngaysinh, cmnd, sdt, diachi);
         }

@@ -42,7 +42,7 @@ namespace PTTK_Project
             }
             else
             {
-                GiaoVienBUS.Instance.ThemGiaoVien(txbHoTen.Text, txbDiaChi.Text, dtpNgaySinh.Value, cmbPhai.Text, txbSDT.Text);
+                GiaoVienBUS.Instance.ThemGiaoVien(txbHoTen.Text, txbDiaChi.Text, dtpNgaySinh.Value.ToString("yyyyMMdd"), cmbPhai.Text, txbSDT.Text);
                 this.Close();
             }
         }

@@ -29,32 +29,17 @@ namespace PTTK_DAO
 
         private KetQuaThiLaiDAO() { }
 
-        public List<KetQuaThiLai> HienThiToanBo()
+        public DataTable HienThiToanBo()
         {
-            List<KetQuaThiLai> ketquathilai = new List<KetQuaThiLai>();
-
-            string query = "select * from KetQuaThiLai";
+            string query = "select KQTL.MaHocPhan, HP.TenHocPhan, KQTL.Nam, KQTL.Khoa, HV.HoTen, KQTL.Diem, KQTL.NgayThiLai, KQTL.SoLanDaThiLai " +
+                "from KetQuaThiLai KQTL join HocPhan HP on KQTL.MaHocPhan = HP.MaHocPhan " +
+                "join HocVien HV on KQTL.MaHocVien = HV.MaHocVien";
             DataProvider.Con.Open();
 
             DataTable data = DataProvider.GetDataToTable(query);
 
-            foreach(DataRow item in data.Rows)
-            {
-                string maHocVien = item["MaHocVien"].ToString();
-                string maHocPhan = item["MaHocPhan"].ToString();
-                string nam = item["Nam"].ToString();
-                string khoa = item["Khoa"].ToString();
-                DateTime Ngaythilai = (DateTime)item["NgayThiLai"];
-                string diem = item["Diem"].ToString();
-                string Solanthilai = item["SoLanDaThiLai"].ToString();
-
-                KetQuaThiLai newKqtl = new KetQuaThiLai(maHocPhan, nam, khoa, maHocVien, Ngaythilai, diem, Solanthilai);
-
-                ketquathilai.Add(newKqtl);
-            }
-
             DataProvider.Con.Close();
-            return ketquathilai;
+            return data;
         }
 
         public DataTable HienThiComboNam(string monhoc, string cmnd)
@@ -172,35 +157,26 @@ namespace PTTK_DAO
 
         }    
 
-        public List<KetQuaThiLai> TimKiem(string ten)
+        public DataTable TimKiem(string ten)
         {
-            List<KetQuaThiLai> ketquathilai = new List<KetQuaThiLai>();
-
             string query = "select MaHocVien from HocVien where HoTen = '" + ten + "'";
             DataProvider.Con.Open();
 
             string maHocVien = DataProvider.GetFieldValues(query);
 
-            query = "Select * from KetQuaThiLai where MaHocVien = " + maHocVien;
+            if (maHocVien == "")
+            {
+                maHocVien = "0";
+            }
+
+            query = "select KQTL.MaHocPhan, HP.TenHocPhan, KQTL.Nam, KQTL.Khoa, HV.HoTen, KQTL.Diem, KQTL.NgayThiLai, KQTL.SoLanDaThiLai " +
+                "from KetQuaThiLai KQTL join HocPhan HP on KQTL.MaHocPhan = HP.MaHocPhan " +
+                "join HocVien HV on KQTL.MaHocVien = HV.MaHocVien where HV.MaHocVien = " + maHocVien;
 
             DataTable data = DataProvider.GetDataToTable(query);
 
-            foreach (DataRow item in data.Rows)
-            {
-                string maHocPhan = item["MaHocPhan"].ToString();
-                string nam = item["Nam"].ToString();
-                string khoa = item["Khoa"].ToString();
-                DateTime Ngaythilai = (DateTime)item["NgayThiLai"];
-                string diem = item["Diem"].ToString();
-                string Solanthilai = item["SoLanDaThiLai"].ToString();
-
-                KetQuaThiLai newKqtl = new KetQuaThiLai(maHocPhan, nam, khoa, maHocVien, Ngaythilai, diem, Solanthilai);
-
-                ketquathilai.Add(newKqtl);
-            }
-
             DataProvider.Con.Close();
-            return ketquathilai;
+            return data;
         }
     }
 }

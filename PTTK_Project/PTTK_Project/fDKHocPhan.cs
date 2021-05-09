@@ -50,11 +50,11 @@ namespace PTTK_Project
                         string sisotoida = KetQuaDangKyHocPhanBUS.Instance.LaySiSo(cmbNam.Text, cmbKhoa.Text, cmbHocPhan.Text);
                         string sisodk = KetQuaDangKyHocPhanBUS.Instance.LaySiSoDK(cmbNam.Text, cmbKhoa.Text, cmbHocPhan.Text);
 
-                        
-                            string thongbao = "Sĩ số của lớp hiện tại là " + sisodk + "/" + sisotoida;
 
-                            MessageBox.Show(thongbao, "Thông báo");
-                        
+                        string thongbao = "Sĩ số của lớp hiện tại là " + sisodk + "/" + sisotoida;
+
+                        MessageBox.Show(thongbao, "Thông báo");
+
                     }
                 }
             }

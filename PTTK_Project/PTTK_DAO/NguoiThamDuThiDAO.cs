@@ -27,7 +27,7 @@ namespace PTTK_DAO
 
         private NguoiThamDuThiDAO() { }
 
-        public void GhiNhan(string hoten, string gioitinh, DateTime ngaysinh, string cmnd, string sdt, string diachi)
+        public void GhiNhan(string hoten, string gioitinh, string ngaysinh, string cmnd, string sdt, string diachi)
         {
             DataProvider.Con.Open();
             string sql = "Insert into NguoiThamDuThi values ('" + hoten + "','" + cmnd + "','"

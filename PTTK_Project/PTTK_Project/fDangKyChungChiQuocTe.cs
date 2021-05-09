@@ -63,7 +63,7 @@ namespace PTTK_Project
             }
             else
             {
-                NguoiThamDuThiBUS.Instance.GhiNhan(txbHoten.Text, cmbGioiTinh.Text, dtpNgaySinh.Value, txbCMND.Text, txbSDT.Text, txbDiaChi.Text);
+                NguoiThamDuThiBUS.Instance.GhiNhan(txbHoten.Text, cmbGioiTinh.Text, dtpNgaySinh.Value.ToString("yyyyMMdd"), txbCMND.Text, txbSDT.Text, txbDiaChi.Text);
                 ChiTietLichThiBUS.Instance.GhiNhan(cmbDotThi.Text, txbTenChungChi.Text, txbHoten.Text);
 
                 MessageBox.Show("Hoàn tất ghi danh!", "Thông báo");

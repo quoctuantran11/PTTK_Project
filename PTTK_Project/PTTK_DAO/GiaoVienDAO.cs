@@ -50,7 +50,7 @@ namespace PTTK_DAO
             return data;
         }
 
-        public void ThemGiaoVien(string ten, string diachi, DateTime ngaysinh, string phai, string sdt)
+        public void ThemGiaoVien(string ten, string diachi, string ngaysinh, string phai, string sdt)
         {
             string query = "insert into GiaoVien values ('" + ten + "','" + diachi + "','" + ngaysinh +
                 "','" + phai + "','" + sdt + "')";

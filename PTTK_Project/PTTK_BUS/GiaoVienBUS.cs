@@ -47,7 +47,7 @@ namespace PTTK_BUS
             }
         }
 
-        public void ThemGiaoVien(string ten, string diachi, DateTime ngaysinh, string phai, string sdt)
+        public void ThemGiaoVien(string ten, string diachi, string ngaysinh, string phai, string sdt)
         {
             GiaoVienDAO.Instance.ThemGiaoVien(ten, diachi, ngaysinh, phai, sdt);
         }

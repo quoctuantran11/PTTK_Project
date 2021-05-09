@@ -55,7 +55,7 @@ namespace PTTK_Project
                     }
                     else
                     {
-                        HocVienBUS.Instance.ThemHocVien(txbHoTen.Text, cmbGioiTinh.Text, dtpNgaySinh.Value, txbCMND.Text, txbSDT.Text, txbDiaChi.Text);
+                        HocVienBUS.Instance.ThemHocVien(txbHoTen.Text, cmbGioiTinh.Text, dtpNgaySinh.Value.ToString("yyyyMMdd"), txbCMND.Text, txbSDT.Text, txbDiaChi.Text);
                         this.Close();
                     }
                 }
