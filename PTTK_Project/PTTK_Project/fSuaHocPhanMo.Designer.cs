@@ -30,6 +30,8 @@ namespace PTTK_Project
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbKhoa = new System.Windows.Forms.ComboBox();
+            this.cmbNam = new System.Windows.Forms.ComboBox();
             this.cmbMaGiaoVien = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtSoluongSV = new System.Windows.Forms.TextBox();
@@ -42,8 +44,6 @@ namespace PTTK_Project
             this.label2 = new System.Windows.Forms.Label();
             this.btnSua = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.cmbNam = new System.Windows.Forms.ComboBox();
-            this.cmbKhoa = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,26 @@ namespace PTTK_Project
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(702, 460);
             this.panel1.TabIndex = 9;
+            // 
+            // cmbKhoa
+            // 
+            this.cmbKhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbKhoa.FormattingEnabled = true;
+            this.cmbKhoa.Location = new System.Drawing.Point(220, 100);
+            this.cmbKhoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbKhoa.Name = "cmbKhoa";
+            this.cmbKhoa.Size = new System.Drawing.Size(430, 28);
+            this.cmbKhoa.TabIndex = 16;
+            // 
+            // cmbNam
+            // 
+            this.cmbNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNam.FormattingEnabled = true;
+            this.cmbNam.Location = new System.Drawing.Point(220, 29);
+            this.cmbNam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbNam.Name = "cmbNam";
+            this.cmbNam.Size = new System.Drawing.Size(430, 28);
+            this.cmbNam.TabIndex = 15;
             // 
             // cmbMaGiaoVien
             // 
@@ -192,26 +212,6 @@ namespace PTTK_Project
             this.label9.TabIndex = 10;
             this.label9.Text = "Sửa Học Phần";
             // 
-            // cmbNam
-            // 
-            this.cmbNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbNam.FormattingEnabled = true;
-            this.cmbNam.Location = new System.Drawing.Point(220, 29);
-            this.cmbNam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbNam.Name = "cmbNam";
-            this.cmbNam.Size = new System.Drawing.Size(430, 28);
-            this.cmbNam.TabIndex = 15;
-            // 
-            // cmbKhoa
-            // 
-            this.cmbKhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbKhoa.FormattingEnabled = true;
-            this.cmbKhoa.Location = new System.Drawing.Point(220, 100);
-            this.cmbKhoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbKhoa.Name = "cmbKhoa";
-            this.cmbKhoa.Size = new System.Drawing.Size(430, 28);
-            this.cmbKhoa.TabIndex = 16;
-            // 
             // fSuaHocPhanMo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -222,6 +222,7 @@ namespace PTTK_Project
             this.Controls.Add(this.label9);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "fSuaHocPhanMo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sửa Học Phần Mở";
             this.Load += new System.EventHandler(this.fSuaHocPhanMo_Load);
             this.panel1.ResumeLayout(false);

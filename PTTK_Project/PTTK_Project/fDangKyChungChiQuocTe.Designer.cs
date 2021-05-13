@@ -58,7 +58,7 @@ namespace PTTK_Project
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(28, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 31);
+            this.label2.Size = new System.Drawing.Size(69, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Họ tên";
             // 
@@ -68,7 +68,7 @@ namespace PTTK_Project
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(28, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 31);
+            this.label3.Size = new System.Drawing.Size(82, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Giới tính";
             // 
@@ -78,7 +78,7 @@ namespace PTTK_Project
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.Location = new System.Drawing.Point(28, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 31);
+            this.label4.Size = new System.Drawing.Size(99, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Ngày sinh";
             // 
@@ -88,7 +88,7 @@ namespace PTTK_Project
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.Location = new System.Drawing.Point(28, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 31);
+            this.label5.Size = new System.Drawing.Size(72, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "CMND";
             // 
@@ -98,7 +98,7 @@ namespace PTTK_Project
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label6.Location = new System.Drawing.Point(406, 218);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 31);
+            this.label6.Size = new System.Drawing.Size(83, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "Ngày thi";
             // 
@@ -119,7 +119,7 @@ namespace PTTK_Project
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label8.Location = new System.Drawing.Point(406, 118);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(184, 31);
+            this.label8.Size = new System.Drawing.Size(136, 25);
             this.label8.TabIndex = 8;
             this.label8.Text = "Tên chứng chỉ";
             // 
@@ -132,7 +132,7 @@ namespace PTTK_Project
             "Nu"});
             this.cmbGioiTinh.Location = new System.Drawing.Point(139, 118);
             this.cmbGioiTinh.Name = "cmbGioiTinh";
-            this.cmbGioiTinh.Size = new System.Drawing.Size(115, 37);
+            this.cmbGioiTinh.Size = new System.Drawing.Size(115, 30);
             this.cmbGioiTinh.TabIndex = 10;
             // 
             // dtpNgaySinh
@@ -140,7 +140,7 @@ namespace PTTK_Project
             this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.dtpNgaySinh.Location = new System.Drawing.Point(139, 168);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(226, 35);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(226, 28);
             this.dtpNgaySinh.TabIndex = 11;
             // 
             // dtpNgayThi
@@ -148,7 +148,7 @@ namespace PTTK_Project
             this.dtpNgayThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.dtpNgayThi.Location = new System.Drawing.Point(533, 214);
             this.dtpNgayThi.Name = "dtpNgayThi";
-            this.dtpNgayThi.Size = new System.Drawing.Size(236, 35);
+            this.dtpNgayThi.Size = new System.Drawing.Size(236, 28);
             this.dtpNgayThi.TabIndex = 12;
             // 
             // txbHoten
@@ -156,7 +156,7 @@ namespace PTTK_Project
             this.txbHoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txbHoten.Location = new System.Drawing.Point(139, 76);
             this.txbHoten.Name = "txbHoten";
-            this.txbHoten.Size = new System.Drawing.Size(226, 35);
+            this.txbHoten.Size = new System.Drawing.Size(226, 28);
             this.txbHoten.TabIndex = 13;
             // 
             // txbCMND
@@ -164,7 +164,7 @@ namespace PTTK_Project
             this.txbCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txbCMND.Location = new System.Drawing.Point(139, 218);
             this.txbCMND.Name = "txbCMND";
-            this.txbCMND.Size = new System.Drawing.Size(226, 35);
+            this.txbCMND.Size = new System.Drawing.Size(226, 28);
             this.txbCMND.TabIndex = 14;
             // 
             // txbTenChungChi
@@ -172,7 +172,7 @@ namespace PTTK_Project
             this.txbTenChungChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txbTenChungChi.Location = new System.Drawing.Point(533, 120);
             this.txbTenChungChi.Name = "txbTenChungChi";
-            this.txbTenChungChi.Size = new System.Drawing.Size(236, 35);
+            this.txbTenChungChi.Size = new System.Drawing.Size(236, 28);
             this.txbTenChungChi.TabIndex = 17;
             // 
             // label1
@@ -181,7 +181,7 @@ namespace PTTK_Project
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(186, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(752, 67);
+            this.label1.Size = new System.Drawing.Size(579, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đăng ký chứng chỉ quốc tế";
             // 
@@ -190,7 +190,7 @@ namespace PTTK_Project
             this.txbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txbDiaChi.Location = new System.Drawing.Point(533, 75);
             this.txbDiaChi.Name = "txbDiaChi";
-            this.txbDiaChi.Size = new System.Drawing.Size(236, 35);
+            this.txbDiaChi.Size = new System.Drawing.Size(236, 28);
             this.txbDiaChi.TabIndex = 32;
             // 
             // label10
@@ -199,7 +199,7 @@ namespace PTTK_Project
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label10.Location = new System.Drawing.Point(406, 79);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 31);
+            this.label10.Size = new System.Drawing.Size(71, 25);
             this.label10.TabIndex = 31;
             this.label10.Text = "Địa chỉ";
             // 
@@ -208,7 +208,7 @@ namespace PTTK_Project
             this.txbSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txbSDT.Location = new System.Drawing.Point(139, 271);
             this.txbSDT.Name = "txbSDT";
-            this.txbSDT.Size = new System.Drawing.Size(226, 35);
+            this.txbSDT.Size = new System.Drawing.Size(226, 28);
             this.txbSDT.TabIndex = 30;
             // 
             // label11
@@ -217,7 +217,7 @@ namespace PTTK_Project
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label11.Location = new System.Drawing.Point(28, 275);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(171, 31);
+            this.label11.Size = new System.Drawing.Size(126, 25);
             this.label11.TabIndex = 29;
             this.label11.Text = "Số điện thoại";
             // 
@@ -238,7 +238,7 @@ namespace PTTK_Project
             this.cmbDotThi.FormattingEnabled = true;
             this.cmbDotThi.Location = new System.Drawing.Point(533, 166);
             this.cmbDotThi.Name = "cmbDotThi";
-            this.cmbDotThi.Size = new System.Drawing.Size(138, 37);
+            this.cmbDotThi.Size = new System.Drawing.Size(138, 30);
             this.cmbDotThi.TabIndex = 35;
             // 
             // label7
@@ -247,13 +247,13 @@ namespace PTTK_Project
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label7.Location = new System.Drawing.Point(407, 170);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 31);
+            this.label7.Size = new System.Drawing.Size(67, 25);
             this.label7.TabIndex = 34;
             this.label7.Text = "Đợt thi";
             // 
             // fDangKyChungChiQuocTe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(813, 400);
@@ -280,6 +280,7 @@ namespace PTTK_Project
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Name = "fDangKyChungChiQuocTe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng ký chứng chỉ quốc tế";
             this.Load += new System.EventHandler(this.fDangKyChungChiQuocTe_Load);
             this.ResumeLayout(false);

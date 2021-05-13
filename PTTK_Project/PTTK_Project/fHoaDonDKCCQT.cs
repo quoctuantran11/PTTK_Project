@@ -36,5 +36,10 @@ namespace PTTK_Project
             string mathisinh = txtMaThiSinh.Text;
             HoaDonDKChungChiQuocTe.Instance.TimKiem(dgvHDDKCCQT, mathisinh);
         }
+
+        private void btnHienToanBo_Click(object sender, EventArgs e)
+        {
+            HoaDonDKChungChiQuocTe.Instance.Xem(dgvHDDKCCQT);
+        }
     }
 }
