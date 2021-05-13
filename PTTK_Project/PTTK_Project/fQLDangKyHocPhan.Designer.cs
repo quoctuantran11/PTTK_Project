@@ -46,21 +46,19 @@ namespace PTTK_Project
             // dgvDKHP
             // 
             this.dgvDKHP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDKHP.Location = new System.Drawing.Point(56, 152);
-            this.dgvDKHP.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDKHP.Location = new System.Drawing.Point(42, 122);
             this.dgvDKHP.Name = "dgvDKHP";
             this.dgvDKHP.RowHeadersWidth = 82;
             this.dgvDKHP.RowTemplate.Height = 33;
-            this.dgvDKHP.Size = new System.Drawing.Size(734, 296);
+            this.dgvDKHP.Size = new System.Drawing.Size(550, 237);
             this.dgvDKHP.TabIndex = 0;
             // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnXoa.Location = new System.Drawing.Point(642, 471);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Location = new System.Drawing.Point(641, 317);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(148, 52);
+            this.btnXoa.Size = new System.Drawing.Size(111, 42);
             this.btnXoa.TabIndex = 1;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -69,10 +67,9 @@ namespace PTTK_Project
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSua.Location = new System.Drawing.Point(58, 471);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSua.Location = new System.Drawing.Point(638, 244);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(152, 52);
+            this.btnSua.Size = new System.Drawing.Size(114, 42);
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -81,30 +78,28 @@ namespace PTTK_Project
             // txbHoten
             // 
             this.txbHoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txbHoten.Location = new System.Drawing.Point(180, 35);
-            this.txbHoten.Margin = new System.Windows.Forms.Padding(4);
+            this.txbHoten.Location = new System.Drawing.Point(131, 50);
             this.txbHoten.Name = "txbHoten";
-            this.txbHoten.Size = new System.Drawing.Size(436, 35);
+            this.txbHoten.Size = new System.Drawing.Size(328, 28);
             this.txbHoten.TabIndex = 23;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(52, 35);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(37, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 31);
+            this.label2.Size = new System.Drawing.Size(88, 25);
             this.label2.TabIndex = 22;
             this.label2.Text = "Học viên";
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnTimKiem.Location = new System.Drawing.Point(636, 26);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(6);
+            this.btnTimKiem.Location = new System.Drawing.Point(476, 46);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(154, 48);
+            this.btnTimKiem.Size = new System.Drawing.Size(116, 38);
             this.btnTimKiem.TabIndex = 24;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
@@ -113,10 +108,10 @@ namespace PTTK_Project
             // btnHienToanBo
             // 
             this.btnHienToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnHienToanBo.Location = new System.Drawing.Point(298, 471);
-            this.btnHienToanBo.Margin = new System.Windows.Forms.Padding(6);
+            this.btnHienToanBo.Location = new System.Drawing.Point(199, 380);
+            this.btnHienToanBo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnHienToanBo.Name = "btnHienToanBo";
-            this.btnHienToanBo.Size = new System.Drawing.Size(256, 52);
+            this.btnHienToanBo.Size = new System.Drawing.Size(192, 42);
             this.btnHienToanBo.TabIndex = 25;
             this.btnHienToanBo.Text = "Hiện toàn bộ";
             this.btnHienToanBo.UseVisualStyleBackColor = true;
@@ -126,9 +121,10 @@ namespace PTTK_Project
             // 
             this.Namcmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Namcmb.FormattingEnabled = true;
-            this.Namcmb.Location = new System.Drawing.Point(322, 97);
+            this.Namcmb.Location = new System.Drawing.Point(673, 122);
+            this.Namcmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Namcmb.Name = "Namcmb";
-            this.Namcmb.Size = new System.Drawing.Size(130, 37);
+            this.Namcmb.Size = new System.Drawing.Size(98, 30);
             this.Namcmb.TabIndex = 26;
             this.Namcmb.Text = "Năm";
             this.Namcmb.SelectedIndexChanged += new System.EventHandler(this.Namcmb_SelectedIndexChanged);
@@ -137,9 +133,10 @@ namespace PTTK_Project
             // 
             this.Khoacmb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Khoacmb.FormattingEnabled = true;
-            this.Khoacmb.Location = new System.Drawing.Point(660, 97);
+            this.Khoacmb.Location = new System.Drawing.Point(673, 172);
+            this.Khoacmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Khoacmb.Name = "Khoacmb";
-            this.Khoacmb.Size = new System.Drawing.Size(130, 37);
+            this.Khoacmb.Size = new System.Drawing.Size(98, 30);
             this.Khoacmb.TabIndex = 27;
             this.Khoacmb.Text = "Khóa";
             this.Khoacmb.SelectedIndexChanged += new System.EventHandler(this.Khoacmb_SelectedIndexChanged);
@@ -148,10 +145,9 @@ namespace PTTK_Project
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label1.Location = new System.Drawing.Point(227, 98);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(609, 122);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 36);
+            this.label1.Size = new System.Drawing.Size(59, 26);
             this.label1.TabIndex = 28;
             this.label1.Text = "Năm";
             // 
@@ -159,18 +155,17 @@ namespace PTTK_Project
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label3.Location = new System.Drawing.Point(549, 98);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(605, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 36);
+            this.label3.Size = new System.Drawing.Size(63, 26);
             this.label3.TabIndex = 29;
             this.label3.Text = "Khóa";
             // 
             // fQLDangKyHocPhan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 545);
+            this.ClientSize = new System.Drawing.Size(808, 436);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Khoacmb);
@@ -182,8 +177,8 @@ namespace PTTK_Project
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.dgvDKHP);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fQLDangKyHocPhan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Đăng Ký Học Phần";
             this.Load += new System.EventHandler(this.fQLDangKyHocPhan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDKHP)).EndInit();

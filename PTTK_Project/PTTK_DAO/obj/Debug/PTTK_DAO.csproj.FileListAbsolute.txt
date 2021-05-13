@@ -50,3 +50,16 @@ D:\GITHUB\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.CoreCompi
 D:\GITHUB\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.CopyComplete
 D:\GITHUB\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.exe
 D:\GITHUB\PTTK_Project\PTTK_Project\PTTK_DAO\obj\Debug\PTTK_DAO.pdb
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\bin\Debug\PTTK_DAO.exe.config
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\bin\Debug\PTTK_DAO.exe
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\bin\Debug\PTTK_DAO.pdb
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\bin\Debug\PTTK_DTO.exe
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\bin\Debug\PTTK_DTO.pdb
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\bin\Debug\PTTK_DTO.exe.config
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\obj\Debug\PTTK_DAO.csprojAssemblyReference.cache
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\obj\Debug\PTTK_DAO.Properties.Resources.resources
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.GenerateResource.cache
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.CoreCompileInputs.cache
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\obj\Debug\PTTK_DAO.csproj.CopyComplete
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\obj\Debug\PTTK_DAO.exe
+C:\Users\NguyenTrungKien\Desktop\7\PTTK_DAO\obj\Debug\PTTK_DAO.pdb

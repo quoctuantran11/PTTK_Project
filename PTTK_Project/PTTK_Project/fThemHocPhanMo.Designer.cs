@@ -34,6 +34,7 @@ namespace PTTK_Project
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtPhongHoc = new System.Windows.Forms.TextBox();
             this.cmbNam = new System.Windows.Forms.ComboBox();
             this.cmbKhoa = new System.Windows.Forms.ComboBox();
             this.cmbMaGiaoVien = new System.Windows.Forms.ComboBox();
@@ -44,7 +45,6 @@ namespace PTTK_Project
             this.cmbMaHocPhan = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
-            this.txtPhongHoc = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,6 +111,14 @@ namespace PTTK_Project
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(702, 446);
             this.panel1.TabIndex = 6;
+            // 
+            // txtPhongHoc
+            // 
+            this.txtPhongHoc.Location = new System.Drawing.Point(220, 243);
+            this.txtPhongHoc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPhongHoc.Name = "txtPhongHoc";
+            this.txtPhongHoc.Size = new System.Drawing.Size(430, 26);
+            this.txtPhongHoc.TabIndex = 17;
             // 
             // cmbNam
             // 
@@ -216,14 +224,6 @@ namespace PTTK_Project
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // txtPhongHoc
-            // 
-            this.txtPhongHoc.Location = new System.Drawing.Point(220, 243);
-            this.txtPhongHoc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtPhongHoc.Name = "txtPhongHoc";
-            this.txtPhongHoc.Size = new System.Drawing.Size(430, 26);
-            this.txtPhongHoc.TabIndex = 17;
-            // 
             // fThemHocPhanMo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -235,6 +235,7 @@ namespace PTTK_Project
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "fThemHocPhanMo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Học Phần Mở";
             this.Load += new System.EventHandler(this.fThemHocPhanMo_Load);
             this.panel1.ResumeLayout(false);

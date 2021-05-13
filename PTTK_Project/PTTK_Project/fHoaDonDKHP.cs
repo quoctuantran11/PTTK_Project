@@ -35,5 +35,10 @@ namespace PTTK_Project
             GN.ShowDialog();
             this.Show();
         }
+
+        private void btnHienToanBo_Click(object sender, EventArgs e)
+        {
+            PTTK_BUS.HoaDonDKHPBUS.Instance.Xem(dgvHDDKHP);
+        }
     }
 }

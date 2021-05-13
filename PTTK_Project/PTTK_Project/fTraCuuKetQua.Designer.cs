@@ -40,20 +40,18 @@ namespace PTTK_Project
             // dgvKetQuaHoc
             // 
             this.dgvKetQuaHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKetQuaHoc.Location = new System.Drawing.Point(58, 184);
-            this.dgvKetQuaHoc.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvKetQuaHoc.Location = new System.Drawing.Point(44, 147);
             this.dgvKetQuaHoc.Name = "dgvKetQuaHoc";
             this.dgvKetQuaHoc.RowHeadersWidth = 82;
-            this.dgvKetQuaHoc.Size = new System.Drawing.Size(876, 348);
+            this.dgvKetQuaHoc.Size = new System.Drawing.Size(657, 278);
             this.dgvKetQuaHoc.TabIndex = 14;
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnTimKiem.Location = new System.Drawing.Point(788, 118);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimKiem.Location = new System.Drawing.Point(591, 94);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(146, 44);
+            this.btnTimKiem.Size = new System.Drawing.Size(110, 35);
             this.btnTimKiem.TabIndex = 13;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
@@ -61,20 +59,18 @@ namespace PTTK_Project
             // 
             // txbHocVien
             // 
-            this.txbHocVien.Location = new System.Drawing.Point(194, 124);
-            this.txbHocVien.Margin = new System.Windows.Forms.Padding(4);
+            this.txbHocVien.Location = new System.Drawing.Point(146, 99);
             this.txbHocVien.Name = "txbHocVien";
-            this.txbHocVien.Size = new System.Drawing.Size(572, 31);
+            this.txbHocVien.Size = new System.Drawing.Size(430, 26);
             this.txbHocVien.TabIndex = 12;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(267, 22);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(200, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(455, 67);
+            this.label2.Size = new System.Drawing.Size(350, 52);
             this.label2.TabIndex = 11;
             this.label2.Text = "Tra cứu kết quả";
             // 
@@ -82,24 +78,25 @@ namespace PTTK_Project
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(52, 124);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(39, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 31);
+            this.label1.Size = new System.Drawing.Size(88, 25);
             this.label1.TabIndex = 10;
             this.label1.Text = "Học viên";
             // 
             // fTraCuuKetQua
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 563);
+            this.ClientSize = new System.Drawing.Size(739, 450);
             this.Controls.Add(this.dgvKetQuaHoc);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txbHocVien);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fTraCuuKetQua";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tra cứu kết quả";
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQuaHoc)).EndInit();
             this.ResumeLayout(false);

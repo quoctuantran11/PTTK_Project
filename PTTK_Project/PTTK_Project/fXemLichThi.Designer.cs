@@ -42,10 +42,10 @@ namespace PTTK_Project
             // cmbDiaDiem
             // 
             this.cmbDiaDiem.FormattingEnabled = true;
-            this.cmbDiaDiem.Location = new System.Drawing.Point(715, 119);
-            this.cmbDiaDiem.Margin = new System.Windows.Forms.Padding(6);
+            this.cmbDiaDiem.Location = new System.Drawing.Point(536, 95);
+            this.cmbDiaDiem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbDiaDiem.Name = "cmbDiaDiem";
-            this.cmbDiaDiem.Size = new System.Drawing.Size(303, 33);
+            this.cmbDiaDiem.Size = new System.Drawing.Size(228, 28);
             this.cmbDiaDiem.TabIndex = 23;
             this.cmbDiaDiem.Text = "Địa Điểm";
             this.cmbDiaDiem.SelectedIndexChanged += new System.EventHandler(this.cmbDiaDiem_SelectedIndexChanged);
@@ -53,10 +53,10 @@ namespace PTTK_Project
             // cmbTenChungChi
             // 
             this.cmbTenChungChi.FormattingEnabled = true;
-            this.cmbTenChungChi.Location = new System.Drawing.Point(190, 124);
-            this.cmbTenChungChi.Margin = new System.Windows.Forms.Padding(6);
+            this.cmbTenChungChi.Location = new System.Drawing.Point(142, 99);
+            this.cmbTenChungChi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbTenChungChi.Name = "cmbTenChungChi";
-            this.cmbTenChungChi.Size = new System.Drawing.Size(290, 33);
+            this.cmbTenChungChi.Size = new System.Drawing.Size(218, 28);
             this.cmbTenChungChi.TabIndex = 22;
             this.cmbTenChungChi.Text = "Tên chứng chỉ";
             this.cmbTenChungChi.SelectedIndexChanged += new System.EventHandler(this.cmbTenChungChi_SelectedIndexChanged);
@@ -64,21 +64,21 @@ namespace PTTK_Project
             // dgvLichThi
             // 
             this.dgvLichThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLichThi.Location = new System.Drawing.Point(37, 179);
-            this.dgvLichThi.Margin = new System.Windows.Forms.Padding(6);
+            this.dgvLichThi.Location = new System.Drawing.Point(28, 143);
+            this.dgvLichThi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvLichThi.Name = "dgvLichThi";
             this.dgvLichThi.RowHeadersWidth = 82;
-            this.dgvLichThi.Size = new System.Drawing.Size(981, 446);
+            this.dgvLichThi.Size = new System.Drawing.Size(736, 357);
             this.dgvLichThi.TabIndex = 21;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(379, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(284, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 73);
+            this.label1.Size = new System.Drawing.Size(199, 55);
             this.label1.TabIndex = 20;
             this.label1.Text = "Lịch Thi";
             // 
@@ -86,10 +86,10 @@ namespace PTTK_Project
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(31, 121);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(23, 97);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 31);
+            this.label4.Size = new System.Drawing.Size(101, 25);
             this.label4.TabIndex = 25;
             this.label4.Text = "Chứng chỉ";
             // 
@@ -97,19 +97,20 @@ namespace PTTK_Project
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(583, 121);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(437, 97);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 31);
+            this.label3.Size = new System.Drawing.Size(88, 25);
             this.label3.TabIndex = 24;
             this.label3.Text = "Địa điểm";
             // 
             // btnHienToanBo
             // 
             this.btnHienToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnHienToanBo.Location = new System.Drawing.Point(410, 643);
+            this.btnHienToanBo.Location = new System.Drawing.Point(308, 514);
+            this.btnHienToanBo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHienToanBo.Name = "btnHienToanBo";
-            this.btnHienToanBo.Size = new System.Drawing.Size(261, 48);
+            this.btnHienToanBo.Size = new System.Drawing.Size(196, 38);
             this.btnHienToanBo.TabIndex = 26;
             this.btnHienToanBo.Text = "Hiện toàn bộ";
             this.btnHienToanBo.UseVisualStyleBackColor = true;
@@ -117,9 +118,9 @@ namespace PTTK_Project
             // 
             // fXemLichThi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1053, 713);
+            this.ClientSize = new System.Drawing.Size(790, 570);
             this.Controls.Add(this.btnHienToanBo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -127,7 +128,9 @@ namespace PTTK_Project
             this.Controls.Add(this.cmbTenChungChi);
             this.Controls.Add(this.dgvLichThi);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fXemLichThi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lịch thi";
             this.Load += new System.EventHandler(this.fXemLichThi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichThi)).EndInit();
