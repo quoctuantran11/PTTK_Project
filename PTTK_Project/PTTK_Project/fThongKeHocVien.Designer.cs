@@ -35,6 +35,7 @@ namespace PTTK_Project
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnHienToanBo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,11 +101,23 @@ namespace PTTK_Project
             this.label3.TabIndex = 5;
             this.label3.Text = "Năm";
             // 
+            // btnHienToanBo
+            // 
+            this.btnHienToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnHienToanBo.Location = new System.Drawing.Point(45, 93);
+            this.btnHienToanBo.Name = "btnHienToanBo";
+            this.btnHienToanBo.Size = new System.Drawing.Size(213, 40);
+            this.btnHienToanBo.TabIndex = 27;
+            this.btnHienToanBo.Text = "Hiện toàn bộ";
+            this.btnHienToanBo.UseVisualStyleBackColor = true;
+            this.btnHienToanBo.Click += new System.EventHandler(this.btnHienToanBo_Click);
+            // 
             // fThongKeHocVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 679);
+            this.Controls.Add(this.btnHienToanBo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -128,5 +141,6 @@ namespace PTTK_Project
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnHienToanBo;
     }
 }

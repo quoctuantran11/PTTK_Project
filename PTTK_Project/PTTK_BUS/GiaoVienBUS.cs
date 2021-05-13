@@ -56,5 +56,10 @@ namespace PTTK_BUS
         {
             return GiaoVienDAO.Instance.LayMaGV();
         }
+
+        public DataTable HienThiGV()
+        {
+            return GiaoVienDAO.Instance.LayGV();
+        }
     }
 }

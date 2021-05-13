@@ -154,7 +154,7 @@ namespace PTTK_DAO
 
         public DataTable TimKiem(string ten)
         {
-            string query = "select MaHocVien from HocVien where HoTen = '" + ten + "'";
+            string query = "select MaHocVien from HocVien where HoTen like '%" + ten + "%'";
             DataProvider.Con.Open();
 
             string maHocVien = DataProvider.GetFieldValues(query);
@@ -174,7 +174,7 @@ namespace PTTK_DAO
             return data;
         }
 
-        public bool DangKyHP(string ten, string nam, string khoa, string hocphan)
+        public bool DangKyHP(string cmnd, string nam, string khoa, string hocphan)
         {
             DataProvider.Con.Open();
             string mahocphan, mahocvien;
@@ -182,11 +182,11 @@ namespace PTTK_DAO
             string sql = "Select MaHocPhan from HocPhan where TenHocPhan = '" + hocphan + "'";
             mahocphan = DataProvider.GetFieldValues(sql);
 
-            sql = "Select MaHocvien from HocVien where HoTen = '" + ten + "'";
+            sql = "Select MaHocvien from HocVien where CMND = '" + cmnd + "'";
             mahocvien = DataProvider.GetFieldValues(sql);
 
             sql = "Insert into KetQuaDangKyHocPhan values (" + mahocphan + "," + nam + ","
-                + khoa + "," + mahocvien + ")";
+                + khoa + "," + mahocvien + ",null,null,null)";
 
             try
             {

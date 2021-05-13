@@ -40,7 +40,7 @@ namespace PTTK_DAO
 
         public DataTable TimGiaoVien(string ten)
         {
-            string query = "Select * from GiaoVien where HoTenGV = '" + ten + "'";
+            string query = "Select * from GiaoVien where HoTenGV like '%" + ten + "%'";
 
             DataProvider.Con.Open();
 
@@ -65,6 +65,16 @@ namespace PTTK_DAO
         public DataTable LayMaGV()
         {
             string query = "Select MaGiaoVien from GiaoVien";
+
+            DataProvider.Connect();
+            DataTable data = DataProvider.GetDataToTable(query);
+            DataProvider.Disconnect();
+            return data;
+        }
+
+        public DataTable LayGV()
+        {
+            string query = "Select HoTenGV from GiaoVien";
 
             DataProvider.Connect();
             DataTable data = DataProvider.GetDataToTable(query);

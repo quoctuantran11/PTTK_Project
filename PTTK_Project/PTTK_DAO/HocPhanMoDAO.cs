@@ -89,12 +89,16 @@ namespace PTTK_DAO
             return table;
         }
 
-        public bool ThemHocPhanMo(int mahocphan, int nam, int khoa, string phonghoc, int soluongsv, int magv)
+        public bool ThemHocPhanMo(int mahocphan, int nam, int khoa, string phonghoc, int soluongsv, string gv)
         {
 
-            string query = "insert into HocPhanMo values (" +mahocphan+ "," +nam+ "," +khoa+ ", '" +phonghoc+ "' ," +soluongsv+ "," +magv+ ")";
+            string query = "select MaGiaoVien from GiaoVien where HoTenGV = '" + gv + "'";
 
             DataProvider.Connect();
+            string magv = DataProvider.GetFieldValues(query);
+
+            query = "insert into HocPhanMo values (" + mahocphan + "," + nam + "," + khoa + ", '" + phonghoc + "' ," + soluongsv + "," + magv + ")";
+
             SqlCommand command = new SqlCommand(query, DataProvider.Con);
             if (command.ExecuteNonQuery() > 0)
             {
@@ -126,13 +130,17 @@ namespace PTTK_DAO
             }
         }
 
-        public bool SuaHocPhanMo(int mahocphan, int nam, int khoa, string phonghoc, int soluongsv, int magv)
+        public bool SuaHocPhanMo(int mahocphan, int nam, int khoa, string phonghoc, int soluongsv, string gv)
         {
 
-            string query = "update HocPhanMo set  PhongHoc = '" +phonghoc+ "', SoLuongSV = " +soluongsv+ ", MaGV = " +magv+
-                "where MaHocPhan = " +mahocphan+ " and Nam = " +nam+ " and Khoa = " +khoa;
+            string query = "select MaGiaoVien from GiaoVien where HoTenGV = '" + gv + "'";
 
             DataProvider.Connect();
+            string magv = DataProvider.GetFieldValues(query);
+
+            query = "update HocPhanMo set  PhongHoc = '" +phonghoc+ "', SoLuongSV = " +soluongsv+ ", MaGV = " +magv+
+                "where MaHocPhan = " +mahocphan+ " and Nam = " +nam+ " and Khoa = " +khoa;
+            
             SqlCommand command = new SqlCommand(query, DataProvider.Con);
             if (command.ExecuteNonQuery() > 0)
             {

@@ -23,7 +23,7 @@ namespace PTTK_Project
             string mathisinh = txtMaThiSinh.Text;
             if(GhiNhanHDDKCCQTBUS.Instance.KiemTraHocVien(mathisinh))
             {
-                ckbTrongTrungTam.Checked = true;
+                rbTrongTrungTam.Checked = true;
                 int tongtien = Int32.Parse(txtTongTien.Text);
                 int giamgia = tongtien / 100 * 10;
 
@@ -34,7 +34,7 @@ namespace PTTK_Project
             }
             else
             {
-                ckbBenNgoai.Checked = true;
+                rbBenNgoai.Checked = true;
             }
 
         }

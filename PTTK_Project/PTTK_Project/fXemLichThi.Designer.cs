@@ -35,16 +35,17 @@ namespace PTTK_Project
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnHienToanBo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichThi)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbDiaDiem
             // 
             this.cmbDiaDiem.FormattingEnabled = true;
-            this.cmbDiaDiem.Location = new System.Drawing.Point(776, 119);
+            this.cmbDiaDiem.Location = new System.Drawing.Point(715, 119);
             this.cmbDiaDiem.Margin = new System.Windows.Forms.Padding(6);
             this.cmbDiaDiem.Name = "cmbDiaDiem";
-            this.cmbDiaDiem.Size = new System.Drawing.Size(260, 33);
+            this.cmbDiaDiem.Size = new System.Drawing.Size(303, 33);
             this.cmbDiaDiem.TabIndex = 23;
             this.cmbDiaDiem.Text = "Địa Điểm";
             this.cmbDiaDiem.SelectedIndexChanged += new System.EventHandler(this.cmbDiaDiem_SelectedIndexChanged);
@@ -67,7 +68,7 @@ namespace PTTK_Project
             this.dgvLichThi.Margin = new System.Windows.Forms.Padding(6);
             this.dgvLichThi.Name = "dgvLichThi";
             this.dgvLichThi.RowHeadersWidth = 82;
-            this.dgvLichThi.Size = new System.Drawing.Size(999, 446);
+            this.dgvLichThi.Size = new System.Drawing.Size(981, 446);
             this.dgvLichThi.TabIndex = 21;
             // 
             // label1
@@ -96,18 +97,30 @@ namespace PTTK_Project
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(634, 121);
+            this.label3.Location = new System.Drawing.Point(583, 121);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 31);
             this.label3.TabIndex = 24;
             this.label3.Text = "Địa điểm";
             // 
+            // btnHienToanBo
+            // 
+            this.btnHienToanBo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnHienToanBo.Location = new System.Drawing.Point(410, 643);
+            this.btnHienToanBo.Name = "btnHienToanBo";
+            this.btnHienToanBo.Size = new System.Drawing.Size(261, 48);
+            this.btnHienToanBo.TabIndex = 26;
+            this.btnHienToanBo.Text = "Hiện toàn bộ";
+            this.btnHienToanBo.UseVisualStyleBackColor = true;
+            this.btnHienToanBo.Click += new System.EventHandler(this.btnHienToanBo_Click);
+            // 
             // fXemLichThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 661);
+            this.ClientSize = new System.Drawing.Size(1053, 713);
+            this.Controls.Add(this.btnHienToanBo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbDiaDiem);
@@ -131,5 +144,6 @@ namespace PTTK_Project
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnHienToanBo;
     }
 }

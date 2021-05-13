@@ -61,6 +61,7 @@ namespace PTTK_Project
                         }
                         else
                         {
+                            MessageBox.Show("Ghi danh thành công!", "Thông báo");
                             this.Close();
                         }
                     }

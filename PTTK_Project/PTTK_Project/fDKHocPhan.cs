@@ -62,13 +62,34 @@ namespace PTTK_Project
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            if(KetQuaDangKyHocPhanBUS.Instance.DangKyHP(txbHoTen.Text, cmbNam.Text, cmbKhoa.Text, cmbHocPhan.Text))
+            if (txbCMND.Text == "")
             {
-                MessageBox.Show("Hoàn tất đăng ký học phần!", "Thông báo");
+                MessageBox.Show("Bạn chưa nhập số CMND của học viên!", "Thông báo");
+                txbCMND.Focus();
+            }
+            else if (cmbNam.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn năm!", "Thông báo");
+            }
+            else if (cmbKhoa.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn khóa!", "Thông báo");
+            }
+            else if (cmbHocPhan.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn học phần!", "Thông báo");
+
             }
             else
             {
-                MessageBox.Show("Lỗi!!!", "Thông báo");
+                if (KetQuaDangKyHocPhanBUS.Instance.DangKyHP(txbCMND.Text, cmbNam.Text, cmbKhoa.Text, cmbHocPhan.Text))
+                {
+                    MessageBox.Show("Hoàn tất đăng ký học phần!", "Thông báo");
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi!!!", "Thông báo");
+                }
             }
         }
 
@@ -116,6 +137,18 @@ namespace PTTK_Project
                 cmbHocPhan.DisplayMember = "TenHocPhan";
                 cmbHocPhan.ValueMember = "MaHocPhan";
                 cmbHocPhan.SelectedIndex = -1;
+            }
+        }
+
+        private void btnKiemTra_Click(object sender, EventArgs e)
+        {
+            if (!HocVienBUS.Instance.KiemTraTrungLap(txbCMND.Text))
+            {
+                MessageBox.Show("Không tìm thấy dữ liệu!", "Thông báo");
+            }
+            else
+            {
+                MessageBox.Show("Tìm thấy dữ liệu!", "Thông báo");
             }
         }
     }

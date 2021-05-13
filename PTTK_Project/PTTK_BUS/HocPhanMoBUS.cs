@@ -53,9 +53,9 @@ namespace PTTK_BUS
             data.DataSource = HocPhanMoDAO.Instance.LayDanhSachHocMo2(mahocphan, nam, khoa);
         }
 
-        public bool ThemHocPhanMo(int mahocphan, int nam, int khoa, string phonghoc, int soluongsv, int magv)
+        public bool ThemHocPhanMo(int mahocphan, int nam, int khoa, string phonghoc, int soluongsv, string gv)
         {
-            return HocPhanMoDAO.Instance.ThemHocPhanMo(mahocphan, nam, khoa, phonghoc, soluongsv, magv);
+            return HocPhanMoDAO.Instance.ThemHocPhanMo(mahocphan, nam, khoa, phonghoc, soluongsv, gv);
         }
 
         public bool XoaHocPhanMo(DataGridView data)
@@ -70,9 +70,9 @@ namespace PTTK_BUS
             return HocPhanMoDAO.Instance.XoaHocPhanMo(mahocphan, nam, khoa);
         }
 
-        public bool SuaHocPhanMo(int mahocphan, int nam, int khoa, string phonghoc, int soluongsv, int magv)
+        public bool SuaHocPhanMo(int mahocphan, int nam, int khoa, string phonghoc, int soluongsv, string gv)
         {
-            return HocPhanMoDAO.Instance.SuaHocPhanMo(mahocphan, nam, khoa, phonghoc, soluongsv, magv);
+            return HocPhanMoDAO.Instance.SuaHocPhanMo(mahocphan, nam, khoa, phonghoc, soluongsv, gv);
         }
 
     }

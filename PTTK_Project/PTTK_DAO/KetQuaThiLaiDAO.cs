@@ -159,7 +159,7 @@ namespace PTTK_DAO
 
         public DataTable TimKiem(string ten)
         {
-            string query = "select MaHocVien from HocVien where HoTen = '" + ten + "'";
+            string query = "select MaHocVien from HocVien where HoTen like '%" + ten + "%'";
             DataProvider.Con.Open();
 
             string maHocVien = DataProvider.GetFieldValues(query);

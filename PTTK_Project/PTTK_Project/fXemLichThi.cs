@@ -21,6 +21,7 @@ namespace PTTK_Project
         private void fXemLichThi_Load(object sender, EventArgs e)
         {
             LichThiBUS.Instance.Xem(dgvLichThi);
+            dgvLichThi.Columns["TenChungChi"].Width = dgvLichThi.Columns["DiaDiem"].Width = 163;
             
             cmbDiaDiem.DataSource = DotThiBUS.Instance.HienThiDiaDiemThi();
             cmbDiaDiem.DisplayMember = cmbDiaDiem.ValueMember = "DiaDiem";
@@ -63,6 +64,11 @@ namespace PTTK_Project
             {
                 LichThiBUS.Instance.Xem_DiaDiemvaChungChi(dgvLichThi, cmbTenChungChi.Text, cmbDiaDiem.Text);
             }
+        }
+
+        private void btnHienToanBo_Click(object sender, EventArgs e)
+        {
+            LichThiBUS.Instance.Xem(dgvLichThi);
         }
     }
 }

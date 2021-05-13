@@ -41,8 +41,8 @@ namespace PTTK_Project
 
         private void Load_cmbMaGiaoVien()
         {
-            cmbMaGiaoVien.DataSource = GiaoVienBUS.Instance.HienThiMaGV();
-            cmbMaGiaoVien.DisplayMember = "MaGiaoVien";
+            cmbMaGiaoVien.DataSource = GiaoVienBUS.Instance.HienThiGV();
+            cmbMaGiaoVien.DisplayMember = "HoTenGV";
         }
 
         private void fThemHocPhanMo_Load(object sender, EventArgs e)
@@ -62,9 +62,9 @@ namespace PTTK_Project
                 int mahocphan = Int32.Parse(cmbMaHocPhan.Text);
                 string phonghoc = (string)txtPhongHoc.Text;
                 int soluongsv = Int32.Parse(txtSoluongSV.Text);
-                int magv = Int32.Parse(cmbMaGiaoVien.Text);
+                string tengv = cmbMaGiaoVien.Text;
 
-                if (HocPhanMoBUS.Instance.ThemHocPhanMo(mahocphan, nam, khoa, phonghoc, soluongsv, magv))
+                if (HocPhanMoBUS.Instance.ThemHocPhanMo(mahocphan, nam, khoa, phonghoc, soluongsv, tengv))
                 {
                     MessageBox.Show("Ghi nhận thành công!");
                 }

@@ -73,9 +73,9 @@ namespace PTTK_BUS
             }
         }
 
-        public bool DangKyHP(string ten, string nam, string khoa, string hocphan)
+        public bool DangKyHP(string cmnd, string nam, string khoa, string hocphan)
         {
-            return KetQuaDangKyHocPhanDAO.Instance.DangKyHP(ten, nam, khoa, hocphan);
+            return KetQuaDangKyHocPhanDAO.Instance.DangKyHP(cmnd, nam, khoa, hocphan);
         }  
         
         public string LaySiSo(string nam, string khoa, string hocphan)

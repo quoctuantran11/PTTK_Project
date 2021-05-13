@@ -28,9 +28,9 @@ namespace PTTK_DAO
 
         public DataTable Xem()
         {
-            string query = "Select LT.MaSoDotThi, CCQT.TenChungChi, LT.NgayThi, DT.DiaDiem" +
+            string query = "Select LT.NgayThi, CCQT.TenChungChi,  DT.DiaDiem" +
                 " from ChungChiQuocTe CCQT join LichThi LT on CCQT.MaChungChi = LT.MaChungChi" +
-                " join DotThi DT on LT.MaSoDotThi = DT.MaSoDotThi";
+                " join DotThi DT on LT.MaSoDotThi = DT.MaSoDotThi order by LT.NgayThi desc";
 
             DataProvider.Con.Open();
 
@@ -43,10 +43,10 @@ namespace PTTK_DAO
 
         public DataTable Xem_ChungChi(string tenchungchi)
         {
-            string query = "Select LT.MaSoDotThi, CCQT.TenChungChi, LT.NgayThi, DT.DiaDiem" +
+            string query = "Select LT.NgayThi, CCQT.TenChungChi,  DT.DiaDiem" +
                 " from ChungChiQuocTe CCQT join LichThi LT on CCQT.MaChungChi = LT.MaChungChi" +
                 " join DotThi DT on LT.MaSoDotThi = DT.MaSoDotThi" + 
-                " where CCQT.TenChungChi = '" + tenchungchi + "'";
+                " where CCQT.TenChungChi = '" + tenchungchi + "' order by LT.NgayThi desc";
 
             DataProvider.Con.Open();
 
@@ -59,10 +59,10 @@ namespace PTTK_DAO
 
         public DataTable Xem_DiaDiem(string tendiadiem)
         {
-            string query = "Select LT.MaSoDotThi, CCQT.TenChungChi, LT.NgayThi, DT.DiaDiem" +
+            string query = "Select LT.NgayThi, CCQT.TenChungChi, DT.DiaDiem" +
                 " from ChungChiQuocTe CCQT join LichThi LT on CCQT.MaChungChi = LT.MaChungChi" +
                 " join DotThi DT on LT.MaSoDotThi = DT.MaSoDotThi" +
-                " where DT.DiaDiem = '" + tendiadiem + "'";
+                " where DT.DiaDiem = '" + tendiadiem + "' order by LT.NgayThi desc";
 
             DataProvider.Con.Open();
 
@@ -75,10 +75,11 @@ namespace PTTK_DAO
 
         public DataTable Xem_DiaDiemvaChungChi(string tendiadiem, string tenchungchi)
         {
-            string query = "Select LT.MaSoDotThi, CCQT.TenChungChi, LT.NgayThi, DT.DiaDiem" +
+            string query = "Select LT.NgayThi, CCQT.TenChungChi,  DT.DiaDiem" +
                 " from ChungChiQuocTe CCQT join LichThi LT on CCQT.MaChungChi = LT.MaChungChi" +
                 " join DotThi DT on LT.MaSoDotThi = DT.MaSoDotThi" +
-                " where DT.DiaDiem = '" + tendiadiem + "' and CCQT.TenChungChi = '" + tenchungchi + "'";
+                " where DT.DiaDiem = '" + tendiadiem + "' and CCQT.TenChungChi = '" + tenchungchi + "'" +
+                " order by LT.NgayThi desc";
 
             DataProvider.Con.Open();
 

@@ -64,5 +64,10 @@ namespace PTTK_Project
                 KetQuaDangKyHocPhanBUS.Instance.ThongKeTheoNamvaQuy(dgvKetQua, cmbNam.Text, cmbQuy.Text);
             }
         }
+
+        private void btnHienToanBo_Click(object sender, EventArgs e)
+        {
+            KetQuaDangKyHocPhanBUS.Instance.DemHocVien(dgvKetQua);
+        }
     }
 }

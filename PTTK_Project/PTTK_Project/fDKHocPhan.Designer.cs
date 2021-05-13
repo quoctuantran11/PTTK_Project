@@ -38,11 +38,12 @@ namespace PTTK_Project
             this.cmbKhoa = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txbHoTen = new System.Windows.Forms.TextBox();
+            this.txbCMND = new System.Windows.Forms.TextBox();
             this.txbLoaiHocPhan = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnGNCC = new System.Windows.Forms.Button();
             this.btnKiemTraSiSo = new System.Windows.Forms.Button();
+            this.btnKiemTra = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -142,17 +143,17 @@ namespace PTTK_Project
             this.label7.Location = new System.Drawing.Point(32, 123);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 31);
+            this.label7.Size = new System.Drawing.Size(136, 31);
             this.label7.TabIndex = 43;
-            this.label7.Text = "Tên học viên";
+            this.label7.Text = "Số CMND";
             // 
-            // txbHoTen
+            // txbCMND
             // 
-            this.txbHoTen.Location = new System.Drawing.Point(248, 121);
-            this.txbHoTen.Margin = new System.Windows.Forms.Padding(4);
-            this.txbHoTen.Name = "txbHoTen";
-            this.txbHoTen.Size = new System.Drawing.Size(530, 31);
-            this.txbHoTen.TabIndex = 44;
+            this.txbCMND.Location = new System.Drawing.Point(248, 121);
+            this.txbCMND.Margin = new System.Windows.Forms.Padding(4);
+            this.txbCMND.Name = "txbCMND";
+            this.txbCMND.Size = new System.Drawing.Size(395, 31);
+            this.txbCMND.TabIndex = 44;
             // 
             // txbLoaiHocPhan
             // 
@@ -200,16 +201,30 @@ namespace PTTK_Project
             this.btnKiemTraSiSo.UseVisualStyleBackColor = true;
             this.btnKiemTraSiSo.Click += new System.EventHandler(this.btnKiemTraSiSo_Click);
             // 
+            // btnKiemTra
+            // 
+            this.btnKiemTra.AutoSize = true;
+            this.btnKiemTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnKiemTra.Location = new System.Drawing.Point(651, 112);
+            this.btnKiemTra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKiemTra.Name = "btnKiemTra";
+            this.btnKiemTra.Size = new System.Drawing.Size(131, 43);
+            this.btnKiemTra.TabIndex = 49;
+            this.btnKiemTra.Text = "Kiểm tra";
+            this.btnKiemTra.UseVisualStyleBackColor = true;
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
+            // 
             // fDKHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 615);
+            this.ClientSize = new System.Drawing.Size(822, 615);
+            this.Controls.Add(this.btnKiemTra);
             this.Controls.Add(this.btnKiemTraSiSo);
             this.Controls.Add(this.btnGNCC);
             this.Controls.Add(this.txbLoaiHocPhan);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txbHoTen);
+            this.Controls.Add(this.txbCMND);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmbKhoa);
             this.Controls.Add(this.label5);
@@ -239,10 +254,11 @@ namespace PTTK_Project
         private System.Windows.Forms.ComboBox cmbKhoa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txbHoTen;
+        private System.Windows.Forms.TextBox txbCMND;
         private System.Windows.Forms.TextBox txbLoaiHocPhan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnGNCC;
         private System.Windows.Forms.Button btnKiemTraSiSo;
+        private System.Windows.Forms.Button btnKiemTra;
     }
 }

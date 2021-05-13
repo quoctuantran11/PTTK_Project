@@ -38,13 +38,15 @@ namespace PTTK_Project
 
         private void Load_cmbNam()
         {
-            cmbNam.DataSource = HocPhanMoBUS.Instance.HienThiHocPhan();
+            //cmbNam.DataSource = HocPhanMoBUS.Instance.HienThiHocPhan();
+            cmbNam.DataSource = Nam_KhoaBUS.Instance.HienThiNam();
             cmbNam.DisplayMember = "Nam";
         }
 
         private void Load_cmbKhoa()
         {
-            cmbKhoa.DataSource = HocPhanMoBUS.Instance.HienThiHocPhan();
+            //cmbKhoa.DataSource = HocPhanMoBUS.Instance.HienThiHocPhan();
+            cmbKhoa.DataSource = Nam_KhoaBUS.Instance.HienThiKhoa();
             cmbKhoa.DisplayMember = "Khoa";
         }
 
