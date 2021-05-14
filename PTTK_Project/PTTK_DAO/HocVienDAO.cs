@@ -30,7 +30,7 @@ namespace PTTK_DAO
         public DataTable KiemTraTrungLap(string cmnd)
         {
             DataProvider.Con.Open();
-            string sql = "select * from HocVien where CMND = " + cmnd;
+            string sql = "select * from HocVien where CMND = '" + cmnd + "'";
 
             DataTable data = DataProvider.GetDataToTable(sql);
 

@@ -62,6 +62,25 @@ namespace PTTK_DAO
                 return false;
             }
         }
+
+        public bool XoaHocPhan(string ma, string ten, string loai)
+        {
+            string query = "Delete from HocPhan where MaHocPhan = " + ma + " and LoaiHocPhan = " +
+                "'" + loai + "' and TenHocPhan = '" + ten + "'";
+            DataProvider.Connect();
+            SqlCommand cmd = new SqlCommand(query,DataProvider.Con);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                DataProvider.Disconnect();
+                return true;
+            }
+            catch
+            {
+                DataProvider.Disconnect();
+                return false;
+            }
+        }
     }
 }
 

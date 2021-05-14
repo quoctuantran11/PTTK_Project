@@ -38,6 +38,7 @@ namespace PTTK_Project
                 }
                 else
                 {
+                    MessageBox.Show("Thêm thành công!", "Thông báo");
                     this.Close();
                 }
             }

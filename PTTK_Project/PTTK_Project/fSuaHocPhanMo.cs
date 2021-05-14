@@ -40,7 +40,7 @@ namespace PTTK_Project
         private void Load_cmbMaGiaoVien()
         {
             cmbMaGiaoVien.DataSource = GiaoVienBUS.Instance.HienThiGV();
-            cmbMaGiaoVien.DisplayMember = "MaGiaoVien";
+            cmbMaGiaoVien.DisplayMember = "HoTenGV";
         }
 
         private void fSuaHocPhanMo_Load(object sender, EventArgs e)
@@ -78,5 +78,11 @@ namespace PTTK_Project
                 MessageBox.Show("Chưa nhập đủ dữ liệu hoặc nhập thông tin không tồn tại");
             }
         }
+
+        private void cmbMaGiaoVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

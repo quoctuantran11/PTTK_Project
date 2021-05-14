@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cKetNoiDB.cs" />
     <Compile Include="fDangKyChungChiQuocTe.cs">
       <SubType>Form</SubType>
     </Compile>

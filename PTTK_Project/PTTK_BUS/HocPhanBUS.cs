@@ -42,5 +42,16 @@ namespace PTTK_BUS
         {
             return HocPhanDAO.Instance.ThemHocPhan(ten, loai);
         }
+
+        public bool XoaHocPhan(DataGridView data)
+        {
+            DataGridViewRow row = data.SelectedCells[0].OwningRow;
+
+            string ma = row.Cells["MaHocPhan"].Value.ToString();
+            string loai = row.Cells["LoaiHocPhan"].Value.ToString();
+            string ten = row.Cells["TenHocPhan"].Value.ToString();
+
+            return HocPhanDAO.Instance.XoaHocPhan(ma, ten, loai);
+        }
     }
 }

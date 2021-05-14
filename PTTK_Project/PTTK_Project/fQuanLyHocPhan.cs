@@ -39,5 +39,17 @@ namespace PTTK_Project
         {
             HocPhanBUS.Instance.XemToanBo(dgvHocPhan);
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if(HocPhanBUS.Instance.XoaHocPhan(dgvHocPhan))
+            {
+                MessageBox.Show("Xóa thành công!","Thông báo");
+            }
+            else
+            {
+                MessageBox.Show("Dữ liệu này hiện không thể xóa!", "Thông báo");
+            }
+        }
     }
 }
