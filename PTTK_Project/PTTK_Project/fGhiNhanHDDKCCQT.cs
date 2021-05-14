@@ -41,10 +41,15 @@ namespace PTTK_Project
 
         private void btnGhiNhan_Click(object sender, EventArgs e)
         {
-            DateTime ngaylap = dtpNgayLap.Value;
+            string ngaylap = dtpNgayLap.Value.ToString();
             int tongtien = Int32.Parse(txtTongTien.Text);
             int mathisinh = Int32.Parse(txtMaThiSinh.Text);
-            int giamgia = Int32.Parse(txtGiamGia.Text);
+            int giamgia = 0;
+            if (txtGiamGia.Text != "")
+            {
+                giamgia = Int32.Parse(txtGiamGia.Text);
+            }
+
             if(GhiNhanHDDKCCQTBUS.Instance.GhiNhan(ngaylap, giamgia, tongtien, mathisinh))
             {
                 MessageBox.Show("Ghi nhận thành công!");

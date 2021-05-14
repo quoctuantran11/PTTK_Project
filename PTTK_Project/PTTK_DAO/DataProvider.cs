@@ -11,7 +11,7 @@ namespace PTTK_DAO
 {
     class DataProvider
     {
-        public static SqlConnection Con = new SqlConnection(@"Data Source= AorusPC;Initial Catalog=PTTK;Integrated Security=True");
+        public static SqlConnection Con = new SqlConnection(@"Data Source=./;Initial Catalog=PTTK;Integrated Security=True");
         public static void Connect()
         {
 

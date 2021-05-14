@@ -62,7 +62,7 @@ namespace PTTK_DAO
             }
         }
 
-        public bool GhiDuLieu(DateTime ngaylap, int giamgia, int tongtien, int mathisinh)
+        public bool GhiDuLieu(string ngaylap, int giamgia, int tongtien, int mathisinh)
         {
             string query = "insert into HoaDonDKChungChiQuocTe (NgayLap, GiamGia, TongTien, MaThiSinh) values ('" + ngaylap + "'," + giamgia + "," + tongtien + "," + mathisinh + ")";
             DataProvider.Connect();

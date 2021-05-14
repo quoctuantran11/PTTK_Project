@@ -30,7 +30,7 @@ namespace PTTK_BUS
             return false;
         }
 
-        public bool GhiNhan(DateTime ngaylap, int giamgia, int tongtien, int mathisinh)
+        public bool GhiNhan(string ngaylap, int giamgia, int tongtien, int mathisinh)
         {
             return GhiNhanHDDKCCQTDAO.Instance.GhiDuLieu(ngaylap, giamgia, tongtien, mathisinh);
         }
