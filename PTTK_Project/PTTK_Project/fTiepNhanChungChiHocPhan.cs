@@ -69,14 +69,26 @@ namespace PTTK_Project
             {
                 if (rbTrungTamNay.Checked == true)
                 {
-                    ChungChiTrungTam_HocVienBUS.Instance.GhiHoSo(txbHoTen.Text, txbChungChi.Text);
-                    this.Close();
+                    if(ChungChiTrungTam_HocVienBUS.Instance.GhiHoSo(txbHoTen.Text, txbChungChi.Text))
+                    {
+                        MessageBox.Show("Ghi nhận hoàn tất!", "Thông báo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi!!", "Thông báo");
+                    }
                 }
 
                 if (rbTrungTamKhac.Checked == true)
                 {
-                    ChungChiNgoaiTrungTam_HocVienBUS.Instance.GhiHoSo(txbHoTen.Text, txbChungChi.Text);
-                    this.Close();
+                    if(ChungChiNgoaiTrungTam_HocVienBUS.Instance.GhiHoSo(txbHoTen.Text, txbChungChi.Text))
+                    {
+                        MessageBox.Show("Ghi nhận hoàn tất!", "Thông báo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi!!", "Thông báo");
+                    }
                 }
             }
         }

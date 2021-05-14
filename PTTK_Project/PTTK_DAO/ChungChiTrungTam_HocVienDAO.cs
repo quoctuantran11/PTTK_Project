@@ -25,7 +25,7 @@ namespace PTTK_DAO
 
         private ChungChiTrungTam_HocVienDAO() { }
 
-        public void GhiHoSo(string ten, string machungchi)
+        public bool GhiHoSo(string ten, string machungchi)
         {
             string sql, mahocvien;
 
@@ -33,12 +33,22 @@ namespace PTTK_DAO
 
             sql = "Select MaHocVien from HocVien where HoTen = '" + ten + "'";
             mahocvien = DataProvider.GetFieldValues(sql);
+            if (mahocvien == "")
+            {
+                DataProvider.Con.Close();
 
-            sql = "Insert into ChungChiTrungTam_HocVien values (" + machungchi + "," + mahocvien + ")";
+                return false;
+            }
+            else
+            {
+                sql = "Insert into ChungChiTrungTam_HocVien values (" + machungchi + "," + mahocvien + ")";
 
-            DataProvider.RunSQL(sql);
-            
-            DataProvider.Con.Close();
+                DataProvider.RunSQL(sql);
+
+                DataProvider.Con.Close();
+
+                return true;
+            }
         }
     }
 }

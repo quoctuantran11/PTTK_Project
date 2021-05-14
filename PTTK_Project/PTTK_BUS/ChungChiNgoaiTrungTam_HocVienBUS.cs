@@ -26,9 +26,9 @@ namespace PTTK_BUS
 
         private ChungChiNgoaiTrungTam_HocVienBUS() { }
 
-        public void GhiHoSo(string ten, string machungchi)
+        public bool GhiHoSo(string ten, string machungchi)
         {
-            ChungChiNgoaiTrungTam_HocVienDAO.Instance.GhiHoSo(ten, machungchi);
+            return ChungChiNgoaiTrungTam_HocVienDAO.Instance.GhiHoSo(ten, machungchi);
         }
     }
 }
